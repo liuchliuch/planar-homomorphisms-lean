@@ -17019,11 +17019,11 @@
     },
     {
       "path": "scripts/compare.py",
-      "sha256": "e16425e87f2b24acf68d4e4701f842a7c767038c9d1fe998bbba9413694d997d"
+      "sha256": "fb3ec74ea75a0e605b0540fe12707f59181b45b653f619713b0f71a29d4ab28a"
     },
     {
       "path": "scripts/landrun-runner.sh",
-      "sha256": "4e008eb429f3340597583eb0efb89decc4d2812979aad4db4adca05a97810cf4"
+      "sha256": "0683556f25f83087683fd97e91552132d9d2bdf9e9e7bc136efa6d92dcd90e5b"
     },
     {
       "path": "scripts/local-landrun.sh",
@@ -17540,6 +17540,16 @@
       "path": "scripts/compare.py",
       "previous_sha256": "7085dcc67b60d9550c109600a54ddeca91f35d2a1f49ab7cc333155f32e070b6",
       "sha256": "e16425e87f2b24acf68d4e4701f842a7c767038c9d1fe998bbba9413694d997d"
+    },
+    {
+      "path": "scripts/compare.py",
+      "previous_sha256": "e16425e87f2b24acf68d4e4701f842a7c767038c9d1fe998bbba9413694d997d",
+      "sha256": "fb3ec74ea75a0e605b0540fe12707f59181b45b653f619713b0f71a29d4ab28a"
+    },
+    {
+      "path": "scripts/landrun-runner.sh",
+      "previous_sha256": "4e008eb429f3340597583eb0efb89decc4d2812979aad4db4adca05a97810cf4",
+      "sha256": "0683556f25f83087683fd97e91552132d9d2bdf9e9e7bc136efa6d92dcd90e5b"
     }
   ],
   "official_comparator_baseline": {

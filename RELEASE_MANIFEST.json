@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
   "status": "COMPARATOR_INTEGRATION_PENDING",
-  "source_snapshot": "31520d76142b9d2e8f643338dcddb6c773c17984dc697987d0cf551c2554a827",
+  "source_snapshot": "375653fbd9c51982207cbf6ca7354672e899101a2375a3199d4d2f9a5590cec0",
   "files": [
     {
       "path": ".github/workflows/lean.yml",
-      "sha256": "ec2305ef358a0064237b39414cb82cf3255d2231d701fb7307486158d1a15206",
-      "bytes": 687,
+      "sha256": "e4341e3c50414dd739cae5df63318279c9dc8f1e9e81cb597fe949e4b26cfeb3",
+      "bytes": 1987,
       "executable": false
     },
     {
@@ -24899,8 +24899,8 @@
     },
     {
       "path": "SOURCE_PROVENANCE.json",
-      "sha256": "fb5d1f1837845020f1a59dcfb908f9bfedbfe0708c7f9788345881db410208e9",
-      "bytes": 700665,
+      "sha256": "7db49e756d0de8b7981091afd1e69ac00d4370608b76b26dfda581da749cddd1",
+      "bytes": 701347,
       "executable": false
     },
     {
@@ -25541,8 +25541,8 @@
     },
     {
       "path": "scripts/compare.py",
-      "sha256": "7085dcc67b60d9550c109600a54ddeca91f35d2a1f49ab7cc333155f32e070b6",
-      "bytes": 11566,
+      "sha256": "fb3ec74ea75a0e605b0540fe12707f59181b45b653f619713b0f71a29d4ab28a",
+      "bytes": 11940,
       "executable": true
     },
     {
@@ -25559,8 +25559,8 @@
     },
     {
       "path": "scripts/landrun-runner.sh",
-      "sha256": "4e008eb429f3340597583eb0efb89decc4d2812979aad4db4adca05a97810cf4",
-      "bytes": 699,
+      "sha256": "0683556f25f83087683fd97e91552132d9d2bdf9e9e7bc136efa6d92dcd90e5b",
+      "bytes": 781,
       "executable": true
     },
     {

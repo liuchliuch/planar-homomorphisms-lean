@@ -16,4 +16,5 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 [[ $# -gt 0 ]] || { echo 'Missing sandboxed command' >&2; exit 2; }
-exec "$LANDRUN_EXECUTABLE" "${options[@]}" -- "$@"
+# Keep the requested Lean worker limit inside the sandbox.
+exec "$LANDRUN_EXECUTABLE" "${options[@]}" --env LEAN_NUM_THREADS -- "$@"

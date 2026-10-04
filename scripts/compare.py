@@ -163,14 +163,10 @@ def main():
     logs.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix='planar-comparator-') as directory:
         adapters = Path(directory)
-        lake_shim = adapters / 'lake'
-        lake_shim.write_text('#!/usr/bin/env python3\nimport os,sys\n'
-                            f"os.environ['LEAN_NUM_THREADS']={str(args.jobs)!r}\n"
-                            f'os.execvpe({real_lake!r}, [{real_lake!r}]+sys.argv[1:], os.environ)\n')
-        lake_shim.chmod(0o755)
         adapter = ROOT / 'scripts' / ('local-landrun.sh' if args.local else 'landrun-runner.sh')
         (adapters / 'landrun').symlink_to(adapter)
         env = os.environ.copy()
+        env['LEAN_NUM_THREADS'] = str(args.jobs)
         env['PATH'] = os.pathsep.join([str(adapters), str(binaries['lean4export'].parent),
                                       env.get('PATH', '')])
         if args.local:
@@ -178,7 +174,7 @@ def main():
         else:
             env['LANDRUN_EXECUTABLE'] = str(Path(shutil.which('landrun')).resolve())
         def command(filename):
-            child = [str(lake_shim), 'env', str(binaries['comparator']), str(SPEC / filename)]
+            child = [real_lake, 'env', str(binaries['comparator']), str(SPEC / filename)]
             if args.local:
                 return child
             return ['systemd-run', '--user', '--pipe', '--wait', '--collect',
@@ -186,6 +182,7 @@ def main():
                     '--working-directory=' + str(ROOT),
                     '--setenv=PATH=' + env['PATH'],
                     '--setenv=HOME=' + str(Path.home()),
+                    '--setenv=LEAN_NUM_THREADS=' + str(args.jobs),
                     '--setenv=LANDRUN_EXECUTABLE=' + env['LANDRUN_EXECUTABLE'], '--', *child]
         checked_run(command('comparator.json'), env, logs / 'comparator.log')
         checked_run(command('negative-premise.json'), env, logs / 'negative-premise.log',
