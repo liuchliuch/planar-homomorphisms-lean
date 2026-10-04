@@ -16545,7 +16545,7 @@
     },
     {
       "path": "lakefile.toml",
-      "sha256": "083bebea477574b7f3cc4c801beda13ce4cbf8da779e47bf868e07ad1eb2e8f4"
+      "sha256": "8e173b91a9cdb227460443f82412e70d8b4cc0b12ae453acb3df045ea300ba78"
     },
     {
       "path": "lean-toolchain",
@@ -17555,6 +17555,11 @@
       "path": "scripts/compare.py",
       "previous_sha256": "fb3ec74ea75a0e605b0540fe12707f59181b45b653f619713b0f71a29d4ab28a",
       "sha256": "c380597197ad706890f7378d79fab98c89c7cae636c9ce147caea5174d7e2778"
+    },
+    {
+      "path": "lakefile.toml",
+      "previous_sha256": "083bebea477574b7f3cc4c801beda13ce4cbf8da779e47bf868e07ad1eb2e8f4",
+      "sha256": "8e173b91a9cdb227460443f82412e70d8b4cc0b12ae453acb3df045ea300ba78"
     }
   ],
   "official_comparator_baseline": {

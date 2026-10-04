@@ -38,6 +38,8 @@ lake exe cache get
 python3 scripts/compare.py --jobs 2
 ```
 
+Lake uses the same 64 MiB Lean worker stack as the full source verifier.
+
 The default mode requires Linux and a running user systemd session. It uses
 Landrun for the official build and export steps and systemd to restrict Unix
 sockets. GitHub Actions supplies this environment. Tools are built outside the

@@ -1,6 +1,8 @@
 name = "planar-homomorphisms"
 version = "0.1.0"
 defaultTargets = ["PlanarHom", "Audit"]
+# Match the source verifier's stack allowance for generated proof tables.
+weakLeanArgs = ["-s", "65536"]
 
 [[require]]
 name = "mathlib"

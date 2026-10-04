@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "status": "COMPARATOR_INTEGRATION_PENDING",
-  "source_snapshot": "6eca56cfadcd35c9a443e6da74359982a8cd9b7f0fc23be559c676ccf0700a4c",
+  "source_snapshot": "500ece326a063026ae0b1590b034345c61ebc0cac37f35206deda01231fa3763",
   "files": [
     {
       "path": ".github/workflows/lean.yml",
@@ -24899,14 +24899,14 @@
     },
     {
       "path": "SOURCE_PROVENANCE.json",
-      "sha256": "9ea03fb667b5b9466c3d5e91d6b8d6d4fedc42266afff06fb0d1ba7a0146fff8",
-      "bytes": 701572,
+      "sha256": "f3cd607ecbfcb62f76ab468d5dcd7a4df30f01f5c9ce713dfcfc752f100db0ac",
+      "bytes": 701792,
       "executable": false
     },
     {
       "path": "docs/COMPARATOR.md",
-      "sha256": "c431232c3f3a8a335ba9cc4ace7fe6ebce204d46bfed2491df54196de6455a69",
-      "bytes": 4123,
+      "sha256": "c930c24b09fa667e205b4f0bfa3cb0d6be268712e463a0b0c6e374530e8da67f",
+      "bytes": 4197,
       "executable": false
     },
     {
@@ -24947,8 +24947,8 @@
     },
     {
       "path": "lakefile.toml",
-      "sha256": "083bebea477574b7f3cc4c801beda13ce4cbf8da779e47bf868e07ad1eb2e8f4",
-      "bytes": 732,
+      "sha256": "8e173b91a9cdb227460443f82412e70d8b4cc0b12ae453acb3df045ea300ba78",
+      "bytes": 837,
       "executable": false
     },
     {
