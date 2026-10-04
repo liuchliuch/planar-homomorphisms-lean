@@ -1,54 +1,55 @@
-# Statement/proof separation and comparator scope
+# Statement checks
 
-## Local checks included in this release
+## Review interfaces
 
 | Purpose | Statements | Solutions | Checker |
 | --- | --- | --- | --- |
-| Three independently written propositions: Theorems 1.1, 1.3 and the rectangular clause of Corollary 12.2 | [Contracts](../Audit/Contracts.lean) | [Solutions](../Audit/Solutions.lean) | [Check](../Audit/Check.lean) |
-| 100 fixed full types across all 58 paper items | [ReviewedStatements](../Audit/ReviewedStatements.lean) | [ReviewedSolutions](../Audit/ReviewedSolutions.lean) | [ReviewedCheck](../Audit/ReviewedCheck.lean) |
+| Theorems 1.1, 1.3 and the rectangular case of Corollary 12.2 | [Contracts](../Audit/Contracts.lean) | [Solutions](../Audit/Solutions.lean) | [Check](../Audit/Check.lean) |
+| 100 statements and interfaces covering all 58 numbered paper results | [ReviewedStatements](../Audit/ReviewedStatements.lean) | [ReviewedSolutions](../Audit/ReviewedSolutions.lean) | [ReviewedCheck](../Audit/ReviewedCheck.lean) |
 
-Statements are definitions with no proof placeholders. The solution files do not
-import the statement files. The checkers compare full types, align universe
-parameters where needed, reject an added-premise negative control for each entry,
-and permit only `propext`, `Classical.choice`, and `Quot.sound` in the transitive
-axiom dependencies. The full verifier also requires the exact 58-item inventory
-and audits all project declarations by their source-module origin.
+The three principal propositions are written out explicitly in `Contracts.lean`.
+The additional interfaces were initially extracted from elaborated library types
+and checked against the [paper correspondence and model review](PAPER_AUDIT.md).
+Both sets are committed source files; verification never regenerates them from
+the solutions. The solution modules do not import the statement modules.
 
-The 100 reviewed signatures were derived from elaborated source interfaces and
-checked against the [paper/model review](PAPER_AUDIT.md). They are fixed source
-text and are never regenerated from solution types during verification. They
-protect against subsequent statement drift; they cannot independently establish
-that the initial formal interpretation matches the paper. The three primary
-contracts were written independently.
+Review the definitions imported by these files together with the hypotheses and
+conclusions. Type agreement detects changes to the formal specification;
+correspondence with the paper is established by mathematical review of that
+specification, rather than by type comparison alone.
 
-Data-valued endpoints retain their complete reduction types, including machines,
-correctness, cost, and query-validity fields. Their checks are not merely checks
-that names exist. The configurations under `Audit/` belong to these local
-checkers; they are not official comparator configuration files.
+## Verification method
 
-## Trust boundary
+The project checkers:
 
-These are in-process checks of trusted source. The statement definitions and
-their transitive model imports are part of the trusted review surface; these
-imports may themselves contain proofs. The checks do not compare separately
-exported environments, isolate hostile metaprograms, or replay proofs through an
-independent kernel. Compilation and axiom auditing do not replace mathematical
-review of the definitions and hypotheses.
+- Compare complete types, aligning universe parameters where necessary.
+- Check transitive axiom dependencies against `propext`, `Classical.choice`, and
+  `Quot.sound`.
+- Test that adding an extra premise to each solution type is rejected.
+- Require the complete inventory of 58 paper items and 100 additional interfaces.
 
-## Official comparator
+Algorithm and reduction interfaces include their machine, correctness, cost,
+and query-validity fields. The full verifier also compiles the proof library and
+audits every project declaration by its originating module.
 
-The [standalone comparator](https://github.com/leanprover/comparator) compares
-trusted challenge and solution statements and their dependencies, checks axioms,
-and replays the exported solution. Its documented workflow requires a compatible
-`lean4export` and a Linux sandbox using `landrun`. The
-[newer Lake integration](https://lean-lang.org/doc/reference/latest/Build-Tools-and-Distribution/Lake/#lake-comparator)
-uses `bubblewrap` on Linux and the matching toolchain's exporter. These upstream
-instructions were checked on 2026-10-04.
+These checks run in the compiled Lean environment and rely on the committed
+statement definitions and their imports. Those imports include mathematical
+definitions and may include proofs. The configurations under `Audit/` are inputs
+to the project checkers.
 
-This project is pinned to Lean 4.24.0. Its Lake sources do not implement
-`lake comparator`; generic help with a zero exit status is not evidence that the
-command exists. No compatible official tool/exporter pairing has been validated
-for this release, and no official Linux comparator run or independent kernel
-replay is claimed. A future integration must validate that compatibility and run
-the actual sandbox/export/replay workflow while protecting the trusted statement
-sources and their imports.
+## Relationship to Lean Comparator
+
+The official [Lean Comparator](https://github.com/leanprover/comparator) compares
+separately exported challenge and solution environments and replays the exported
+proofs through Lean's kernel. Its sandboxed workflow also isolates the build and
+export processes.
+
+This repository uses the project checkers described above. The official
+Comparator has not been run on this development. The checks provide neither
+process sandboxing nor proof replay in a separately reconstructed environment,
+and no external kernel implementation has been used. Proofs are checked by the
+pinned Lean 4.24.0 kernel during compilation.
+
+For the distinctions between compilation, axiom inspection, statement comparison,
+and kernel replay, see the
+[Lean proof-validation reference](https://lean-lang.org/doc/reference/latest/ValidatingProofs/).

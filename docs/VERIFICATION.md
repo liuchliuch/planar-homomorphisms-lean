@@ -18,3 +18,9 @@ The final source, audit interface, and verifier were freshly compiled from an ex
 See `verification/final/` for per-target commands, exit codes, source/object hashes, statement checks, origin audits, and unchanged-source guards. Large retained logs are gzip-compressed; `log-index.json` records the uncompressed size and hash of every run file and identifies omitted reproducible diagnostics and generated audit inputs. Full raw logs are produced locally under `logs/runs/` when the verifier runs. `verification/archive-rebuild.json` records the actual extraction, command, timings, and dependency location. Absolute execution paths are historical evidence, not required build inputs.
 
 This kernel/dependency result is separate from the statement and model review in [PAPER_AUDIT.md](PAPER_AUDIT.md). It is not an independent kernel implementation or a manual review of every proof line.
+
+The verification results above identify the prepared source snapshot. Subsequent
+README and verification-method documentation edits, and the addition of a GitHub
+Actions workflow, leave that source/tool/configuration snapshot unchanged.
+The current file inventory and publication changes are recorded in
+[RELEASE_MANIFEST.json](../RELEASE_MANIFEST.json).

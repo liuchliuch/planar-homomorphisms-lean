@@ -8,9 +8,9 @@ The included [paper](paper/paper.pdf) is pinned by [SHA-256](paper/SHA256SUMS).
 
 | Paper result | Formal theorem | Statement for review |
 | --- | --- | --- |
-| Theorem 1.1: nonnegative interactions | [theorem11](PlanarHom/MainDichotomiesClosed.lean#L13) | [Independent contracts](Audit/Contracts.lean) |
-| Theorem 1.3: fixed positive vertex weights | [theorem13](PlanarHom/MainDichotomiesClosed.lean#L15) | [Independent contracts](Audit/Contracts.lean) |
-| All 58 numbered proof statements | [Paper-to-Lean map](docs/PAPER_AUDIT.md) | [100 fixed interface types](Audit/ReviewedStatements.lean) |
+| Theorem 1.1: nonnegative interactions | [theorem11](PlanarHom/MainDichotomiesClosed.lean#L13) | [Statement](Audit/Contracts.lean) |
+| Theorem 1.3: fixed positive vertex weights | [theorem13](PlanarHom/MainDichotomiesClosed.lean#L15) | [Statement](Audit/Contracts.lean) |
+| All 58 numbered proof statements | [Paper-to-Lean map](docs/PAPER_AUDIT.md) | [Statement interfaces](Audit/ReviewedStatements.lean) |
 
 The definitions of the tractable matrix classes are in
 [Structures.lean](PlanarHom/Structures.lean). The main results use exact algebraic
@@ -38,17 +38,21 @@ See [reproduction and packaging](docs/REPRODUCING.md) for the exact commands and
 [verification results](docs/VERIFICATION.md) for the delivered source snapshot.
 Generated coloring and routing tables are necessary proof inputs.
 
-## Reviewing statements separately from proofs
+## Statements and proofs
 
-[Contracts](Audit/Contracts.lean) and [solutions](Audit/Solutions.lean) are separate
-files. Three primary propositions were written independently. Another
-[100 fixed signatures](Audit/ReviewedStatements.lean), derived from the reviewed
-source interfaces, cover all 58 paper items. The checker compares complete types,
-checks transitive axioms, and rejects an added-premise negative control for each.
+[Contracts.lean](Audit/Contracts.lean) states Theorems 1.1 and 1.3 and the
+rectangular case of Corollary 12.2, with their hypotheses written out explicitly.
+[Solutions.lean](Audit/Solutions.lean) supplies the corresponding proofs.
 
-These are local checks of trusted sources. The official Linux sandboxed
-[comparator](https://github.com/leanprover/comparator) has not been run, and no
-independent kernel replay is claimed. See [comparator scope](docs/COMPARATOR.md).
+[ReviewedStatements.lean](Audit/ReviewedStatements.lean) records a further
+100 formal statements and interfaces covering all 58 numbered paper results;
+[ReviewedSolutions.lean](Audit/ReviewedSolutions.lean) connects them to the library.
+These statement files are fixed inputs to verification.
+
+The verification command uses the project's Lean-based checkers to compare the
+statement and proof types and audit their axiom dependencies. See
+[statement checks](docs/COMPARATOR.md) for the checking method and its relationship
+to the official Lean Comparator.
 
 ## Citation and license
 

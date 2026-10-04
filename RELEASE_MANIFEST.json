@@ -1,8 +1,14 @@
 {
   "schema_version": 1,
-  "status": "SOURCE_ARCHIVE_REBUILD_VERIFIED",
+  "status": "SOURCE_SNAPSHOT_VERIFIED",
   "source_snapshot": "57a388e0f0b98bbe552ece7d519fa6274b5d0d0543978ac83509fbf877744dd0",
   "files": [
+    {
+      "path": ".github/workflows/lean.yml",
+      "sha256": "ec2305ef358a0064237b39414cb82cf3255d2231d701fb7307486158d1a15206",
+      "bytes": 687,
+      "executable": false
+    },
     {
       "path": ".gitignore",
       "sha256": "9398b7ccc9e2139c1d69ecb6c443023aaea9f13293feda2c59d67ebd168b39a0",
@@ -24833,8 +24839,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "2f549eda3b81301453f462dcf7dbe6ec4e1b540b7b3a10a0e70aed61c8e52326",
-      "bytes": 2999,
+      "sha256": "95421d825df8158ae15821947b35b93bbc778be8cd88277528c6c4e9d4e013da",
+      "bytes": 3101,
       "executable": false
     },
     {
@@ -24845,8 +24851,8 @@
     },
     {
       "path": "docs/COMPARATOR.md",
-      "sha256": "0eabe7fe26f1cd837ae9cf7880f60e958fa117adbddcf1b00b4855e4672fa369",
-      "bytes": 3311,
+      "sha256": "b443828d59cb392b402014c7afba7adf7949c6dc2f800fad5a9227b3ce27c9a0",
+      "bytes": 2907,
       "executable": false
     },
     {
@@ -24869,8 +24875,8 @@
     },
     {
       "path": "docs/VERIFICATION.md",
-      "sha256": "b7985d02ff29bbc711059e2d5a005e7398be99d0d08a115d3a5ee889c9064a1a",
-      "bytes": 1837,
+      "sha256": "9d81875a96cd6f8280bee16f3beef86e8a45c1203bacfdb21530a0fbfc34ea2b",
+      "bytes": 2193,
       "executable": false
     },
     {
@@ -25630,5 +25636,17 @@
       "executable": false
     }
   ],
-  "note": "Source snapshot covers all Lean, audit, verifier, and pinned configuration inputs."
+  "note": "The source/tool/configuration snapshot retains the verified prepared-archive inputs. This inventory includes subsequent documentation edits and the GitHub Actions workflow.",
+  "publication_changes": {
+    "base_archive_sha256": "deb5dcb911acaed6e4aab214c98876d00b936162685655483a20c55be3829893",
+    "modified_files": [
+      "README.md",
+      "docs/COMPARATOR.md",
+      "docs/VERIFICATION.md"
+    ],
+    "added_files": [
+      ".github/workflows/lean.yml"
+    ],
+    "verification_inputs_unchanged": true
+  }
 }
