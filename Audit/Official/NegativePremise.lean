@@ -4,7 +4,6 @@ noncomputable section
 open scoped BigOperators Classical
 open PlanarHom.AlgebraicProductInterpolation PlanarHom.Complexity PlanarHom.Structures
 open PlanarHom.DomainDoublingClassification
-universe u_1 u_2
 namespace PlanarHomAudit.Comparator
 
 theorem theorem11 : False →

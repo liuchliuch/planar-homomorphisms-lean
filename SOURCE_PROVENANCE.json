@@ -16983,19 +16983,19 @@
     },
     {
       "path": "Audit/Official/Challenge.lean",
-      "sha256": "192bb7643e1291a7f32a0a11469227b38b90fe74c3acb1842806a82cd3642f70"
+      "sha256": "634485fb3364b5dcaf90276983f71b92a55227933563718005cd02c4277be256"
     },
     {
       "path": "Audit/Official/NegativeAxiom.lean",
-      "sha256": "30fafadaa069fdcbeafc9932b87f807b79bf841ce93ed2fb46561b5afe8e5359"
+      "sha256": "69f05bcae1b2d03565790919d5df2b6da2f7347305946e7d266187ccccd0bf75"
     },
     {
       "path": "Audit/Official/NegativePremise.lean",
-      "sha256": "a2e3fd3325947a9419d6f7fe5dca5cab44eaf7daf5560a037f9326873563fc89"
+      "sha256": "897c772ac990e0efeff4b8946110120da1f4edbe93301ecf03887be6c51c0052"
     },
     {
       "path": "Audit/Official/Solution.lean",
-      "sha256": "51afbf308ad8879533de478372a9df5ea80d6b0e5f1b13fc0fcd7d86dd669c1b"
+      "sha256": "7ec1f07fecdcb28a5af1d8a41f93d71e242d9501672d28845cd7125892fcee2f"
     },
     {
       "path": "Audit/Official/comparator.json",
@@ -17560,6 +17560,26 @@
       "path": "lakefile.toml",
       "previous_sha256": "083bebea477574b7f3cc4c801beda13ce4cbf8da779e47bf868e07ad1eb2e8f4",
       "sha256": "8e173b91a9cdb227460443f82412e70d8b4cc0b12ae453acb3df045ea300ba78"
+    },
+    {
+      "path": "Audit/Official/Challenge.lean",
+      "previous_sha256": "192bb7643e1291a7f32a0a11469227b38b90fe74c3acb1842806a82cd3642f70",
+      "sha256": "634485fb3364b5dcaf90276983f71b92a55227933563718005cd02c4277be256"
+    },
+    {
+      "path": "Audit/Official/NegativeAxiom.lean",
+      "previous_sha256": "30fafadaa069fdcbeafc9932b87f807b79bf841ce93ed2fb46561b5afe8e5359",
+      "sha256": "69f05bcae1b2d03565790919d5df2b6da2f7347305946e7d266187ccccd0bf75"
+    },
+    {
+      "path": "Audit/Official/NegativePremise.lean",
+      "previous_sha256": "a2e3fd3325947a9419d6f7fe5dca5cab44eaf7daf5560a037f9326873563fc89",
+      "sha256": "897c772ac990e0efeff4b8946110120da1f4edbe93301ecf03887be6c51c0052"
+    },
+    {
+      "path": "Audit/Official/Solution.lean",
+      "previous_sha256": "51afbf308ad8879533de478372a9df5ea80d6b0e5f1b13fc0fcd7d86dd669c1b",
+      "sha256": "7ec1f07fecdcb28a5af1d8a41f93d71e242d9501672d28845cd7125892fcee2f"
     }
   ],
   "official_comparator_baseline": {

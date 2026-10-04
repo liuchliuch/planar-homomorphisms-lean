@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "status": "COMPARATOR_INTEGRATION_PENDING",
-  "source_snapshot": "500ece326a063026ae0b1590b034345c61ebc0cac37f35206deda01231fa3763",
+  "source_snapshot": "f69e52beb8f4fe9d756d135ece218fbac5a97c17194292e2ab700b926bded518",
   "files": [
     {
       "path": ".github/workflows/lean.yml",
@@ -35,26 +35,26 @@
     },
     {
       "path": "Audit/Official/Challenge.lean",
-      "sha256": "192bb7643e1291a7f32a0a11469227b38b90fe74c3acb1842806a82cd3642f70",
-      "bytes": 150568,
+      "sha256": "634485fb3364b5dcaf90276983f71b92a55227933563718005cd02c4277be256",
+      "bytes": 150551,
       "executable": false
     },
     {
       "path": "Audit/Official/NegativeAxiom.lean",
-      "sha256": "30fafadaa069fdcbeafc9932b87f807b79bf841ce93ed2fb46561b5afe8e5359",
-      "bytes": 967,
+      "sha256": "69f05bcae1b2d03565790919d5df2b6da2f7347305946e7d266187ccccd0bf75",
+      "bytes": 950,
       "executable": false
     },
     {
       "path": "Audit/Official/NegativePremise.lean",
-      "sha256": "a2e3fd3325947a9419d6f7fe5dca5cab44eaf7daf5560a037f9326873563fc89",
-      "bytes": 685,
+      "sha256": "897c772ac990e0efeff4b8946110120da1f4edbe93301ecf03887be6c51c0052",
+      "bytes": 668,
       "executable": false
     },
     {
       "path": "Audit/Official/Solution.lean",
-      "sha256": "51afbf308ad8879533de478372a9df5ea80d6b0e5f1b13fc0fcd7d86dd669c1b",
-      "bytes": 154678,
+      "sha256": "7ec1f07fecdcb28a5af1d8a41f93d71e242d9501672d28845cd7125892fcee2f",
+      "bytes": 154661,
       "executable": false
     },
     {
@@ -24899,8 +24899,8 @@
     },
     {
       "path": "SOURCE_PROVENANCE.json",
-      "sha256": "f3cd607ecbfcb62f76ab468d5dcd7a4df30f01f5c9ce713dfcfc752f100db0ac",
-      "bytes": 701792,
+      "sha256": "d9cf8dca7897da8dd2a18c6a0292ce386d63f4e04e669077d1d1c97197010c97",
+      "bytes": 702745,
       "executable": false
     },
     {
