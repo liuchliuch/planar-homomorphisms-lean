@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "status": "COMPARATOR_INTEGRATION_PENDING",
-  "source_snapshot": "375653fbd9c51982207cbf6ca7354672e899101a2375a3199d4d2f9a5590cec0",
+  "source_snapshot": "6eca56cfadcd35c9a443e6da74359982a8cd9b7f0fc23be559c676ccf0700a4c",
   "files": [
     {
       "path": ".github/workflows/lean.yml",
@@ -24899,8 +24899,8 @@
     },
     {
       "path": "SOURCE_PROVENANCE.json",
-      "sha256": "7db49e756d0de8b7981091afd1e69ac00d4370608b76b26dfda581da749cddd1",
-      "bytes": 701347,
+      "sha256": "9ea03fb667b5b9466c3d5e91d6b8d6d4fedc42266afff06fb0d1ba7a0146fff8",
+      "bytes": 701572,
       "executable": false
     },
     {
@@ -25541,8 +25541,8 @@
     },
     {
       "path": "scripts/compare.py",
-      "sha256": "fb3ec74ea75a0e605b0540fe12707f59181b45b653f619713b0f71a29d4ab28a",
-      "bytes": 11940,
+      "sha256": "c380597197ad706890f7378d79fab98c89c7cae636c9ce147caea5174d7e2778",
+      "bytes": 12714,
       "executable": true
     },
     {

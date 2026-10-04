@@ -71,6 +71,18 @@ def check_checkout(path, revision):
             f'Modified tracked tool sources: {path.name}')
 
 
+def validate_dependencies():
+    packages = json.loads((ROOT / 'lake-manifest.json').read_text())['packages']
+    require(len(packages) == 9, 'Unexpected mathematical dependency inventory')
+    revisions = {}
+    for package in packages:
+        path = ROOT / '.lake/packages' / package['name']
+        require(path.is_dir(), 'Fetch pinned mathematical dependencies with lake exe cache get')
+        check_checkout(path, package['rev'])
+        revisions[package['name']] = package['rev']
+    return revisions
+
+
 def prepare_tools(pins):
     cache = Path(os.environ.get('XDG_CACHE_HOME', str(Path.home() / '.cache')))
     tools = Path(os.environ.get('COMPARATOR_HOME',
@@ -142,6 +154,7 @@ def main():
     pins = json.loads((SPEC / 'toolchain.json').read_text())
     require((ROOT / 'lean-toolchain').read_text().strip() == pins['lean'], 'Toolchain changed')
     config = validate_inputs()
+    dependency_revisions = validate_dependencies()
     before = output([sys.executable, 'scripts/snapshot.py'])
     started = time.time()
     landrun_hash = None
@@ -191,12 +204,15 @@ def main():
                     'Illegal axiom detected')
     require(output([sys.executable, 'scripts/snapshot.py']) == before,
             'Verification inputs changed during Comparator execution')
+    require(validate_dependencies() == dependency_revisions,
+            'Mathematical dependency revisions changed during verification')
     for name, path in components.items():
         check_checkout(path, pins[name]['rev'])
     require({name: sha(path) for name, path in binaries.items()} == binary_hashes,
             'Checking executables changed during verification')
     report = {'schema_version': 1, 'status': 'PASS',
               'source_snapshot': hashlib.sha256((before + '\n').encode()).hexdigest(),
+              'mathematical_dependency_revisions': dependency_revisions,
               'platform': platform.system(), 'lean': output(['lean', '--version']),
               'comparator_revision': pins['comparator']['rev'],
               'exporter_revision': pins['lean4export']['rev'],

@@ -17019,7 +17019,7 @@
     },
     {
       "path": "scripts/compare.py",
-      "sha256": "fb3ec74ea75a0e605b0540fe12707f59181b45b653f619713b0f71a29d4ab28a"
+      "sha256": "c380597197ad706890f7378d79fab98c89c7cae636c9ce147caea5174d7e2778"
     },
     {
       "path": "scripts/landrun-runner.sh",
@@ -17550,6 +17550,11 @@
       "path": "scripts/landrun-runner.sh",
       "previous_sha256": "4e008eb429f3340597583eb0efb89decc4d2812979aad4db4adca05a97810cf4",
       "sha256": "0683556f25f83087683fd97e91552132d9d2bdf9e9e7bc136efa6d92dcd90e5b"
+    },
+    {
+      "path": "scripts/compare.py",
+      "previous_sha256": "fb3ec74ea75a0e605b0540fe12707f59181b45b653f619713b0f71a29d4ab28a",
+      "sha256": "c380597197ad706890f7378d79fab98c89c7cae636c9ce147caea5174d7e2778"
     }
   ],
   "official_comparator_baseline": {
