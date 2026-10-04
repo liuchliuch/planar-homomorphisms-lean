@@ -92,10 +92,21 @@ def code_only(text):
   elif text[i]=='"':string=True;i+=1;out.append(' ')
   else:out.append(text[i]);i+=1
  return ''.join(out)
+specification_files = {
+ 'Audit/Official/Challenge.lean': {'sorry'},
+ 'Audit/Official/NegativeAxiom.lean': {'axiom'},
+}
+isolated_modules = {'Audit.Official.Challenge', 'Audit.Official.NegativePremise',
+                    'Audit.Official.NegativeAxiom'}
 for rel in actual_accepted:
  if rel.endswith('.lean'):
-  match=re.search(r'\b(sorry|admit|sorryAx|axiom)\b',code_only((root/rel).read_text()))
-  assert not match,f'Forbidden unproved-source token in {rel}: {match.group(0) if match else ""}'
+  code=code_only((root/rel).read_text())
+  tokens=set(re.findall(r'\b(sorry|admit|sorryAx|axiom)\b',code))
+  forbidden=tokens-specification_files.get(rel,set())
+  assert not forbidden,f'Forbidden unproved-source tokens in {rel}: {sorted(forbidden)}'
+  if rel not in specification_files and rel!='Audit/Official/NegativePremise.lean':
+   imports=set(re.findall(r'(?m)^\s*import\s+([\w.]+)',code))
+   assert not imports & isolated_modules,f'Specification or negative control imported by proof code: {rel}'
 suites=json.loads((root/'scripts/regression-suites.json').read_text())
 gates=json.loads((root/'scripts/integration-gates.json').read_text())
 assert len(suites)==len(set(suites)),'Duplicate regression suite entry'

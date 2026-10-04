@@ -39,14 +39,27 @@ The required gates are:
   and 14 archive/environment/evidence regression tests pass.
 
 Only `propext`, `Classical.choice`, and `Quot.sound` are allowed. Source checks also
-reject `axiom`, `sorry`, `admit`, and `sorryAx` outside comments and strings.
+reject `axiom`, `sorry`, `admit`, and `sorryAx` outside comments and strings in
+the proof library. The separate official challenge permits specification
+placeholders; the isolated negative axiom control permits its deliberately
+untrusted axiom. Neither can be imported by proof modules.
 Each Lean process uses one worker and a 64 MiB thread stack. Four concurrent
 processes are the default; lower `PLGH_JOBS` on memory-constrained machines.
 Actual commands, exits, timings, and complete raw logs are retained locally in
 the run directory. The verifier makes no promise about its own runtime.
 
-The statement/model review remains separate from compilation. The official
-sandboxed comparator was not run; see [COMPARATOR.md](COMPARATOR.md).
+## Official Comparator
+
+```sh
+python3 scripts/compare.py --jobs 2
+```
+
+This Linux command checks the 103 fixed interfaces, the permitted axioms, fresh
+Lean kernel replay, and two negative controls. It requires the pinned Landrun and
+a user systemd session. On macOS, add `--local` to run explicitly without process
+isolation. The official challenge and negative controls are separate Lake targets
+and are excluded from the default proof build. See [COMPARATOR.md](COMPARATOR.md)
+for installation, tool pins and scope.
 
 ## Build a source archive
 

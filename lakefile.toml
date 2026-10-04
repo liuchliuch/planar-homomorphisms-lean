@@ -12,4 +12,16 @@ name = "PlanarHom"
 
 [[lean_lib]]
 name = "Audit"
-roots = ["Audit.Check", "Audit.Inventory", "Audit.ReviewedCheck"]
+roots = ["Audit.Contracts", "Audit.Solutions", "Audit.Check", "Audit.Inventory", "Audit.ReviewedStatements", "Audit.ReviewedSolutions", "Audit.ReviewedCheck"]
+
+[[lean_lib]]
+name = "ComparatorChallenge"
+roots = ["Audit.Official.Challenge"]
+
+[[lean_lib]]
+name = "ComparatorSolution"
+roots = ["Audit.Official.Solution"]
+
+[[lean_lib]]
+name = "ComparatorNegativeControls"
+roots = ["Audit.Official.NegativePremise", "Audit.Official.NegativeAxiom"]

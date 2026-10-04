@@ -1,55 +1,88 @@
-# Statement checks
+# Lean Comparator
 
-## Review interfaces
+The repository uses the official [Lean Comparator](https://github.com/leanprover/comparator)
+with Lean 4.24.0. Its revision, exporter, kernel replay library, and Linux sandbox
+are fixed in [toolchain.json](../Audit/Official/toolchain.json).
 
-| Purpose | Statements | Solutions | Checker |
-| --- | --- | --- | --- |
-| Theorems 1.1, 1.3 and the rectangular case of Corollary 12.2 | [Contracts](../Audit/Contracts.lean) | [Solutions](../Audit/Solutions.lean) | [Check](../Audit/Check.lean) |
-| 100 statements and interfaces covering all 58 numbered paper results | [ReviewedStatements](../Audit/ReviewedStatements.lean) | [ReviewedSolutions](../Audit/ReviewedSolutions.lean) | [ReviewedCheck](../Audit/ReviewedCheck.lean) |
+## Challenge and solution
 
-The three principal propositions are written out explicitly in `Contracts.lean`.
-The additional interfaces were initially extracted from elaborated library types
-and checked against the [paper correspondence and model review](PAPER_AUDIT.md).
-Both sets are committed source files; verification never regenerates them from
-the solutions. The solution modules do not import the statement modules.
+| Targets | Fixed specification | Proofs and implementations |
+| --- | --- | --- |
+| Theorems 1.1, 1.3 and the rectangular case of Corollary 12.2 | [Challenge](../Audit/Official/Challenge.lean) | [Solution](../Audit/Official/Solution.lean) |
+| 100 additional interfaces covering 58 numbered paper results | Same challenge file | Same solution file |
 
-Review the definitions imported by these files together with the hypotheses and
-conclusions. Type agreement detects changes to the formal specification;
-correspondence with the paper is established by mathematical review of that
-specification, rather than by type comparison alone.
+The three principal propositions have their hypotheses and conclusions written
+out explicitly. The additional interfaces retain the complete types in
+[ReviewedStatements.lean](../Audit/ReviewedStatements.lean), checked against the
+[paper correspondence and model review](PAPER_AUDIT.md). They are committed
+specifications; the verification command never extracts new statements from the
+solution.
 
-## Verification method
+Challenge and solution use the same declaration names in separate exported
+environments. The solution imports only the proof modules, never the challenge
+or statement modules. Challenge placeholders specify goals; they are excluded
+from the proof library. The three main targets are theorem holes. The 100 other
+targets use Comparator's typed definition holes to accommodate both propositions
+and data-valued algorithm or reduction interfaces. These holes specify inhabitants
+of fixed complete types; the underlying mathematical definitions remain fixed.
+The [target inventory](../Audit/Official/targets.json) records every correspondence.
 
-The project checkers:
+## Run the check
 
-- Compare complete types, aligning universe parameters where necessary.
-- Check transitive axiom dependencies against `propext`, `Classical.choice`, and
+Install Elan, Python 3.11+, Bash and Git. On Linux, also install Go 1.24 and the
+pinned Landrun:
+
+```sh
+go install github.com/zouuup/landrun/cmd/landrun@811cfff51ceaf3d9843708aa6d22e9b84ccac8b4
+lake exe cache get
+python3 scripts/compare.py --jobs 2
+```
+
+The default mode requires Linux and a running user systemd session. It uses
+Landrun for the official build and export steps and systemd to restrict Unix
+sockets. GitHub Actions supplies this environment. Tools are built outside the
+project's writable `.lake` directory, under `~/.cache` by default; `COMPARATOR_HOME`
+can select an existing checkout at the pinned revision.
+
+For development on macOS, run:
+
+```sh
+python3 scripts/compare.py --local --jobs 4
+```
+
+Local mode runs the same official declaration comparison, axiom inspection, and
+Lean kernel replay, with process isolation explicitly disabled. The report records
+which mode ran. Successful runs write `verification/comparator.json`; complete
+logs remain under `.lake/comparator-results/`.
+
+## Required results
+
+The command requires:
+
+- Agreement of all 103 target types, names and universe parameters, and agreement
+  of their relevant mathematical dependencies.
+- Transitive axiom dependencies contained in `propext`, `Classical.choice`, and
   `Quot.sound`.
-- Test that adding an extra premise to each solution type is rejected.
-- Require the complete inventory of 58 paper items and 100 additional interfaces.
+- Successful reconstruction of the exported solution in a fresh Lean kernel
+  environment.
+- Rejection of [an additional premise](../Audit/Official/NegativePremise.lean)
+  and [an unpermitted axiom](../Audit/Official/NegativeAxiom.lean), each for the
+  expected reason.
+- Unchanged verification inputs, tool revisions and checking executables.
 
-Algorithm and reduction interfaces include their machine, correctness, cost,
-and query-validity fields. The full verifier also compiles the proof library and
-audits every project declaration by its originating module.
+The [full verifier](REPRODUCING.md) additionally audits every project declaration
+and runs the regression suites. Its existing local statement checkers remain
+available for that purpose.
 
-These checks run in the compiled Lean environment and rely on the committed
-statement definitions and their imports. Those imports include mathematical
-definitions and may include proofs. The configurations under `Audit/` are inputs
-to the project checkers.
+## Scope
 
-## Relationship to Lean Comparator
+Comparator checks agreement with the formal specification. Mathematical review
+of the specification and its imported definitions establishes correspondence
+with the paper. The additional interfaces originated in elaborated library types;
+they are not 100 independent translations of the paper.
 
-The official [Lean Comparator](https://github.com/leanprover/comparator) compares
-separately exported challenge and solution environments and replays the exported
-proofs through Lean's kernel. Its sandboxed workflow also isolates the build and
-export processes.
-
-This repository uses the project checkers described above. The official
-Comparator has not been run on this development. The checks provide neither
-process sandboxing nor proof replay in a separately reconstructed environment,
-and no external kernel implementation has been used. Proofs are checked by the
-pinned Lean 4.24.0 kernel during compilation.
-
-For the distinctions between compilation, axiom inspection, statement comparison,
-and kernel replay, see the
-[Lean proof-validation reference](https://lean-lang.org/doc/reference/latest/ValidatingProofs/).
+Kernel replay uses the pinned Lean kernel in a fresh environment. No second
+kernel implementation is enabled. See the
+[Lean proof-validation reference](https://lean-lang.org/doc/reference/latest/ValidatingProofs/)
+for the distinction between compilation, axiom inspection, environment comparison
+and kernel replay.

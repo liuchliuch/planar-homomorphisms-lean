@@ -1,0 +1,14 @@
+{
+  "challenge_module": "Audit.Official.Challenge",
+  "solution_module": "Audit.Official.NegativePremise",
+  "theorem_names": [
+    "PlanarHomAudit.Comparator.theorem11"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "enable_nanoda": false
+}

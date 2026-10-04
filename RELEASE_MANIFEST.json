@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "status": "SOURCE_SNAPSHOT_VERIFIED",
-  "source_snapshot": "57a388e0f0b98bbe552ece7d519fa6274b5d0d0543978ac83509fbf877744dd0",
+  "status": "COMPARATOR_INTEGRATION_PENDING",
+  "source_snapshot": "31520d76142b9d2e8f643338dcddb6c773c17984dc697987d0cf551c2554a827",
   "files": [
     {
       "path": ".github/workflows/lean.yml",
@@ -31,6 +31,60 @@
       "path": "Audit/Inventory.lean",
       "sha256": "2af27f4d83661e1248bf50371610c1075ad833ada58a6cc684439a73c8877252",
       "bytes": 8006,
+      "executable": false
+    },
+    {
+      "path": "Audit/Official/Challenge.lean",
+      "sha256": "192bb7643e1291a7f32a0a11469227b38b90fe74c3acb1842806a82cd3642f70",
+      "bytes": 150568,
+      "executable": false
+    },
+    {
+      "path": "Audit/Official/NegativeAxiom.lean",
+      "sha256": "30fafadaa069fdcbeafc9932b87f807b79bf841ce93ed2fb46561b5afe8e5359",
+      "bytes": 967,
+      "executable": false
+    },
+    {
+      "path": "Audit/Official/NegativePremise.lean",
+      "sha256": "a2e3fd3325947a9419d6f7fe5dca5cab44eaf7daf5560a037f9326873563fc89",
+      "bytes": 685,
+      "executable": false
+    },
+    {
+      "path": "Audit/Official/Solution.lean",
+      "sha256": "51afbf308ad8879533de478372a9df5ea80d6b0e5f1b13fc0fcd7d86dd669c1b",
+      "bytes": 154678,
+      "executable": false
+    },
+    {
+      "path": "Audit/Official/comparator.json",
+      "sha256": "6ceba22cf507a1fa2945ec6e6f1d556cf5d1dae4c56b0336c0486cae979747d8",
+      "bytes": 4839,
+      "executable": false
+    },
+    {
+      "path": "Audit/Official/negative-axiom.json",
+      "sha256": "b39aa274e428510cf37bdea0540f3e9fb49b20614be2d9cd8a5f1a7b52281364",
+      "bytes": 311,
+      "executable": false
+    },
+    {
+      "path": "Audit/Official/negative-premise.json",
+      "sha256": "62e80348324300c9b8f47a25dc0ecb064a32466433091666b1e42605d64889d1",
+      "bytes": 313,
+      "executable": false
+    },
+    {
+      "path": "Audit/Official/targets.json",
+      "sha256": "7a7059ee40555a9f3294845c4835b5945138267a41040da56af394474998d5a1",
+      "bytes": 36364,
+      "executable": false
+    },
+    {
+      "path": "Audit/Official/toolchain.json",
+      "sha256": "54abe96fdbaa43a9de6a7c3d4d5872878a687febb81ce4b5df712e81b0167a6f",
+      "bytes": 569,
       "executable": false
     },
     {
@@ -24839,20 +24893,20 @@
     },
     {
       "path": "README.md",
-      "sha256": "95421d825df8158ae15821947b35b93bbc778be8cd88277528c6c4e9d4e013da",
-      "bytes": 3101,
+      "sha256": "b7dfbbd0d98ad5db9202784263fe1ef7f238ea656adf4c96adb28f56cfb3934a",
+      "bytes": 3394,
       "executable": false
     },
     {
       "path": "SOURCE_PROVENANCE.json",
-      "sha256": "0a8dbb5e48ebad07f5f6aa5470fe88812958c841a1788843ff1529bdc6cbfaf5",
-      "bytes": 695691,
+      "sha256": "fb5d1f1837845020f1a59dcfb908f9bfedbfe0708c7f9788345881db410208e9",
+      "bytes": 700665,
       "executable": false
     },
     {
       "path": "docs/COMPARATOR.md",
-      "sha256": "b443828d59cb392b402014c7afba7adf7949c6dc2f800fad5a9227b3ce27c9a0",
-      "bytes": 2907,
+      "sha256": "c431232c3f3a8a335ba9cc4ace7fe6ebce204d46bfed2491df54196de6455a69",
+      "bytes": 4123,
       "executable": false
     },
     {
@@ -24863,8 +24917,8 @@
     },
     {
       "path": "docs/REPRODUCING.md",
-      "sha256": "e66263ddba13f53be38a2198b27ca5245b214dbebf0a302a2f65c1be22d87303",
-      "bytes": 4141,
+      "sha256": "f933b4f2a9e8a12c67e3cae2079793a6af3642ef466014d0e7e1d38eeab65342",
+      "bytes": 4723,
       "executable": false
     },
     {
@@ -24875,8 +24929,8 @@
     },
     {
       "path": "docs/VERIFICATION.md",
-      "sha256": "9d81875a96cd6f8280bee16f3beef86e8a45c1203bacfdb21530a0fbfc34ea2b",
-      "bytes": 2193,
+      "sha256": "7730b2a526c691dd69923a6a7a2f1a6aa7a7159b3e6472a704fa28d3b11d9a4a",
+      "bytes": 2502,
       "executable": false
     },
     {
@@ -24893,8 +24947,8 @@
     },
     {
       "path": "lakefile.toml",
-      "sha256": "220a4a7335f8b9b4cdfd0b6f2a076562240ef3a995891b666c8e9395f6c8a83f",
-      "bytes": 356,
+      "sha256": "083bebea477574b7f3cc4c801beda13ce4cbf8da779e47bf868e07ad1eb2e8f4",
+      "bytes": 732,
       "executable": false
     },
     {
@@ -25486,6 +25540,12 @@
       "executable": true
     },
     {
+      "path": "scripts/compare.py",
+      "sha256": "7085dcc67b60d9550c109600a54ddeca91f35d2a1f49ab7cc333155f32e070b6",
+      "bytes": 11566,
+      "executable": true
+    },
+    {
       "path": "scripts/env.sh",
       "sha256": "289813f09a61244162bd06f5efc085600a9ead0a88b188b800f7668aac381634",
       "bytes": 629,
@@ -25498,6 +25558,18 @@
       "executable": false
     },
     {
+      "path": "scripts/landrun-runner.sh",
+      "sha256": "4e008eb429f3340597583eb0efb89decc4d2812979aad4db4adca05a97810cf4",
+      "bytes": 699,
+      "executable": true
+    },
+    {
+      "path": "scripts/local-landrun.sh",
+      "sha256": "43c389df406014d6e69e8aec9f1737ce70726df3ba46e1114ea7644755011005",
+      "bytes": 421,
+      "executable": true
+    },
+    {
       "path": "scripts/regression-suites.json",
       "sha256": "705a7cdc7a0ad7af0f10cf6111b4541b8c7fb892c95a2572778cf57284c0af64",
       "bytes": 2964,
@@ -25505,8 +25577,8 @@
     },
     {
       "path": "scripts/release.py",
-      "sha256": "45c6a7b5758ef031ad313db9300cff93f44fbbd6b4082aebb80f4bc4a85c6dfb",
-      "bytes": 20994,
+      "sha256": "676822157b578700c05e75b8bccfca8b3948cf745fafaf607071732aa055ec1b",
+      "bytes": 21457,
       "executable": true
     },
     {
@@ -25535,8 +25607,8 @@
     },
     {
       "path": "scripts/verify_current.py",
-      "sha256": "0b43ffb2348220305f62ce3a8eff694ee42232fc653ce99a74f997dc34b0a96d",
-      "bytes": 22352,
+      "sha256": "48598c0e50ab9a24f6f71926e91adc66e9632a585227e4f1722d86b4664756cf",
+      "bytes": 22924,
       "executable": true
     },
     {
@@ -25636,7 +25708,7 @@
       "executable": false
     }
   ],
-  "note": "The source/tool/configuration snapshot retains the verified prepared-archive inputs. This inventory includes subsequent documentation edits and the GitHub Actions workflow.",
+  "note": "Original mathematical proofs and dependency pins are preserved; official Comparator interfaces and tooling are additional verification inputs. Integration checks are pending.",
   "publication_changes": {
     "base_archive_sha256": "deb5dcb911acaed6e4aab214c98876d00b936162685655483a20c55be3829893",
     "modified_files": [
@@ -25648,5 +25720,6 @@
       ".github/workflows/lean.yml"
     ],
     "verification_inputs_unchanged": true
-  }
+  },
+  "prepared_proof_snapshot": "57a388e0f0b98bbe552ece7d519fa6274b5d0d0543978ac83509fbf877744dd0"
 }

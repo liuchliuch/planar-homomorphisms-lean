@@ -1,0 +1,938 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "name": "PlanarHomAudit.Comparator.theorem11",
+      "kind": "theorem",
+      "statement": "PlanarHomAudit.Contracts.theorem11",
+      "solution": "PlanarHomAudit.Solutions.theorem11",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.theorem13",
+      "kind": "theorem",
+      "statement": "PlanarHomAudit.Contracts.theorem13",
+      "solution": "PlanarHomAudit.Solutions.theorem13",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.corollary122_rectangular",
+      "kind": "theorem",
+      "statement": "PlanarHomAudit.Contracts.corollary122_rectangular",
+      "solution": "PlanarHomAudit.Solutions.corollary122_rectangular",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_1_1_1",
+      "kind": "definition",
+      "paper_item": "1.1",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_1_1_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_1_1_1",
+      "original": "PlanarHom.MainDichotomyScope.theorem11",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_1_3_1",
+      "kind": "definition",
+      "paper_item": "1.3",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_1_3_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_1_3_1",
+      "original": "PlanarHom.MainDichotomyScope.theorem13",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_2_2_1",
+      "kind": "definition",
+      "paper_item": "2.2",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_2_2_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_2_2_1",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.proposition22_i",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_2_2_2",
+      "kind": "definition",
+      "paper_item": "2.2",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_2_2_2",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_2_2_2",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.proposition22_potts",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_2_3_1",
+      "kind": "definition",
+      "paper_item": "2.3",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_2_3_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_2_3_1",
+      "original": "PlanarHom.FixedRealSmallState.theorem23",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_2_4_1",
+      "kind": "definition",
+      "paper_item": "2.4",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_2_4_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_2_4_1",
+      "original": "PlanarHom.FixedRealSmallState.theorem24",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_2_4_2",
+      "kind": "definition",
+      "paper_item": "2.4",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_2_4_2",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_2_4_2",
+      "original": "PlanarHom.FixedRealSmallState.theorem24_positive",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_2_5_1",
+      "kind": "definition",
+      "paper_item": "2.5",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_2_5_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_2_5_1",
+      "original": "PlanarHom.GadgetDiagonalSeparation.proposition25",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_2_6_1",
+      "kind": "definition",
+      "paper_item": "2.6",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_2_6_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_2_6_1",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.proposition26",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_3_1_1",
+      "kind": "definition",
+      "paper_item": "3.1",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_3_1_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_3_1_1",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma31_binary",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_3_1_2",
+      "kind": "definition",
+      "paper_item": "3.1",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_3_1_2",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_3_1_2",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma31_unary",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_3_1_3",
+      "kind": "definition",
+      "paper_item": "3.1",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_3_1_3",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_3_1_3",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma31_domain_binary",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_3_1_4",
+      "kind": "definition",
+      "paper_item": "3.1",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_3_1_4",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_3_1_4",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma31_domain_unary",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_3_2_1",
+      "kind": "definition",
+      "paper_item": "3.2",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_3_2_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_3_2_1",
+      "original": "PlanarHom.Corollary32.support_chains",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_3_2_2",
+      "kind": "definition",
+      "paper_item": "3.2",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_3_2_2",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_3_2_2",
+      "original": "PlanarHom.Corollary32.mixed_equivalence",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_3_2_3",
+      "kind": "definition",
+      "paper_item": "3.2",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_3_2_3",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_3_2_3",
+      "original": "PlanarHom.Corollary32.joint_extremal_transforms",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_3_3_1",
+      "kind": "definition",
+      "paper_item": "3.3",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_3_3_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_3_3_1",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma33_range",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_3_3_2",
+      "kind": "definition",
+      "paper_item": "3.3",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_3_3_2",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_3_3_2",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma33_rationalPower",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_3_5_1",
+      "kind": "definition",
+      "paper_item": "3.5",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_3_5_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_3_5_1",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma35_root",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_3_5_2",
+      "kind": "definition",
+      "paper_item": "3.5",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_3_5_2",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_3_5_2",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma35_component",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_3_5_3",
+      "kind": "definition",
+      "paper_item": "3.5",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_3_5_3",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_3_5_3",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma35_inFP",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_3_6_1",
+      "kind": "definition",
+      "paper_item": "3.6",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_3_6_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_3_6_1",
+      "original": "PlanarHom.tensorPower_linearIndependent",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_3_6_2",
+      "kind": "definition",
+      "paper_item": "3.6",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_3_6_2",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_3_6_2",
+      "original": "PlanarHom.hadamard_weighted_gram_posDef",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_3_7_1",
+      "kind": "definition",
+      "paper_item": "3.7",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_3_7_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_3_7_1",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma37_inverseDiagonal",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_3_7_2",
+      "kind": "definition",
+      "paper_item": "3.7",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_3_7_2",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_3_7_2",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma37_removeWeights",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_3_7_3",
+      "kind": "definition",
+      "paper_item": "3.7",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_3_7_3",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_3_7_3",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma37_rational",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_3_7_4",
+      "kind": "definition",
+      "paper_item": "3.7",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_3_7_4",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_3_7_4",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma37_finiteRationalPowers",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_3_8_1",
+      "kind": "definition",
+      "paper_item": "3.8",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_3_8_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_3_8_1",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary38_identity",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_3_8_2",
+      "kind": "definition",
+      "paper_item": "3.8",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_3_8_2",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_3_8_2",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary38",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_3_8_3",
+      "kind": "definition",
+      "paper_item": "3.8",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_3_8_3",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_3_8_3",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary38_zeroOne",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_3_8_4",
+      "kind": "definition",
+      "paper_item": "3.8",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_3_8_4",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_3_8_4",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary38_zeroOne_hardnessLift",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_3_9_1",
+      "kind": "definition",
+      "paper_item": "3.9",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_3_9_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_3_9_1",
+      "original": "PlanarHom.lemma_3_9",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_3_10_1",
+      "kind": "definition",
+      "paper_item": "3.10",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_3_10_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_3_10_1",
+      "original": "PlanarHom.EffectiveProductTransfer.lemma310_polynomial_parameter",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_3_10_2",
+      "kind": "definition",
+      "paper_item": "3.10",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_3_10_2",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_3_10_2",
+      "original": "PlanarHom.EffectiveProductTransfer.lemma310_spectral_parameter",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_3_10_3",
+      "kind": "definition",
+      "paper_item": "3.10",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_3_10_3",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_3_10_3",
+      "original": "PlanarHom.EffectiveProductTransfer.lemma310_polynomial_domain_parameter",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_3_10_4",
+      "kind": "definition",
+      "paper_item": "3.10",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_3_10_4",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_3_10_4",
+      "original": "PlanarHom.EffectiveProductTransfer.lemma310_spectral_domain_parameter",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_3_11_1",
+      "kind": "definition",
+      "paper_item": "3.11",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_3_11_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_3_11_1",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma311_source",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_3_11_2",
+      "kind": "definition",
+      "paper_item": "3.11",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_3_11_2",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_3_11_2",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma311",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_4_1_1",
+      "kind": "definition",
+      "paper_item": "4.1",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_4_1_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_4_1_1",
+      "original": "PlanarHom.ClosedMatrixFamily.lemma41",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_4_2_1",
+      "kind": "definition",
+      "paper_item": "4.2",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_4_2_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_4_2_1",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma42_uniform",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_4_2_2",
+      "kind": "definition",
+      "paper_item": "4.2",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_4_2_2",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_4_2_2",
+      "original": "PlanarHom.ClosedMatrixFamily.lemma42_structural",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_4_3_1",
+      "kind": "definition",
+      "paper_item": "4.3",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_4_3_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_4_3_1",
+      "original": "PlanarHom.ClosedMatrixFamily.lemma43",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_4_4_1",
+      "kind": "definition",
+      "paper_item": "4.4",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_4_4_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_4_4_1",
+      "original": "PlanarHom.ClosedMatrixFamily.lemma44",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_4_5_1",
+      "kind": "definition",
+      "paper_item": "4.5",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_4_5_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_4_5_1",
+      "original": "PlanarHom.KernelContinuation.posDef_distanceKernel",
+      "levels": [
+        "u_1"
+      ]
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_4_6_1",
+      "kind": "definition",
+      "paper_item": "4.6",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_4_6_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_4_6_1",
+      "original": "PlanarHom.CartesianGeometry.cartesian_product_characterization",
+      "levels": [
+        "u_1"
+      ]
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_4_7_1",
+      "kind": "definition",
+      "paper_item": "4.7",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_4_7_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_4_7_1",
+      "original": "PlanarHom.ClosedMatrixFamily.lemma47",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_4_8_1",
+      "kind": "definition",
+      "paper_item": "4.8",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_4_8_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_4_8_1",
+      "original": "PlanarHom.ClosedMatrixFamily.proposition48_fixed_maximum",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_5_1_1",
+      "kind": "definition",
+      "paper_item": "5.1",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_5_1_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_5_1_1",
+      "original": "PlanarHom.BooleanTensorDichotomy.theorem5_1_literal",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_6_1_1",
+      "kind": "definition",
+      "paper_item": "6.1",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_6_1_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_6_1_1",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.theorem61",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_6_2_1",
+      "kind": "definition",
+      "paper_item": "6.2",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_6_2_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_6_2_1",
+      "original": "PlanarHom.ClosedMatrixFamily.corollary62",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_7_1_1",
+      "kind": "definition",
+      "paper_item": "7.1",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_7_1_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_7_1_1",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.theorem71_weighted",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_7_1_2",
+      "kind": "definition",
+      "paper_item": "7.1",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_7_1_2",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_7_1_2",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.theorem71_unweighted",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_8_1_1",
+      "kind": "definition",
+      "paper_item": "8.1",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_8_1_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_8_1_1",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.theorem81",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_8_2_1",
+      "kind": "definition",
+      "paper_item": "8.2",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_8_2_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_8_2_1",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma82",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_8_3_1",
+      "kind": "definition",
+      "paper_item": "8.3",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_8_3_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_8_3_1",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma83",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_9_1_1",
+      "kind": "definition",
+      "paper_item": "9.1",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_9_1_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_9_1_1",
+      "original": "PlanarHom.RectangularUnweightedSourceForms.theorem91",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_9_2_1",
+      "kind": "definition",
+      "paper_item": "9.2",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_9_2_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_9_2_1",
+      "original": "PlanarHom.RectangularCoreSourceRigidity.proposition92",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_9_3_1",
+      "kind": "definition",
+      "paper_item": "9.3",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_9_3_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_9_3_1",
+      "original": "PlanarHom.PrescribedTensorWeight.lemma93",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_11_1_1",
+      "kind": "definition",
+      "paper_item": "11.1",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_11_1_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_11_1_1",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma111_a",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_11_1_2",
+      "kind": "definition",
+      "paper_item": "11.1",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_11_1_2",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_11_1_2",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma111_b",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_11_1_3",
+      "kind": "definition",
+      "paper_item": "11.1",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_11_1_3",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_11_1_3",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma111_c",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_11_2_1",
+      "kind": "definition",
+      "paper_item": "11.2",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_11_2_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_11_2_1",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary112",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_11_2_2",
+      "kind": "definition",
+      "paper_item": "11.2",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_11_2_2",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_11_2_2",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.empty_surviving_evaluate",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_12_1_1",
+      "kind": "definition",
+      "paper_item": "12.1",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_12_1_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_12_1_1",
+      "original": "PlanarHom.TargetGraphDichotomy.corollary121",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_12_2_1",
+      "kind": "definition",
+      "paper_item": "12.2",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_12_2_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_12_2_1",
+      "original": "PlanarHom.DomainDoublingClassification.corollary122_bipartite",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_12_2_2",
+      "kind": "definition",
+      "paper_item": "12.2",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_12_2_2",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_12_2_2",
+      "original": "PlanarHom.DomainDoublingClassification.corollary122_prescribed",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_12_2_3",
+      "kind": "definition",
+      "paper_item": "12.2",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_12_2_3",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_12_2_3",
+      "original": "PlanarHom.DomainDoublingClassification.corollary122_rectangular",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_12_2_4",
+      "kind": "definition",
+      "paper_item": "12.2",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_12_2_4",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_12_2_4",
+      "original": "PlanarHom.DomainDoublingClassification.corollary122_bipartite_unweighted",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_12_2_5",
+      "kind": "definition",
+      "paper_item": "12.2",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_12_2_5",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_12_2_5",
+      "original": "PlanarHom.DomainDoublingClassification.corollary122_prescribed_unweighted",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_12_4_1",
+      "kind": "definition",
+      "paper_item": "12.4",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_12_4_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_12_4_1",
+      "original": "PlanarHom.CenteredLogStructural.lemma124_structure_and_rank",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_12_4_2",
+      "kind": "definition",
+      "paper_item": "12.4",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_12_4_2",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_12_4_2",
+      "original": "PlanarHom.CenteredLogStructural.tensor_form_inFP",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_12_5_1",
+      "kind": "definition",
+      "paper_item": "12.5",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_12_5_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_12_5_1",
+      "original": "PlanarHom.FixedRealClock.corollary125",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_12_6_1",
+      "kind": "definition",
+      "paper_item": "12.6",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_12_6_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_12_6_1",
+      "original": "PlanarHom.FixedRealCoupledIsing.corollary126_set",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_12_6_2",
+      "kind": "definition",
+      "paper_item": "12.6",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_12_6_2",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_12_6_2",
+      "original": "PlanarHom.FixedRealCoupledIsing.empty_labels_inFP",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_12_7_1",
+      "kind": "definition",
+      "paper_item": "12.7",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_12_7_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_12_7_1",
+      "original": "PlanarHom.FixedRealBlumeCapel.corollary127",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_12_8_1",
+      "kind": "definition",
+      "paper_item": "12.8",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_12_8_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_12_8_1",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary128_unweighted",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_12_8_2",
+      "kind": "definition",
+      "paper_item": "12.8",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_12_8_2",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_12_8_2",
+      "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary128_weighted",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_A_1_1",
+      "kind": "definition",
+      "paper_item": "A.1",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_A_1_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_A_1_1",
+      "original": "PlanarHom.FixedRealLemmaA1.lemmaA1",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_A_2_1",
+      "kind": "definition",
+      "paper_item": "A.2",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_A_2_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_A_2_1",
+      "original": "PlanarHom.FixedRealMixedRootRestriction.corollaryA2_mixed_root_prescribed",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_A_2_2",
+      "kind": "definition",
+      "paper_item": "A.2",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_A_2_2",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_A_2_2",
+      "original": "PlanarHom.FixedRealMixedRootRestriction.corollaryA2_mixed_submatrix_prescribed",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_A_2_3",
+      "kind": "definition",
+      "paper_item": "A.2",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_A_2_3",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_A_2_3",
+      "original": "PlanarHom.FixedRealMixedOrientation.corollaryA2_mixed_orientation_prescribed",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_A_3_1",
+      "kind": "definition",
+      "paper_item": "A.3",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_A_3_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_A_3_1",
+      "original": "PlanarHom.FixedRealMixedInterpolation.theoremA3_prescribed_joint",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_A_4_1",
+      "kind": "definition",
+      "paper_item": "A.4",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_A_4_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_A_4_1",
+      "original": "PlanarHom.RelationApproximation.relation_preserving_approximation",
+      "levels": [
+        "u_1"
+      ]
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_A_4_2",
+      "kind": "definition",
+      "paper_item": "A.4",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_A_4_2",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_A_4_2",
+      "original": "PlanarHom.FixedRealApproximation.theoremA4_joint",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_A_4_3",
+      "kind": "definition",
+      "paper_item": "A.4",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_A_4_3",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_A_4_3",
+      "original": "PlanarHom.FixedRealApproximation.theoremA4_prescribed_rational",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_A_5_1",
+      "kind": "definition",
+      "paper_item": "A.5",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_A_5_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_A_5_1",
+      "original": "PlanarHom.FixedChartClosedness.isClosed_nonnegativeClass_support",
+      "levels": [
+        "u_1"
+      ]
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_A_5_2",
+      "kind": "definition",
+      "paper_item": "A.5",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_A_5_2",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_A_5_2",
+      "original": "PlanarHom.FixedChartClosedness.nonnegativeClass_of_tendsto_fixedSupport",
+      "levels": [
+        "u_1",
+        "u_2"
+      ]
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_A_6_1",
+      "kind": "definition",
+      "paper_item": "A.6",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_A_6_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_A_6_1",
+      "original": "PlanarHom.FixedRealApproximation.theoremA6",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_A_7_1",
+      "kind": "definition",
+      "paper_item": "A.7",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_A_7_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_A_7_1",
+      "original": "PlanarHom.FixedRealSignedTransforms.theoremA7_all_five",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_A_7_2",
+      "kind": "definition",
+      "paper_item": "A.7",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_A_7_2",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_A_7_2",
+      "original": "PlanarHom.FixedRealSignedTransforms.theoremA7_chain",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_A_7_3",
+      "kind": "definition",
+      "paper_item": "A.7",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_A_7_3",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_A_7_3",
+      "original": "PlanarHom.FixedRealSignedTransforms.theoremA7_mixed_equivalence",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_A_8_1",
+      "kind": "definition",
+      "paper_item": "A.8",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_A_8_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_A_8_1",
+      "original": "PlanarHom.FixedRealWeightRemoval.theoremA8",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_A_8_2",
+      "kind": "definition",
+      "paper_item": "A.8",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_A_8_2",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_A_8_2",
+      "original": "PlanarHom.FixedRealWeightRemoval.constructedPowers_joint",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_A_9_1",
+      "kind": "definition",
+      "paper_item": "A.9",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_A_9_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_A_9_1",
+      "original": "PlanarHom.FixedRealSupportHardness.theoremA9_zeroOne",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_A_9_2",
+      "kind": "definition",
+      "paper_item": "A.9",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_A_9_2",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_A_9_2",
+      "original": "PlanarHom.FixedRealSupportHardness.theoremA9_hard",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_A_10_1",
+      "kind": "definition",
+      "paper_item": "A.10",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_A_10_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_A_10_1",
+      "original": "PlanarHom.FixedRealLemmaA10.lemmaA10",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_A_11_1",
+      "kind": "definition",
+      "paper_item": "A.11",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_A_11_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_A_11_1",
+      "original": "PlanarHom.FixedRealLemmaA11.lemmaA11",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_A_12_1",
+      "kind": "definition",
+      "paper_item": "A.12",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_A_12_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_A_12_1",
+      "original": "PlanarHom.FixedRealWeightedClassification.theoremA12",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_A_13_1",
+      "kind": "definition",
+      "paper_item": "A.13",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_A_13_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_A_13_1",
+      "original": "PlanarHom.FixedRealSurvivingWeights.theoremA13",
+      "levels": []
+    },
+    {
+      "name": "PlanarHomAudit.Comparator.item_A_14_1",
+      "kind": "definition",
+      "paper_item": "A.14",
+      "statement": "PlanarHomAudit.ReviewedStatements.item_A_14_1",
+      "solution": "PlanarHomAudit.ReviewedSolutions.item_A_14_1",
+      "original": "PlanarHom.FixedRealSignedConsequences.theoremA14",
+      "levels": []
+    }
+  ],
+  "definition_policy": "Fixed complete types; values supplied by the verified library, not open mathematical model definitions."
+}

@@ -16545,7 +16545,7 @@
     },
     {
       "path": "lakefile.toml",
-      "sha256": "220a4a7335f8b9b4cdfd0b6f2a076562240ef3a995891b666c8e9395f6c8a83f"
+      "sha256": "083bebea477574b7f3cc4c801beda13ce4cbf8da779e47bf868e07ad1eb2e8f4"
     },
     {
       "path": "lean-toolchain",
@@ -16937,7 +16937,7 @@
     },
     {
       "path": "scripts/release.py",
-      "sha256": "45c6a7b5758ef031ad313db9300cff93f44fbbd6b4082aebb80f4bc4a85c6dfb"
+      "sha256": "676822157b578700c05e75b8bccfca8b3948cf745fafaf607071732aa055ec1b"
     },
     {
       "path": "scripts/resume_fresh.py",
@@ -16957,7 +16957,7 @@
     },
     {
       "path": "scripts/verify_current.py",
-      "sha256": "0b43ffb2348220305f62ce3a8eff694ee42232fc653ce99a74f997dc34b0a96d"
+      "sha256": "48598c0e50ab9a24f6f71926e91adc66e9632a585227e4f1722d86b4664756cf"
     }
   ],
   "new_verification_support": [
@@ -16980,6 +16980,54 @@
     {
       "path": "scripts/regression-suites.json",
       "sha256": "705a7cdc7a0ad7af0f10cf6111b4541b8c7fb892c95a2572778cf57284c0af64"
+    },
+    {
+      "path": "Audit/Official/Challenge.lean",
+      "sha256": "192bb7643e1291a7f32a0a11469227b38b90fe74c3acb1842806a82cd3642f70"
+    },
+    {
+      "path": "Audit/Official/NegativeAxiom.lean",
+      "sha256": "30fafadaa069fdcbeafc9932b87f807b79bf841ce93ed2fb46561b5afe8e5359"
+    },
+    {
+      "path": "Audit/Official/NegativePremise.lean",
+      "sha256": "a2e3fd3325947a9419d6f7fe5dca5cab44eaf7daf5560a037f9326873563fc89"
+    },
+    {
+      "path": "Audit/Official/Solution.lean",
+      "sha256": "51afbf308ad8879533de478372a9df5ea80d6b0e5f1b13fc0fcd7d86dd669c1b"
+    },
+    {
+      "path": "Audit/Official/comparator.json",
+      "sha256": "6ceba22cf507a1fa2945ec6e6f1d556cf5d1dae4c56b0336c0486cae979747d8"
+    },
+    {
+      "path": "Audit/Official/negative-axiom.json",
+      "sha256": "b39aa274e428510cf37bdea0540f3e9fb49b20614be2d9cd8a5f1a7b52281364"
+    },
+    {
+      "path": "Audit/Official/negative-premise.json",
+      "sha256": "62e80348324300c9b8f47a25dc0ecb064a32466433091666b1e42605d64889d1"
+    },
+    {
+      "path": "Audit/Official/targets.json",
+      "sha256": "7a7059ee40555a9f3294845c4835b5945138267a41040da56af394474998d5a1"
+    },
+    {
+      "path": "Audit/Official/toolchain.json",
+      "sha256": "54abe96fdbaa43a9de6a7c3d4d5872878a687febb81ce4b5df712e81b0167a6f"
+    },
+    {
+      "path": "scripts/compare.py",
+      "sha256": "7085dcc67b60d9550c109600a54ddeca91f35d2a1f49ab7cc333155f32e070b6"
+    },
+    {
+      "path": "scripts/landrun-runner.sh",
+      "sha256": "4e008eb429f3340597583eb0efb89decc4d2812979aad4db4adca05a97810cf4"
+    },
+    {
+      "path": "scripts/local-landrun.sh",
+      "sha256": "43c389df406014d6e69e8aec9f1737ce70726df3ba46e1114ea7644755011005"
     }
   ],
   "review_changes": [
@@ -17411,5 +17459,87 @@
       "sha256": "0b43ffb2348220305f62ce3a8eff694ee42232fc653ce99a74f997dc34b0a96d"
     }
   ],
-  "publication_review_note": "Mathematical code is unchanged; Lean edits correct stale comments. Packaging honors installed environments and exports compact current evidence."
+  "publication_review_note": "Mathematical code is unchanged; Lean edits correct stale comments. Packaging honors installed environments and exports compact current evidence.",
+  "official_comparator_changes": [
+    {
+      "path": "lakefile.toml",
+      "previous_sha256": "220a4a7335f8b9b4cdfd0b6f2a076562240ef3a995891b666c8e9395f6c8a83f",
+      "sha256": "083bebea477574b7f3cc4c801beda13ce4cbf8da779e47bf868e07ad1eb2e8f4"
+    },
+    {
+      "path": "scripts/release.py",
+      "previous_sha256": "45c6a7b5758ef031ad313db9300cff93f44fbbd6b4082aebb80f4bc4a85c6dfb",
+      "sha256": "676822157b578700c05e75b8bccfca8b3948cf745fafaf607071732aa055ec1b"
+    },
+    {
+      "path": "scripts/verify_current.py",
+      "previous_sha256": "0b43ffb2348220305f62ce3a8eff694ee42232fc653ce99a74f997dc34b0a96d",
+      "sha256": "48598c0e50ab9a24f6f71926e91adc66e9632a585227e4f1722d86b4664756cf"
+    },
+    {
+      "path": "Audit/Official/Challenge.lean",
+      "previous_sha256": null,
+      "sha256": "192bb7643e1291a7f32a0a11469227b38b90fe74c3acb1842806a82cd3642f70"
+    },
+    {
+      "path": "Audit/Official/NegativeAxiom.lean",
+      "previous_sha256": null,
+      "sha256": "30fafadaa069fdcbeafc9932b87f807b79bf841ce93ed2fb46561b5afe8e5359"
+    },
+    {
+      "path": "Audit/Official/NegativePremise.lean",
+      "previous_sha256": null,
+      "sha256": "a2e3fd3325947a9419d6f7fe5dca5cab44eaf7daf5560a037f9326873563fc89"
+    },
+    {
+      "path": "Audit/Official/Solution.lean",
+      "previous_sha256": null,
+      "sha256": "51afbf308ad8879533de478372a9df5ea80d6b0e5f1b13fc0fcd7d86dd669c1b"
+    },
+    {
+      "path": "Audit/Official/comparator.json",
+      "previous_sha256": null,
+      "sha256": "6ceba22cf507a1fa2945ec6e6f1d556cf5d1dae4c56b0336c0486cae979747d8"
+    },
+    {
+      "path": "Audit/Official/negative-axiom.json",
+      "previous_sha256": null,
+      "sha256": "b39aa274e428510cf37bdea0540f3e9fb49b20614be2d9cd8a5f1a7b52281364"
+    },
+    {
+      "path": "Audit/Official/negative-premise.json",
+      "previous_sha256": null,
+      "sha256": "62e80348324300c9b8f47a25dc0ecb064a32466433091666b1e42605d64889d1"
+    },
+    {
+      "path": "Audit/Official/targets.json",
+      "previous_sha256": null,
+      "sha256": "7a7059ee40555a9f3294845c4835b5945138267a41040da56af394474998d5a1"
+    },
+    {
+      "path": "Audit/Official/toolchain.json",
+      "previous_sha256": null,
+      "sha256": "54abe96fdbaa43a9de6a7c3d4d5872878a687febb81ce4b5df712e81b0167a6f"
+    },
+    {
+      "path": "scripts/compare.py",
+      "previous_sha256": null,
+      "sha256": "7085dcc67b60d9550c109600a54ddeca91f35d2a1f49ab7cc333155f32e070b6"
+    },
+    {
+      "path": "scripts/landrun-runner.sh",
+      "previous_sha256": null,
+      "sha256": "4e008eb429f3340597583eb0efb89decc4d2812979aad4db4adca05a97810cf4"
+    },
+    {
+      "path": "scripts/local-landrun.sh",
+      "previous_sha256": null,
+      "sha256": "43c389df406014d6e69e8aec9f1737ce70726df3ba46e1114ea7644755011005"
+    }
+  ],
+  "official_comparator_baseline": {
+    "source_snapshot": "57a388e0f0b98bbe552ece7d519fa6274b5d0d0543978ac83509fbf877744dd0",
+    "archive_sha256": "deb5dcb911acaed6e4aab214c98876d00b936162685655483a20c55be3829893",
+    "note": "All original mathematical Lean sources, original audit modules and mathematical dependency revisions are unchanged. New official interfaces, runner, proof-source isolation and Lake build roots are recorded separately."
+  }
 }

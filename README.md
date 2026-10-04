@@ -38,21 +38,30 @@ See [reproduction and packaging](docs/REPRODUCING.md) for the exact commands and
 [verification results](docs/VERIFICATION.md) for the delivered source snapshot.
 Generated coloring and routing tables are necessary proof inputs.
 
-## Statements and proofs
+## Statement verification
 
-[Contracts.lean](Audit/Contracts.lean) states Theorems 1.1 and 1.3 and the
-rectangular case of Corollary 12.2, with their hypotheses written out explicitly.
-[Solutions.lean](Audit/Solutions.lean) supplies the corresponding proofs.
+The official [Lean Comparator](https://github.com/leanprover/comparator) checks
+[Challenge.lean](Audit/Official/Challenge.lean) against
+[Solution.lean](Audit/Official/Solution.lean). The challenge fixes the three main
+propositions and 100 additional interfaces covering all 58 numbered paper results.
+The solution supplies proofs and implementations at those same types.
 
-[ReviewedStatements.lean](Audit/ReviewedStatements.lean) records a further
-100 formal statements and interfaces covering all 58 numbered paper results;
-[ReviewedSolutions.lean](Audit/ReviewedSolutions.lean) connects them to the library.
-These statement files are fixed inputs to verification.
+Comparator compares the exported declarations and their dependencies, checks the
+permitted axioms, and rechecks the solution in a fresh Lean kernel environment.
+Linux CI isolates compilation and export with Landrun. The checking tools and
+all mathematical dependencies are pinned.
 
-The verification command uses the project's Lean-based checkers to compare the
-statement and proof types and audit their axiom dependencies. See
-[statement checks](docs/COMPARATOR.md) for the checking method and its relationship
-to the official Lean Comparator.
+On Linux, with the pinned Landrun installed and a running user systemd session:
+
+```sh
+python3 scripts/compare.py --jobs 2
+```
+
+For development on macOS, use `--local`; this explicitly disables process
+isolation. Both modes also check that a solution with an extra premise and a
+solution using an extra axiom are rejected. See
+[Comparator setup and scope](docs/COMPARATOR.md) and
+[verification results](docs/VERIFICATION.md).
 
 ## Citation and license
 

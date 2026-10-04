@@ -305,6 +305,10 @@ def publish(receipt_path):
     require(summary["status"] == "PASS" and summary["snapshot"] == sid, "Invalid run summary")
     require((run / "source-snapshot.sha256").read_text() == snapshot(ROOT)[1],
             "Rebuilt source file hashes differ")
+    comparator_path = ROOT / "verification/comparator.json"
+    comparator_result = json.loads(comparator_path.read_text()) if comparator_path.exists() else None
+    if comparator_result and comparator_result.get("source_snapshot") != sid:
+        comparator_result = None
     if (ROOT / "verification").exists():
         backup = ROOT / ".audit" / ("previous-evidence-" + datetime.datetime.now(
             datetime.timezone.utc).strftime("%Y%m%dT%H%M%S%fZ"))
@@ -312,6 +316,8 @@ def publish(receipt_path):
         shutil.move(str(ROOT / "verification"), str(backup))
     export_evidence(run, ROOT / "verification/final")
     write_json(ROOT / "verification/archive-rebuild.json", receipt)
+    if comparator_result:
+        write_json(ROOT / "verification/comparator.json", comparator_result)
     report = (
         "# Verification results\n\n"
         "The final source, audit interface, and verifier were freshly compiled from an extracted "
@@ -329,7 +335,8 @@ def publish(receipt_path):
         f"- Reviewed full-type contracts: {summary['reviewed_signature_contracts']} across {summary['reviewed_contract_items']} paper items\n"
         f"- Numbered paper items inventoried: {summary['paper_items_checked']}\n"
         "- Permitted axioms: `propext`, `Classical.choice`, `Quot.sound`\n"
-        "- Official Linux comparator: not run; no equivalent sandbox claim\n\n"
+        "- Official Comparator: see `verification/comparator.json` when present and "
+        "[COMPARATOR.md](COMPARATOR.md) for the separate command and scope.\n\n"
         "See `verification/final/` for per-target commands, exit codes, source/object hashes, "
         "statement checks, origin audits, and unchanged-source guards. Large retained logs "
         "are gzip-compressed; `log-index.json` records the uncompressed size and hash of "
