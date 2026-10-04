@@ -105,8 +105,20 @@ def checked_run(command, env, log, expected_error=None):
     with log.open('w') as handle:
         process = subprocess.Popen(list(map(str, command)), cwd=ROOT, env=env,
                                    stdout=handle, stderr=subprocess.STDOUT)
-        code = process.wait()
+        while True:
+            try:
+                code = process.wait(timeout=60)
+                break
+            except subprocess.TimeoutExpired:
+                with log.open('rb') as progress:
+                    progress.seek(max(0, log.stat().st_size - 4096))
+                    lines = progress.read().decode(errors='replace').splitlines()
+                if lines:
+                    print(f'{log.stem}: {lines[-1]}', flush=True)
     text = log.read_text(errors='replace')
+    unexpected = (code == 0 or expected_error not in text) if expected_error else code != 0
+    if unexpected:
+        print('\n'.join(text.splitlines()[-60:]), flush=True)
     if expected_error:
         require(code != 0 and expected_error in text,
                 f'Negative control did not fail for the expected reason: {log}')
