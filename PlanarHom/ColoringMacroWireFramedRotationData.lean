@@ -1,0 +1,10 @@
+import PlanarHom.ColoringMacroWireFramedRotationTableHost
+import PlanarHom.ColoringMacroWireFramedRotationTableVertexroot
+import PlanarHom.ColoringMacroWireFramedRotationTableVertexrank
+import PlanarHom.ColoringMacroWireFramedRotationTableParent
+import PlanarHom.ColoringMacroWireFramedRotationTableParentedge
+import PlanarHom.ColoringMacroWireFramedRotationTableConnectrank
+import PlanarHom.ColoringMacroWireFramedFaceData
+namespace PlanarHom.ColoringMacroFaces.WireFramed
+def rotateValue (i : ℕ) : ℕ := nextValue (if i%2=0 then i+1 else i-1)
+end PlanarHom.ColoringMacroFaces.WireFramed

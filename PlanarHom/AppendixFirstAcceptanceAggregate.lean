@@ -1,0 +1,22 @@
+import PlanarHom.FixedRealLemmaA1
+import PlanarHom.FixedRealClockApplication
+import PlanarHom.FixedRealCoupledIsingApplication
+import PlanarHom.FixedRealBlumeCapelApplication
+import PlanarHom.FixedRealAppendixA2
+import PlanarHom.RealAppendixApproximationPrescribedRational
+import PlanarHom.FixedRealSignedConsequences
+import PlanarHom.FixedRealThreeStateDichotomy
+import PlanarHom.FixedRealFourStateDichotomy
+import PlanarHom.FixedRealNonnegativeDichotomy
+import PlanarHom.FixedRealJointPrescribedFields
+import PlanarHom.RealAppendixApproximationEndpoints
+import PlanarHom.RealAppendixTransformEndpoints
+import PlanarHom.FixedRealNonnegativeTractability
+import PlanarHom.RealNonnegativeHardness
+import PlanarHom.FixedRealPrescribedWeightRemoval
+import PlanarHom.FixedRealSupportDichotomy
+import PlanarHom.FixedRealLemmaA10
+import PlanarHom.FixedRealLemmaA11
+
+/-! First coherent fixed-real Appendix acceptance candidates. Original scope
+is reviewed per numbered item. Unfinished A.12/A.13 are absent. -/

@@ -1,0 +1,6 @@
+import PlanarHom.ColoringMacroFanFramedFaceTableNext
+import PlanarHom.ColoringMacroFanFramedFaceTablePrev
+import PlanarHom.ColoringMacroFanFramedFaceTableLabel
+import PlanarHom.ColoringMacroFanFramedFaceTableRoot
+import PlanarHom.ColoringMacroFanFramedFaceTableRank
+import PlanarHom.ColoringMacroFanFramedFaceTableGap

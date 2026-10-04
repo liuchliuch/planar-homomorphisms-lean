@@ -1,0 +1,10 @@
+import PlanarHom.ColoringMacroTestFramedRotationTableHost
+import PlanarHom.ColoringMacroTestFramedRotationTableVertexroot
+import PlanarHom.ColoringMacroTestFramedRotationTableVertexrank
+import PlanarHom.ColoringMacroTestFramedRotationTableParent
+import PlanarHom.ColoringMacroTestFramedRotationTableParentedge
+import PlanarHom.ColoringMacroTestFramedRotationTableConnectrank
+import PlanarHom.ColoringMacroTestFramedFaceData
+namespace PlanarHom.ColoringMacroFaces.TestFramed
+def rotateValue (i : ℕ) : ℕ := nextValue (if i%2=0 then i+1 else i-1)
+end PlanarHom.ColoringMacroFaces.TestFramed

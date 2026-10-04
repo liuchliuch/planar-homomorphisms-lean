@@ -1,0 +1,13 @@
+import PlanarHom.ColoringEmitterMacroValidity
+
+/-! NEW bounded kernel checks for private address tables. Each independent
+check covers at most 32 entries; the global statement is proved by list gluing. -/
+namespace PlanarHom.ColoringEmitter.Macro
+open PositiveBlockProgram
+set_option maxRecDepth 100000
+set_option maxHeartbeats 3000000
+
+def testPrivateChunk0 : List (ℕ×ℕ) := [(3,0),(4,1),(5,2),(6,3),(7,4),(8,5),(9,6),(10,7),(11,8),(12,9),(13,10),(14,11),(15,12),(16,13),(17,14),(18,15),(19,16),(20,17),(21,18),(22,19),(23,20),(24,21),(25,22),(26,23),(27,24),(28,25),(29,26),(30,27),(31,28),(32,29),(33,30),(34,31)]
+theorem testPrivateChunk0_valid : ∀p∈testPrivateChunk0,address .test p.1=(2,p.2,0) := by decide +kernel
+
+end PlanarHom.ColoringEmitter.Macro

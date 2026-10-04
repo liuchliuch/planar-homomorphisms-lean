@@ -1,0 +1,12 @@
+.lake/
+.build/
+.cache/
+.tools/
+.tmp/
+.audit/
+logs/
+__pycache__/
+.DS_Store
+*.olean
+*.ilean
+planar-homomorphisms-reviewed-*.tar.gz*

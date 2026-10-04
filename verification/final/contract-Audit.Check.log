@@ -1,0 +1,9 @@
+EXTRA_PREMISE_REJECTED PlanarHomAudit.Solutions.theorem11
+CONTRACT_PASS PlanarHomAudit.Solutions.theorem11 == PlanarHomAudit.Contracts.theorem11
+CONTRACT_AXIOMS PlanarHomAudit.Solutions.theorem11: [propext, Classical.choice, Quot.sound]
+EXTRA_PREMISE_REJECTED PlanarHomAudit.Solutions.theorem13
+CONTRACT_PASS PlanarHomAudit.Solutions.theorem13 == PlanarHomAudit.Contracts.theorem13
+CONTRACT_AXIOMS PlanarHomAudit.Solutions.theorem13: [propext, Classical.choice, Quot.sound]
+EXTRA_PREMISE_REJECTED PlanarHomAudit.Solutions.corollary122_rectangular
+CONTRACT_PASS PlanarHomAudit.Solutions.corollary122_rectangular == PlanarHomAudit.Contracts.corollary122_rectangular
+CONTRACT_AXIOMS PlanarHomAudit.Solutions.corollary122_rectangular: [propext, Classical.choice, Quot.sound]

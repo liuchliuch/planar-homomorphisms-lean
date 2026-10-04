@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying paper when using this formalization."
+title: "Planar graph homomorphisms in Lean"
+type: software
+authors:
+  - family-names: Liu
+    given-names: Chenghua
+  - family-names: Meng
+    given-names: Boning
+preferred-citation:
+  type: article
+  title: "A Dichotomy for Planar Graph Homomorphisms with Nonnegative Weights"
+  authors:
+    - family-names: Liu
+      given-names: Chenghua
+    - family-names: Meng
+      given-names: Boning
+  url: "https://liuchliuch.github.io/files/dichotomy-planar-graph-homomorphisms-nonnegative-weights.pdf"

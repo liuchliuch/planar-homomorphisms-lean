@@ -1,0 +1,300 @@
+REVIEWED_CONTRACT_PASS 1.1 PlanarHomAudit.ReviewedSolutions.item_1_1_1 == PlanarHomAudit.ReviewedStatements.item_1_1_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_1_1_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_1_1_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 1.3 PlanarHomAudit.ReviewedSolutions.item_1_3_1 == PlanarHomAudit.ReviewedStatements.item_1_3_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_1_3_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_1_3_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 2.2 PlanarHomAudit.ReviewedSolutions.item_2_2_1 == PlanarHomAudit.ReviewedStatements.item_2_2_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_2_2_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_2_2_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 2.2 PlanarHomAudit.ReviewedSolutions.item_2_2_2 == PlanarHomAudit.ReviewedStatements.item_2_2_2
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_2_2_2
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_2_2_2: [propext, Quot.sound, Classical.choice]
+REVIEWED_CONTRACT_PASS 2.3 PlanarHomAudit.ReviewedSolutions.item_2_3_1 == PlanarHomAudit.ReviewedStatements.item_2_3_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_2_3_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_2_3_1: [propext, Quot.sound, Classical.choice]
+REVIEWED_CONTRACT_PASS 2.4 PlanarHomAudit.ReviewedSolutions.item_2_4_1 == PlanarHomAudit.ReviewedStatements.item_2_4_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_2_4_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_2_4_1: [propext, Quot.sound, Classical.choice]
+REVIEWED_CONTRACT_PASS 2.4 PlanarHomAudit.ReviewedSolutions.item_2_4_2 == PlanarHomAudit.ReviewedStatements.item_2_4_2
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_2_4_2
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_2_4_2: [propext, Quot.sound, Classical.choice]
+REVIEWED_CONTRACT_PASS 2.5 PlanarHomAudit.ReviewedSolutions.item_2_5_1 == PlanarHomAudit.ReviewedStatements.item_2_5_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_2_5_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_2_5_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 2.6 PlanarHomAudit.ReviewedSolutions.item_2_6_1 == PlanarHomAudit.ReviewedStatements.item_2_6_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_2_6_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_2_6_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 3.1 PlanarHomAudit.ReviewedSolutions.item_3_1_1 == PlanarHomAudit.ReviewedStatements.item_3_1_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_3_1_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_3_1_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 3.1 PlanarHomAudit.ReviewedSolutions.item_3_1_2 == PlanarHomAudit.ReviewedStatements.item_3_1_2
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_3_1_2
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_3_1_2: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 3.1 PlanarHomAudit.ReviewedSolutions.item_3_1_3 == PlanarHomAudit.ReviewedStatements.item_3_1_3
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_3_1_3
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_3_1_3: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 3.1 PlanarHomAudit.ReviewedSolutions.item_3_1_4 == PlanarHomAudit.ReviewedStatements.item_3_1_4
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_3_1_4
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_3_1_4: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 3.2 PlanarHomAudit.ReviewedSolutions.item_3_2_1 == PlanarHomAudit.ReviewedStatements.item_3_2_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_3_2_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_3_2_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 3.2 PlanarHomAudit.ReviewedSolutions.item_3_2_2 == PlanarHomAudit.ReviewedStatements.item_3_2_2
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_3_2_2
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_3_2_2: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 3.2 PlanarHomAudit.ReviewedSolutions.item_3_2_3 == PlanarHomAudit.ReviewedStatements.item_3_2_3
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_3_2_3
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_3_2_3: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 3.3 PlanarHomAudit.ReviewedSolutions.item_3_3_1 == PlanarHomAudit.ReviewedStatements.item_3_3_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_3_3_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_3_3_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 3.3 PlanarHomAudit.ReviewedSolutions.item_3_3_2 == PlanarHomAudit.ReviewedStatements.item_3_3_2
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_3_3_2
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_3_3_2: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 3.5 PlanarHomAudit.ReviewedSolutions.item_3_5_1 == PlanarHomAudit.ReviewedStatements.item_3_5_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_3_5_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_3_5_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 3.5 PlanarHomAudit.ReviewedSolutions.item_3_5_2 == PlanarHomAudit.ReviewedStatements.item_3_5_2
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_3_5_2
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_3_5_2: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 3.5 PlanarHomAudit.ReviewedSolutions.item_3_5_3 == PlanarHomAudit.ReviewedStatements.item_3_5_3
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_3_5_3
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_3_5_3: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 3.6 PlanarHomAudit.ReviewedSolutions.item_3_6_1 == PlanarHomAudit.ReviewedStatements.item_3_6_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_3_6_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_3_6_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 3.6 PlanarHomAudit.ReviewedSolutions.item_3_6_2 == PlanarHomAudit.ReviewedStatements.item_3_6_2
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_3_6_2
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_3_6_2: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 3.7 PlanarHomAudit.ReviewedSolutions.item_3_7_1 == PlanarHomAudit.ReviewedStatements.item_3_7_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_3_7_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_3_7_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 3.7 PlanarHomAudit.ReviewedSolutions.item_3_7_2 == PlanarHomAudit.ReviewedStatements.item_3_7_2
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_3_7_2
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_3_7_2: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 3.7 PlanarHomAudit.ReviewedSolutions.item_3_7_3 == PlanarHomAudit.ReviewedStatements.item_3_7_3
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_3_7_3
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_3_7_3: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 3.7 PlanarHomAudit.ReviewedSolutions.item_3_7_4 == PlanarHomAudit.ReviewedStatements.item_3_7_4
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_3_7_4
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_3_7_4: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 3.8 PlanarHomAudit.ReviewedSolutions.item_3_8_1 == PlanarHomAudit.ReviewedStatements.item_3_8_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_3_8_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_3_8_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 3.8 PlanarHomAudit.ReviewedSolutions.item_3_8_2 == PlanarHomAudit.ReviewedStatements.item_3_8_2
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_3_8_2
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_3_8_2: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 3.8 PlanarHomAudit.ReviewedSolutions.item_3_8_3 == PlanarHomAudit.ReviewedStatements.item_3_8_3
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_3_8_3
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_3_8_3: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 3.8 PlanarHomAudit.ReviewedSolutions.item_3_8_4 == PlanarHomAudit.ReviewedStatements.item_3_8_4
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_3_8_4
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_3_8_4: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 3.9 PlanarHomAudit.ReviewedSolutions.item_3_9_1 == PlanarHomAudit.ReviewedStatements.item_3_9_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_3_9_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_3_9_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 3.10 PlanarHomAudit.ReviewedSolutions.item_3_10_1 == PlanarHomAudit.ReviewedStatements.item_3_10_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_3_10_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_3_10_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 3.10 PlanarHomAudit.ReviewedSolutions.item_3_10_2 == PlanarHomAudit.ReviewedStatements.item_3_10_2
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_3_10_2
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_3_10_2: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 3.10 PlanarHomAudit.ReviewedSolutions.item_3_10_3 == PlanarHomAudit.ReviewedStatements.item_3_10_3
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_3_10_3
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_3_10_3: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 3.10 PlanarHomAudit.ReviewedSolutions.item_3_10_4 == PlanarHomAudit.ReviewedStatements.item_3_10_4
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_3_10_4
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_3_10_4: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 3.11 PlanarHomAudit.ReviewedSolutions.item_3_11_1 == PlanarHomAudit.ReviewedStatements.item_3_11_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_3_11_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_3_11_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 3.11 PlanarHomAudit.ReviewedSolutions.item_3_11_2 == PlanarHomAudit.ReviewedStatements.item_3_11_2
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_3_11_2
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_3_11_2: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 4.1 PlanarHomAudit.ReviewedSolutions.item_4_1_1 == PlanarHomAudit.ReviewedStatements.item_4_1_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_4_1_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_4_1_1: [propext, Quot.sound, Classical.choice]
+REVIEWED_CONTRACT_PASS 4.2 PlanarHomAudit.ReviewedSolutions.item_4_2_1 == PlanarHomAudit.ReviewedStatements.item_4_2_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_4_2_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_4_2_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 4.2 PlanarHomAudit.ReviewedSolutions.item_4_2_2 == PlanarHomAudit.ReviewedStatements.item_4_2_2
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_4_2_2
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_4_2_2: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 4.3 PlanarHomAudit.ReviewedSolutions.item_4_3_1 == PlanarHomAudit.ReviewedStatements.item_4_3_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_4_3_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_4_3_1: [propext, Quot.sound, Classical.choice]
+REVIEWED_CONTRACT_PASS 4.4 PlanarHomAudit.ReviewedSolutions.item_4_4_1 == PlanarHomAudit.ReviewedStatements.item_4_4_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_4_4_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_4_4_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 4.5 PlanarHomAudit.ReviewedSolutions.item_4_5_1 == PlanarHomAudit.ReviewedStatements.item_4_5_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_4_5_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_4_5_1: [propext, Quot.sound, Classical.choice]
+REVIEWED_CONTRACT_PASS 4.6 PlanarHomAudit.ReviewedSolutions.item_4_6_1 == PlanarHomAudit.ReviewedStatements.item_4_6_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_4_6_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_4_6_1: [propext, Quot.sound, Classical.choice]
+REVIEWED_CONTRACT_PASS 4.7 PlanarHomAudit.ReviewedSolutions.item_4_7_1 == PlanarHomAudit.ReviewedStatements.item_4_7_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_4_7_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_4_7_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 4.8 PlanarHomAudit.ReviewedSolutions.item_4_8_1 == PlanarHomAudit.ReviewedStatements.item_4_8_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_4_8_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_4_8_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 5.1 PlanarHomAudit.ReviewedSolutions.item_5_1_1 == PlanarHomAudit.ReviewedStatements.item_5_1_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_5_1_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_5_1_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 6.1 PlanarHomAudit.ReviewedSolutions.item_6_1_1 == PlanarHomAudit.ReviewedStatements.item_6_1_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_6_1_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_6_1_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 6.2 PlanarHomAudit.ReviewedSolutions.item_6_2_1 == PlanarHomAudit.ReviewedStatements.item_6_2_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_6_2_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_6_2_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 7.1 PlanarHomAudit.ReviewedSolutions.item_7_1_1 == PlanarHomAudit.ReviewedStatements.item_7_1_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_7_1_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_7_1_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 7.1 PlanarHomAudit.ReviewedSolutions.item_7_1_2 == PlanarHomAudit.ReviewedStatements.item_7_1_2
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_7_1_2
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_7_1_2: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 8.1 PlanarHomAudit.ReviewedSolutions.item_8_1_1 == PlanarHomAudit.ReviewedStatements.item_8_1_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_8_1_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_8_1_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 8.2 PlanarHomAudit.ReviewedSolutions.item_8_2_1 == PlanarHomAudit.ReviewedStatements.item_8_2_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_8_2_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_8_2_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 8.3 PlanarHomAudit.ReviewedSolutions.item_8_3_1 == PlanarHomAudit.ReviewedStatements.item_8_3_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_8_3_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_8_3_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 9.1 PlanarHomAudit.ReviewedSolutions.item_9_1_1 == PlanarHomAudit.ReviewedStatements.item_9_1_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_9_1_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_9_1_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 9.2 PlanarHomAudit.ReviewedSolutions.item_9_2_1 == PlanarHomAudit.ReviewedStatements.item_9_2_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_9_2_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_9_2_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 9.3 PlanarHomAudit.ReviewedSolutions.item_9_3_1 == PlanarHomAudit.ReviewedStatements.item_9_3_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_9_3_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_9_3_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 11.1 PlanarHomAudit.ReviewedSolutions.item_11_1_1 == PlanarHomAudit.ReviewedStatements.item_11_1_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_11_1_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_11_1_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 11.1 PlanarHomAudit.ReviewedSolutions.item_11_1_2 == PlanarHomAudit.ReviewedStatements.item_11_1_2
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_11_1_2
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_11_1_2: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 11.1 PlanarHomAudit.ReviewedSolutions.item_11_1_3 == PlanarHomAudit.ReviewedStatements.item_11_1_3
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_11_1_3
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_11_1_3: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 11.2 PlanarHomAudit.ReviewedSolutions.item_11_2_1 == PlanarHomAudit.ReviewedStatements.item_11_2_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_11_2_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_11_2_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 11.2 PlanarHomAudit.ReviewedSolutions.item_11_2_2 == PlanarHomAudit.ReviewedStatements.item_11_2_2
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_11_2_2
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_11_2_2: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 12.1 PlanarHomAudit.ReviewedSolutions.item_12_1_1 == PlanarHomAudit.ReviewedStatements.item_12_1_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_12_1_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_12_1_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 12.2 PlanarHomAudit.ReviewedSolutions.item_12_2_1 == PlanarHomAudit.ReviewedStatements.item_12_2_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_12_2_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_12_2_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 12.2 PlanarHomAudit.ReviewedSolutions.item_12_2_2 == PlanarHomAudit.ReviewedStatements.item_12_2_2
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_12_2_2
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_12_2_2: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 12.2 PlanarHomAudit.ReviewedSolutions.item_12_2_3 == PlanarHomAudit.ReviewedStatements.item_12_2_3
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_12_2_3
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_12_2_3: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 12.2 PlanarHomAudit.ReviewedSolutions.item_12_2_4 == PlanarHomAudit.ReviewedStatements.item_12_2_4
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_12_2_4
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_12_2_4: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 12.2 PlanarHomAudit.ReviewedSolutions.item_12_2_5 == PlanarHomAudit.ReviewedStatements.item_12_2_5
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_12_2_5
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_12_2_5: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 12.4 PlanarHomAudit.ReviewedSolutions.item_12_4_1 == PlanarHomAudit.ReviewedStatements.item_12_4_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_12_4_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_12_4_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 12.4 PlanarHomAudit.ReviewedSolutions.item_12_4_2 == PlanarHomAudit.ReviewedStatements.item_12_4_2
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_12_4_2
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_12_4_2: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 12.5 PlanarHomAudit.ReviewedSolutions.item_12_5_1 == PlanarHomAudit.ReviewedStatements.item_12_5_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_12_5_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_12_5_1: [propext, Quot.sound, Classical.choice]
+REVIEWED_CONTRACT_PASS 12.6 PlanarHomAudit.ReviewedSolutions.item_12_6_1 == PlanarHomAudit.ReviewedStatements.item_12_6_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_12_6_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_12_6_1: [propext, Quot.sound, Classical.choice]
+REVIEWED_CONTRACT_PASS 12.6 PlanarHomAudit.ReviewedSolutions.item_12_6_2 == PlanarHomAudit.ReviewedStatements.item_12_6_2
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_12_6_2
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_12_6_2: [propext, Quot.sound, Classical.choice]
+REVIEWED_CONTRACT_PASS 12.7 PlanarHomAudit.ReviewedSolutions.item_12_7_1 == PlanarHomAudit.ReviewedStatements.item_12_7_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_12_7_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_12_7_1: [propext, Quot.sound, Classical.choice]
+REVIEWED_CONTRACT_PASS 12.8 PlanarHomAudit.ReviewedSolutions.item_12_8_1 == PlanarHomAudit.ReviewedStatements.item_12_8_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_12_8_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_12_8_1: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS 12.8 PlanarHomAudit.ReviewedSolutions.item_12_8_2 == PlanarHomAudit.ReviewedStatements.item_12_8_2
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_12_8_2
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_12_8_2: [propext, Classical.choice, Quot.sound]
+REVIEWED_CONTRACT_PASS A.1 PlanarHomAudit.ReviewedSolutions.item_A_1_1 == PlanarHomAudit.ReviewedStatements.item_A_1_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_A_1_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_A_1_1: [propext, Quot.sound, Classical.choice]
+REVIEWED_CONTRACT_PASS A.2 PlanarHomAudit.ReviewedSolutions.item_A_2_1 == PlanarHomAudit.ReviewedStatements.item_A_2_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_A_2_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_A_2_1: [propext, Quot.sound, Classical.choice]
+REVIEWED_CONTRACT_PASS A.2 PlanarHomAudit.ReviewedSolutions.item_A_2_2 == PlanarHomAudit.ReviewedStatements.item_A_2_2
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_A_2_2
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_A_2_2: [propext, Quot.sound, Classical.choice]
+REVIEWED_CONTRACT_PASS A.2 PlanarHomAudit.ReviewedSolutions.item_A_2_3 == PlanarHomAudit.ReviewedStatements.item_A_2_3
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_A_2_3
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_A_2_3: [propext, Quot.sound, Classical.choice]
+REVIEWED_CONTRACT_PASS A.3 PlanarHomAudit.ReviewedSolutions.item_A_3_1 == PlanarHomAudit.ReviewedStatements.item_A_3_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_A_3_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_A_3_1: [propext, Quot.sound, Classical.choice]
+REVIEWED_CONTRACT_PASS A.4 PlanarHomAudit.ReviewedSolutions.item_A_4_1 == PlanarHomAudit.ReviewedStatements.item_A_4_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_A_4_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_A_4_1: [propext, Quot.sound, Classical.choice]
+REVIEWED_CONTRACT_PASS A.4 PlanarHomAudit.ReviewedSolutions.item_A_4_2 == PlanarHomAudit.ReviewedStatements.item_A_4_2
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_A_4_2
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_A_4_2: [propext, Quot.sound, Classical.choice]
+REVIEWED_CONTRACT_PASS A.4 PlanarHomAudit.ReviewedSolutions.item_A_4_3 == PlanarHomAudit.ReviewedStatements.item_A_4_3
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_A_4_3
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_A_4_3: [propext, Quot.sound, Classical.choice]
+REVIEWED_CONTRACT_PASS A.5 PlanarHomAudit.ReviewedSolutions.item_A_5_1 == PlanarHomAudit.ReviewedStatements.item_A_5_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_A_5_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_A_5_1: [propext, Quot.sound, Classical.choice]
+REVIEWED_CONTRACT_PASS A.5 PlanarHomAudit.ReviewedSolutions.item_A_5_2 == PlanarHomAudit.ReviewedStatements.item_A_5_2
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_A_5_2
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_A_5_2: [propext, Quot.sound, Classical.choice]
+REVIEWED_CONTRACT_PASS A.6 PlanarHomAudit.ReviewedSolutions.item_A_6_1 == PlanarHomAudit.ReviewedStatements.item_A_6_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_A_6_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_A_6_1: [propext, Quot.sound, Classical.choice]
+REVIEWED_CONTRACT_PASS A.7 PlanarHomAudit.ReviewedSolutions.item_A_7_1 == PlanarHomAudit.ReviewedStatements.item_A_7_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_A_7_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_A_7_1: [propext, Quot.sound, Classical.choice]
+REVIEWED_CONTRACT_PASS A.7 PlanarHomAudit.ReviewedSolutions.item_A_7_2 == PlanarHomAudit.ReviewedStatements.item_A_7_2
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_A_7_2
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_A_7_2: [propext, Quot.sound, Classical.choice]
+REVIEWED_CONTRACT_PASS A.7 PlanarHomAudit.ReviewedSolutions.item_A_7_3 == PlanarHomAudit.ReviewedStatements.item_A_7_3
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_A_7_3
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_A_7_3: [propext, Quot.sound, Classical.choice]
+REVIEWED_CONTRACT_PASS A.8 PlanarHomAudit.ReviewedSolutions.item_A_8_1 == PlanarHomAudit.ReviewedStatements.item_A_8_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_A_8_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_A_8_1: [propext, Quot.sound, Classical.choice]
+REVIEWED_CONTRACT_PASS A.8 PlanarHomAudit.ReviewedSolutions.item_A_8_2 == PlanarHomAudit.ReviewedStatements.item_A_8_2
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_A_8_2
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_A_8_2: [propext, Quot.sound, Classical.choice]
+REVIEWED_CONTRACT_PASS A.9 PlanarHomAudit.ReviewedSolutions.item_A_9_1 == PlanarHomAudit.ReviewedStatements.item_A_9_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_A_9_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_A_9_1: [propext, Quot.sound, Classical.choice]
+REVIEWED_CONTRACT_PASS A.9 PlanarHomAudit.ReviewedSolutions.item_A_9_2 == PlanarHomAudit.ReviewedStatements.item_A_9_2
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_A_9_2
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_A_9_2: [propext, Quot.sound, Classical.choice]
+REVIEWED_CONTRACT_PASS A.10 PlanarHomAudit.ReviewedSolutions.item_A_10_1 == PlanarHomAudit.ReviewedStatements.item_A_10_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_A_10_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_A_10_1: [propext, Quot.sound, Classical.choice]
+REVIEWED_CONTRACT_PASS A.11 PlanarHomAudit.ReviewedSolutions.item_A_11_1 == PlanarHomAudit.ReviewedStatements.item_A_11_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_A_11_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_A_11_1: [propext, Quot.sound, Classical.choice]
+REVIEWED_CONTRACT_PASS A.12 PlanarHomAudit.ReviewedSolutions.item_A_12_1 == PlanarHomAudit.ReviewedStatements.item_A_12_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_A_12_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_A_12_1: [propext, Quot.sound, Classical.choice]
+REVIEWED_CONTRACT_PASS A.13 PlanarHomAudit.ReviewedSolutions.item_A_13_1 == PlanarHomAudit.ReviewedStatements.item_A_13_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_A_13_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_A_13_1: [propext, Quot.sound, Classical.choice]
+REVIEWED_CONTRACT_PASS A.14 PlanarHomAudit.ReviewedSolutions.item_A_14_1 == PlanarHomAudit.ReviewedStatements.item_A_14_1
+REVIEWED_EXTRA_PREMISE_REJECTED PlanarHomAudit.ReviewedSolutions.item_A_14_1
+REVIEWED_CONTRACT_AXIOMS PlanarHomAudit.ReviewedSolutions.item_A_14_1: [propext, Quot.sound, Classical.choice]

@@ -1,0 +1,6 @@
+import PlanarHom.ColoringMacroWireFramedFaceTableNext
+import PlanarHom.ColoringMacroWireFramedFaceTablePrev
+import PlanarHom.ColoringMacroWireFramedFaceTableLabel
+import PlanarHom.ColoringMacroWireFramedFaceTableRoot
+import PlanarHom.ColoringMacroWireFramedFaceTableRank
+import PlanarHom.ColoringMacroWireFramedFaceTableGap

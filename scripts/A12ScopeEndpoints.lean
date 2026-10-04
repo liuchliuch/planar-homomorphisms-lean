@@ -1,0 +1,6 @@
+import PlanarHom.FixedRealWeightedClassification
+
+#print axioms PlanarHom.FixedRealWeightedClassification.theoremA12
+#print axioms PlanarHom.FixedRealWeightedNecessity.positiveVertexWeightClass_of_not_hard
+#print axioms PlanarHom.FixedRealRectangularWeightedNecessity.allowed_of_not_hard
+#print PlanarHom.FixedRealWeightedClassification.theoremA12

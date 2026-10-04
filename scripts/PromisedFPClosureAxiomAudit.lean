@@ -1,0 +1,22 @@
+import PlanarHom.PromisedFPClosureRegressions
+
+#print PlanarHom.Complexity.PromisePolyTimeTuringReduction.inFP
+#print axioms PlanarHom.Complexity.PromisedFPClosureReconstruction.transcript_answer
+#print axioms PlanarHom.Complexity.PromisedFPClosureReconstruction.computer
+#print axioms PlanarHom.Complexity.PromisePolyTimeTuringReduction.inFP
+#print axioms PlanarHom.Complexity.PromisedFPClosureRegressions.recovered_signature
+#print axioms PlanarHom.Complexity.PromisedFPClosureRegressions.raw_input_encoding
+#print axioms PlanarHom.Complexity.PromisedFPClosureRegressions.raw_output_encoding
+#print axioms PlanarHom.Complexity.PromisedFPClosureRegressions.compiler_program
+#print axioms PlanarHom.Complexity.PromisedFPClosureRegressions.compiler_time
+#print axioms PlanarHom.Complexity.PromisedFPClosureRegressions.raw_outputs
+#print axioms PlanarHom.Complexity.PromisedFPClosureRegressions.derived_output_length
+#print axioms PlanarHom.Complexity.PromisedFPClosureRegressions.identityProblem
+#print axioms PlanarHom.Complexity.PromisedFPClosureRegressions.identity_solver
+#print axioms PlanarHom.Complexity.PromisedFPClosureRegressions.identityReduction
+#print axioms PlanarHom.Complexity.PromisedFPClosureRegressions.one_query
+#print axioms PlanarHom.Complexity.PromisedFPClosureRegressions.composed_queries
+#print axioms PlanarHom.Complexity.PromisedFPClosureRegressions.distinct_promises
+#print axioms PlanarHom.Complexity.PromisedFPClosureRegressions.empty_promise
+#print axioms PlanarHom.Complexity.PromisedFPClosureRegressions.empty_word_outputs
+#print axioms PlanarHom.Complexity.PromisedFPClosureRegressions.concrete_transcript

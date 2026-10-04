@@ -1,0 +1,7 @@
+SCOPE_PASS PlanarHom.tensorPower_linearIndependent: no project Complexity dependency
+SCOPE_PASS PlanarHom.hadamard_weighted_gram_posDef: no project Complexity dependency
+SCOPE_PASS PlanarHom.lemma_3_9: no project Complexity dependency
+SCOPE_PASS PlanarHom.KernelContinuation.posDef_distanceKernel: no project Complexity dependency
+SCOPE_PASS PlanarHom.CartesianGeometry.cartesian_product_characterization: no project Complexity dependency
+SCOPE_PASS PlanarHom.FixedChartClosedness.isClosed_nonnegativeClass_support: no project Complexity dependency
+SCOPE_PASS PlanarHom.FixedChartClosedness.nonnegativeClass_of_tendsto_fixedSupport: no project Complexity dependency

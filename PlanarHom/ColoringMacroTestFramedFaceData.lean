@@ -1,0 +1,6 @@
+import PlanarHom.ColoringMacroTestFramedFaceTableNext
+import PlanarHom.ColoringMacroTestFramedFaceTablePrev
+import PlanarHom.ColoringMacroTestFramedFaceTableLabel
+import PlanarHom.ColoringMacroTestFramedFaceTableRoot
+import PlanarHom.ColoringMacroTestFramedFaceTableRank
+import PlanarHom.ColoringMacroTestFramedFaceTableGap

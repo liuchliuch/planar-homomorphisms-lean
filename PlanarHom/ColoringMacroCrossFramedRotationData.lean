@@ -1,0 +1,10 @@
+import PlanarHom.ColoringMacroCrossFramedRotationTableHost
+import PlanarHom.ColoringMacroCrossFramedRotationTableVertexroot
+import PlanarHom.ColoringMacroCrossFramedRotationTableVertexrank
+import PlanarHom.ColoringMacroCrossFramedRotationTableParent
+import PlanarHom.ColoringMacroCrossFramedRotationTableParentedge
+import PlanarHom.ColoringMacroCrossFramedRotationTableConnectrank
+import PlanarHom.ColoringMacroCrossFramedFaceData
+namespace PlanarHom.ColoringMacroFaces.CrossFramed
+def rotateValue (i : ℕ) : ℕ := nextValue (if i%2=0 then i+1 else i-1)
+end PlanarHom.ColoringMacroFaces.CrossFramed

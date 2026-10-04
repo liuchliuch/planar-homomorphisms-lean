@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "mode": "trusted-local-in-process",
+  "statements_module": "Audit.Contracts",
+  "solution_module": "Audit.Solutions",
+  "theorem_names": [
+    {
+      "statement": "PlanarHomAudit.Contracts.theorem11",
+      "solution": "PlanarHomAudit.Solutions.theorem11"
+    },
+    {
+      "statement": "PlanarHomAudit.Contracts.theorem13",
+      "solution": "PlanarHomAudit.Solutions.theorem13"
+    },
+    {
+      "statement": "PlanarHomAudit.Contracts.corollary122_rectangular",
+      "solution": "PlanarHomAudit.Solutions.corollary122_rectangular"
+    }
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "official_comparator": false,
+  "independent_kernel_replay": false
+}

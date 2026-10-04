@@ -1,0 +1,2150 @@
+{
+  "schema_version": 1,
+  "paper_sha256": "366b92c0dfafc076a43751b04cae1296562d3b87ec97a9b27d8a25085dc407f5",
+  "paper_url": "https://liuchliuch.github.io/files/dichotomy-planar-graph-homomorphisms-nonnegative-weights.pdf",
+  "body_items": 44,
+  "appendix_items": 14,
+  "review_method": "Comparison of numbered paper statements, semantic definitions, and selected proof chains. No claim of manual line-by-line review of every implementation module.",
+  "kernel_verification": "See docs/VERIFICATION.md and matching source snapshot.",
+  "items": [
+    {
+      "item": "1.1",
+      "kind": "Theorem",
+      "title": "Structural dichotomy",
+      "paper_pages": "4",
+      "review": "Fixed algebraic entries, ordinary planar multigraph inputs, unit vertex weights, all three support-block forms, and separate easy/hard implications. The final endpoint discharges both computational foundations.",
+      "declarations": [
+        {
+          "name": "PlanarHom.MainDichotomyScope.theorem11",
+          "file": "PlanarHom/MainDichotomiesClosed.lean",
+          "line": 13
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "1.1",
+            "original": "PlanarHom.MainDichotomyScope.theorem11",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_1_1_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_1_1_1",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": true,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "1.3",
+      "kind": "Theorem",
+      "title": "One fixed positive vertex-weight vector",
+      "paper_pages": "5–6",
+      "review": "Uses the original numerical identical-row quotient and class-summed positive weights. Nondegenerate Ising coordinates require rho != 1; weights are constant only along those coordinates.",
+      "declarations": [
+        {
+          "name": "PlanarHom.MainDichotomyScope.theorem13",
+          "file": "PlanarHom/MainDichotomiesClosed.lean",
+          "line": 15
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "1.3",
+            "original": "PlanarHom.MainDichotomyScope.theorem13",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_1_3_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_1_3_1",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": true,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "2.2",
+      "kind": "Proposition",
+      "title": "Boolean and Potts counting problems",
+      "paper_pages": "18",
+      "review": "Biased Boolean hardness, zero-field Ising evaluation, and all-q positive Potts hardness are proved by concrete source reductions/algorithms; the final consumers do not take them as hypotheses.",
+      "declarations": [
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.proposition22_i",
+          "file": "PlanarHom/BooleanAndPottsCountingClosed.lean",
+          "line": 73
+        },
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.proposition22_potts",
+          "file": "PlanarHom/BooleanAndPottsCountingClosed.lean",
+          "line": 79
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "2.2",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.proposition22_i",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_2_2_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_2_2_1",
+            "levels": []
+          },
+          {
+            "item": "2.2",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.proposition22_potts",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_2_2_2",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_2_2_2",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "2.3",
+      "kind": "Theorem",
+      "title": "Three states [CM23]",
+      "paper_pages": "19",
+      "review": "Signed symmetric three-state classification is stated in the prescribed fixed-real field model. Its Boolean criterion includes the exceptional ac = -b^2, a = -c case.",
+      "declarations": [
+        {
+          "name": "PlanarHom.FixedRealSmallState.theorem23",
+          "file": "PlanarHom/FixedRealThreeStateDichotomy.lean",
+          "line": 12
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "2.3",
+            "original": "PlanarHom.FixedRealSmallState.theorem23",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_2_3_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_2_3_1",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "2.4",
+      "kind": "Theorem",
+      "title": "Four states of full rank [CM24]",
+      "paper_pages": "19",
+      "review": "Rank four remains an explicit hypothesis. Nonempty direct-sum sizes and literal Boolean factors are retained; field extraction supplies the smaller-block algorithms.",
+      "declarations": [
+        {
+          "name": "PlanarHom.FixedRealSmallState.theorem24",
+          "file": "PlanarHom/FixedRealFourStateDichotomy.lean",
+          "line": 13
+        },
+        {
+          "name": "PlanarHom.FixedRealSmallState.theorem24_positive",
+          "file": "PlanarHom/FixedRealFourStateDichotomy.lean",
+          "line": 27
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "2.4",
+            "original": "PlanarHom.FixedRealSmallState.theorem24",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_2_4_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_2_4_1",
+            "levels": []
+          },
+          {
+            "item": "2.4",
+            "original": "PlanarHom.FixedRealSmallState.theorem24_positive",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_2_4_2",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_2_4_2",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "2.5",
+      "kind": "Proposition",
+      "title": "Diagonal separation [CMY26]",
+      "paper_pages": "20",
+      "review": "The closed endpoint covers positive matrices with injective diagonals and actual separating planar cofacial gadgets. Gadget existence is a paper hypothesis, not inferred.",
+      "declarations": [
+        {
+          "name": "PlanarHom.GadgetDiagonalSeparation.proposition25",
+          "file": "PlanarHom/BodyCorollariesClosed.lean",
+          "line": 129
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "2.5",
+            "original": "PlanarHom.GadgetDiagonalSeparation.proposition25",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_2_5_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_2_5_1",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "2.6",
+      "kind": "Proposition",
+      "title": "Composition of known tractable cases",
+      "paper_pages": "21–22",
+      "review": "The composition endpoint establishes machine-level FP, beyond the finite partition identities. Empty products, isolated vertices, loops, and disconnected components remain in the encoding.",
+      "declarations": [
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.proposition26",
+          "file": "PlanarHom/BodyUnconditionalClassification.lean",
+          "line": 55
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "2.6",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.proposition26",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_2_6_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_2_6_1",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "3.1",
+      "kind": "Lemma",
+      "title": "Joint product interpolation",
+      "paper_pages": "22–24",
+      "review": "Equal-length nonzero product identities and source-zero preservation are explicit. Signed entries and additional target zeros are permitted; binary, unary, and prescribed-domain reductions retain old labels.",
+      "declarations": [
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma31_binary",
+          "file": "PlanarHom/AlgebraicProductInterpolation.lean",
+          "line": 218
+        },
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma31_unary",
+          "file": "PlanarHom/AlgebraicProductInterpolation.lean",
+          "line": 226
+        },
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma31_domain_binary",
+          "file": "PlanarHom/AlgebraicProductInterpolation.lean",
+          "line": 235
+        },
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma31_domain_unary",
+          "file": "PlanarHom/AlgebraicProductInterpolation.lean",
+          "line": 246
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "3.1",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma31_binary",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_3_1_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_3_1_1",
+            "levels": []
+          },
+          {
+            "item": "3.1",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma31_unary",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_3_1_2",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_3_1_2",
+            "levels": []
+          },
+          {
+            "item": "3.1",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma31_domain_binary",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_3_1_3",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_3_1_3",
+            "levels": []
+          },
+          {
+            "item": "3.1",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma31_domain_unary",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_3_1_4",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_3_1_4",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "3.2",
+      "kind": "Corollary",
+      "title": "Support, magnitude, sign, and extremal positions",
+      "paper_pages": "24–25",
+      "review": "Separate weighted chains, joint support/magnitude/sign availability, mixed equivalence, and nonzero-source extremal masks. No inference from separate homogeneous algorithms to a mixed algorithm.",
+      "declarations": [
+        {
+          "name": "PlanarHom.Corollary32.support_chains",
+          "file": "PlanarHom/Corollary32Real.lean",
+          "line": 51
+        },
+        {
+          "name": "PlanarHom.Corollary32.mixed_equivalence",
+          "file": "PlanarHom/Corollary32Real.lean",
+          "line": 38
+        },
+        {
+          "name": "PlanarHom.Corollary32.joint_extremal_transforms",
+          "file": "PlanarHom/Corollary32Real.lean",
+          "line": 71
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "3.2",
+            "original": "PlanarHom.Corollary32.support_chains",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_3_2_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_3_2_1",
+            "levels": []
+          },
+          {
+            "item": "3.2",
+            "original": "PlanarHom.Corollary32.mixed_equivalence",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_3_2_2",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_3_2_2",
+            "levels": []
+          },
+          {
+            "item": "3.2",
+            "original": "PlanarHom.Corollary32.joint_extremal_transforms",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_3_2_3",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_3_2_3",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "3.3",
+      "kind": "Lemma",
+      "title": "Spectral interpolation",
+      "paper_pages": "25–26",
+      "review": "Unit backgrounds, PSD range projector, and rational powers for PD sources; joint availability is expressed by actual promise reductions.",
+      "declarations": [
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma33_range",
+          "file": "PlanarHom/SpectralRealAvailability.lean",
+          "line": 35
+        },
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma33_rationalPower",
+          "file": "PlanarHom/SpectralRealAvailability.lean",
+          "line": 44
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "3.3",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma33_range",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_3_3_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_3_3_1",
+            "levels": []
+          },
+          {
+            "item": "3.3",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma33_rationalPower",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_3_3_2",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_3_3_2",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "3.5",
+      "kind": "Lemma",
+      "title": "Restriction at one root",
+      "paper_pages": "27–28",
+      "review": "An arbitrary fixed subset at one root is handled by finite rooted signatures and positive weighted projection. The result is not unrestricted simultaneous pinning.",
+      "declarations": [
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma35_root",
+          "file": "PlanarHom/RootedRealAvailability.lean",
+          "line": 38
+        },
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma35_component",
+          "file": "PlanarHom/RootedRealComponentAvailability.lean",
+          "line": 75
+        },
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma35_inFP",
+          "file": "PlanarHom/RootedRealTractability.lean",
+          "line": 43
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "3.5",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma35_root",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_3_5_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_3_5_1",
+            "levels": []
+          },
+          {
+            "item": "3.5",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma35_component",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_3_5_2",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_3_5_2",
+            "levels": []
+          },
+          {
+            "item": "3.5",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma35_inFP",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_3_5_3",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_3_5_3",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "3.6",
+      "kind": "Lemma",
+      "title": "Linear independence of tensor powers",
+      "paper_pages": "28",
+      "review": "Nonzero pairwise nonproportional real vectors, p = max(1,r-1), and weighted Gram positivity. Entrywise nonnegativity is not added.",
+      "declarations": [
+        {
+          "name": "PlanarHom.tensorPower_linearIndependent",
+          "file": "PlanarHom/TensorPower.lean",
+          "line": 221
+        },
+        {
+          "name": "PlanarHom.hadamard_weighted_gram_posDef",
+          "file": "PlanarHom/TensorPower.lean",
+          "line": 254
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "3.6",
+            "original": "PlanarHom.tensorPower_linearIndependent",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_3_6_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_3_6_1",
+            "levels": []
+          },
+          {
+            "item": "3.6",
+            "original": "PlanarHom.hadamard_weighted_gram_posDef",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_3_6_2",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_3_6_2",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "3.7",
+      "kind": "Lemma",
+      "title": "Removal of positive vertex weights",
+      "paper_pages": "28–30",
+      "review": "No zero or proportional rows; fixed positive weights. Inverse diagonal/rational powers and unaries lead to the one-way unweighting reduction with retained constraints.",
+      "declarations": [
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma37_inverseDiagonal",
+          "file": "PlanarHom/PositiveWeightRealAvailability.lean",
+          "line": 21
+        },
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma37_removeWeights",
+          "file": "PlanarHom/PositiveWeightRealAvailability.lean",
+          "line": 31
+        },
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma37_rational",
+          "file": "PlanarHom/PositiveWeightSourceAvailability.lean",
+          "line": 37
+        },
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma37_finiteRationalPowers",
+          "file": "PlanarHom/FiniteWeightPowerRealAvailability.lean",
+          "line": 25
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "3.7",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma37_inverseDiagonal",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_3_7_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_3_7_1",
+            "levels": []
+          },
+          {
+            "item": "3.7",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma37_removeWeights",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_3_7_2",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_3_7_2",
+            "levels": []
+          },
+          {
+            "item": "3.7",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma37_rational",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_3_7_3",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_3_7_3",
+            "levels": []
+          },
+          {
+            "item": "3.7",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma37_finiteRationalPowers",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_3_7_4",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_3_7_4",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "3.8",
+      "kind": "Corollary",
+      "title": "Actual twins and zero–one matrices",
+      "paper_pages": "30–31",
+      "review": "Actual numerical twins, full fiber sums, and explicit zero-class/isolated-vertex handling. The nonproportional-row condition remains where needed and is proved for distinct nonzero zero-one rows.",
+      "declarations": [
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary38_identity",
+          "file": "PlanarHom/ActualTwinRealAvailability.lean",
+          "line": 79
+        },
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary38",
+          "file": "PlanarHom/ActualTwinRealAvailability.lean",
+          "line": 142
+        },
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary38_zeroOne",
+          "file": "PlanarHom/ActualTwinRealAvailability.lean",
+          "line": 153
+        },
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary38_zeroOne_hardnessLift",
+          "file": "PlanarHom/ActualTwinRealAvailability.lean",
+          "line": 189
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "3.8",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary38_identity",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_3_8_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_3_8_1",
+            "levels": []
+          },
+          {
+            "item": "3.8",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary38",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_3_8_2",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_3_8_2",
+            "levels": []
+          },
+          {
+            "item": "3.8",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary38_zeroOne",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_3_8_3",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_3_8_3",
+            "levels": []
+          },
+          {
+            "item": "3.8",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary38_zeroOne_hardnessLift",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_3_8_4",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_3_8_4",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "3.9",
+      "kind": "Lemma",
+      "title": "Zeros of exponential sums",
+      "paper_pages": "31",
+      "review": "At most N-1 distinct real zeros for a genuine nonzero exponential sum with distinct positive bases; zero coefficients are removed.",
+      "declarations": [
+        {
+          "name": "PlanarHom.lemma_3_9",
+          "file": "PlanarHom/ExponentialZeros.lean",
+          "line": 177
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "3.9",
+            "original": "PlanarHom.lemma_3_9",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_3_9_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_3_9_1",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "3.10",
+      "kind": "Lemma",
+      "title": "Effective transfer of product identities",
+      "paper_pages": "31–33",
+      "review": "Uniform positive-integer simulations, eventual positivity, polynomial or spectral families, and variable-field presentation/degree/entry bounds are explicit. These are the paper's algorithmic hypotheses; reductions are constructed from them.",
+      "declarations": [
+        {
+          "name": "PlanarHom.EffectiveProductTransfer.lemma310_polynomial_parameter",
+          "file": "PlanarHom/RationalParameterEffectiveTransfer.lean",
+          "line": 27
+        },
+        {
+          "name": "PlanarHom.EffectiveProductTransfer.lemma310_spectral_parameter",
+          "file": "PlanarHom/RationalParameterEffectiveTransfer.lean",
+          "line": 32
+        },
+        {
+          "name": "PlanarHom.EffectiveProductTransfer.lemma310_polynomial_domain_parameter",
+          "file": "PlanarHom/RationalParameterEffectiveTransfer.lean",
+          "line": 37
+        },
+        {
+          "name": "PlanarHom.EffectiveProductTransfer.lemma310_spectral_domain_parameter",
+          "file": "PlanarHom/RationalParameterEffectiveTransfer.lean",
+          "line": 43
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "3.10",
+            "original": "PlanarHom.EffectiveProductTransfer.lemma310_polynomial_parameter",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_3_10_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_3_10_1",
+            "levels": []
+          },
+          {
+            "item": "3.10",
+            "original": "PlanarHom.EffectiveProductTransfer.lemma310_spectral_parameter",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_3_10_2",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_3_10_2",
+            "levels": []
+          },
+          {
+            "item": "3.10",
+            "original": "PlanarHom.EffectiveProductTransfer.lemma310_polynomial_domain_parameter",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_3_10_3",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_3_10_3",
+            "levels": []
+          },
+          {
+            "item": "3.10",
+            "original": "PlanarHom.EffectiveProductTransfer.lemma310_spectral_domain_parameter",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_3_10_4",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_3_10_4",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "3.11",
+      "kind": "Lemma",
+      "title": "Full logarithmic support is hard",
+      "paper_pages": "34–35",
+      "review": "Connected nonnegative algebraic PD source of order at least three with full off-diagonal log support. The closed source endpoint composes the actual I+J reduction with proved Potts hardness.",
+      "declarations": [
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma311_source",
+          "file": "PlanarHom/BodyUnconditionalClassification.lean",
+          "line": 26
+        },
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma311",
+          "file": "PlanarHom/BodyUnconditionalClassification.lean",
+          "line": 16
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "3.11",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma311_source",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_3_11_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_3_11_1",
+            "levels": []
+          },
+          {
+            "item": "3.11",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma311",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_3_11_2",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_3_11_2",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "4.1",
+      "kind": "Lemma",
+      "title": "Positive entries of the logarithm",
+      "paper_pages": "36",
+      "review": "Maximality is an attained finite edge-count maximum in the same closed family. Positive log-edge entries and connectivity are derived.",
+      "declarations": [
+        {
+          "name": "PlanarHom.ClosedMatrixFamily.lemma41",
+          "file": "PlanarHom/AlgebraicClosedMatrixFamily.lean",
+          "line": 30
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "4.1",
+            "original": "PlanarHom.ClosedMatrixFamily.lemma41",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_4_1_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_4_1_1",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "4.2",
+      "kind": "Lemma",
+      "title": "Simulating E_R(x)",
+      "paper_pages": "36–37",
+      "review": "Uniform rational-parameter simulation is separate from the near-zero real-parameter PD/log-sparsity conclusion. No rational-to-real quantifier substitution.",
+      "declarations": [
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma42_uniform",
+          "file": "PlanarHom/DistanceKernelRealAvailability.lean",
+          "line": 22
+        },
+        {
+          "name": "PlanarHom.ClosedMatrixFamily.lemma42_structural",
+          "file": "PlanarHom/AlgebraicClosedMatrixFamily.lean",
+          "line": 49
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "4.2",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma42_uniform",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_4_2_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_4_2_1",
+            "levels": []
+          },
+          {
+            "item": "4.2",
+            "original": "PlanarHom.ClosedMatrixFamily.lemma42_structural",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_4_2_2",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_4_2_2",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "4.3",
+      "kind": "Lemma",
+      "title": "Weighted shortest paths",
+      "paper_pages": "37–38",
+      "review": "The same maximizing log graph and positive log-edge weights imply h! shortest paths with equal path products. Candidate membership and bounds come from closure.",
+      "declarations": [
+        {
+          "name": "PlanarHom.ClosedMatrixFamily.lemma43",
+          "file": "PlanarHom/AlgebraicClosedMatrixFamily.lean",
+          "line": 38
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "4.3",
+            "original": "PlanarHom.ClosedMatrixFamily.lemma43",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_4_3_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_4_3_1",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "4.4",
+      "kind": "Lemma",
+      "title": "Nonadjacent common neighbours",
+      "paper_pages": "38–40",
+      "review": "The five-edge Wheatstone signature has an actual planar outer-face gadget. Maximality yields two nonadjacent common neighbors, then clique-union neighborhoods.",
+      "declarations": [
+        {
+          "name": "PlanarHom.ClosedMatrixFamily.lemma44",
+          "file": "PlanarHom/ClosedFamilyLocalGeometry.lean",
+          "line": 54
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "4.4",
+            "original": "PlanarHom.ClosedMatrixFamily.lemma44",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_4_4_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_4_4_1",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "4.5",
+      "kind": "Lemma",
+      "title": "Positive definiteness throughout the parameter interval",
+      "paper_pages": "40–41",
+      "review": "The endpoint has only finite connectedness and near-zero log sparsity as substantive graph hypotheses. The implementation uses analytic exponential-dual completion; its gradient/continuation properties are proved, rather than assumed.",
+      "declarations": [
+        {
+          "name": "PlanarHom.KernelContinuation.posDef_distanceKernel",
+          "file": "PlanarHom/KernelContinuation.lean",
+          "line": 282
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "4.5",
+            "original": "PlanarHom.KernelContinuation.posDef_distanceKernel",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_4_5_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_4_5_1",
+            "levels": [
+              "u_1"
+            ]
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "4.6",
+      "kind": "Lemma",
+      "title": "Cartesian product characterization",
+      "paper_pages": "41–42",
+      "review": "PSD distance kernels on the whole interval and the two local graph conditions yield a genuine graph isomorphism to a product of cliques of size >= 2, including the empty product.",
+      "declarations": [
+        {
+          "name": "PlanarHom.CartesianGeometry.cartesian_product_characterization",
+          "file": "PlanarHom/CartesianGeometry.lean",
+          "line": 867
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "4.6",
+            "original": "PlanarHom.CartesianGeometry.cartesian_product_characterization",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_4_6_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_4_6_1",
+            "levels": [
+              "u_1"
+            ]
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "4.7",
+      "kind": "Theorem",
+      "title": "Maximum support is a Cartesian product",
+      "paper_pages": "42",
+      "review": "Combines the same-family closure, local geometry, continuation, and Cartesian characterization. Clique sizes need not agree.",
+      "declarations": [
+        {
+          "name": "PlanarHom.ClosedMatrixFamily.lemma47",
+          "file": "PlanarHom/ClosedFamilyCartesian.lean",
+          "line": 34
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "4.7",
+            "original": "PlanarHom.ClosedMatrixFamily.lemma47",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_4_7_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_4_7_1",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "4.8",
+      "kind": "Proposition",
+      "title": "Tensor decomposition in common coordinates",
+      "paper_pages": "42–45",
+      "review": "One fixed maximal cube chart is retained for every admissible N. Nonnegative PD factors, algebraicity, connected positivity, and prescribed-domain companions are distinct clauses.",
+      "declarations": [
+        {
+          "name": "PlanarHom.ClosedMatrixFamily.proposition48_fixed_maximum",
+          "file": "PlanarHom/ClosedFamilyTensor.lean",
+          "line": 157
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "4.8",
+            "original": "PlanarHom.ClosedMatrixFamily.proposition48_fixed_maximum",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_4_8_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_4_8_1",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "5.1",
+      "kind": "Theorem",
+      "title": "Tensor products of Boolean-domain matrices",
+      "paper_pages": "45–50",
+      "review": "Positive algebraic PD Boolean factors; any biased factor gives hardness by a proved factor-isolation reduction, not by reversing the tensor partition identity. Equal factors use the actual Ising algorithm.",
+      "declarations": [
+        {
+          "name": "PlanarHom.BooleanTensorDichotomy.theorem5_1_literal",
+          "file": "PlanarHom/BooleanTensorDichotomy.lean",
+          "line": 77
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "5.1",
+            "original": "PlanarHom.BooleanTensorDichotomy.theorem5_1_literal",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_5_1_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_5_1_1",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "6.1",
+      "kind": "Theorem",
+      "title": "Connected nonnegative PD matrices",
+      "paper_pages": "50–52",
+      "review": "The displayed gamma times tensor of [[a,b],[b,a]] is linked to the normalized form with 0 < b < a. Connected nonnegative PD and unit weights are preserved.",
+      "declarations": [
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.theorem61",
+          "file": "PlanarHom/PositiveDefiniteDisplayedClassification.lean",
+          "line": 56
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "6.1",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.theorem61",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_6_1_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_6_1_1",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "6.2",
+      "kind": "Corollary",
+      "title": "Common coordinates when the source is not hard",
+      "paper_pages": "52–53",
+      "review": "One common chart covers disconnected nonnegative PD members, equal-diagonal connected members, and strictly positive singular/indefinite members. Abstract closure hypotheses are separately instantiated for actual source families.",
+      "declarations": [
+        {
+          "name": "PlanarHom.ClosedMatrixFamily.corollary62",
+          "file": "PlanarHom/CommonCubeCorollaryClosed.lean",
+          "line": 11
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "6.2",
+            "original": "PlanarHom.ClosedMatrixFamily.corollary62",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_6_2_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_6_2_1",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "7.1",
+      "kind": "Theorem",
+      "title": "Zero–one matrices",
+      "paper_pages": "53–55",
+      "review": "The closed unweighted endpoint includes accepting-path #P membership and hardness; the weighted endpoint claims FP/#P-hardness. All three basic support components are literal.",
+      "declarations": [
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.theorem71_weighted",
+          "file": "PlanarHom/ZeroOneTheorem71Closed.lean",
+          "line": 11
+        },
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.theorem71_unweighted",
+          "file": "PlanarHom/ZeroOneTheorem71Closed.lean",
+          "line": 19
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "7.1",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.theorem71_weighted",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_7_1_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_7_1_1",
+            "levels": []
+          },
+          {
+            "item": "7.1",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.theorem71_unweighted",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_7_1_2",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_7_1_2",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "8.1",
+      "kind": "Theorem",
+      "title": "Strictly positive matrices",
+      "paper_pages": "56, proof 58",
+      "review": "Strictly positive algebraic matrices; arbitrary rank-one amplitudes times Ising tensor. Closed foundations supply both branches.",
+      "declarations": [
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.theorem81",
+          "file": "PlanarHom/BodyUnconditionalClassification.lean",
+          "line": 36
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "8.1",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.theorem81",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_8_1_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_8_1_1",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "8.2",
+      "kind": "Lemma",
+      "title": "Unit diagonal and distinct rows",
+      "paper_pages": "56–57",
+      "review": "Unit diagonal and distinct actual rows; hardness or a nondegenerate tensor and nonsingularity. Positivity does not imply PD and is not silently replaced by it.",
+      "declarations": [
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma82",
+          "file": "PlanarHom/BodyUnconditionalClassification.lean",
+          "line": 43
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "8.2",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma82",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_8_2_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_8_2_1",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "8.3",
+      "kind": "Lemma",
+      "title": "Vertex weights on Boolean tensor products",
+      "paper_pages": "57–58",
+      "review": "Nondegenerate positive Ising tensor with positive algebraic weights. Constant weights give FP; any nonconstant pair gives hardness.",
+      "declarations": [
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma83",
+          "file": "PlanarHom/WeightedTensorAndRectangularClosure.lean",
+          "line": 13
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "8.3",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma83",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_8_3_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_8_3_1",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "9.1",
+      "kind": "Theorem",
+      "title": "Positive rectangular blocks",
+      "paper_pages": "59, proof 65–66",
+      "review": "Strictly positive rectangular block, independent row/column coordinates, possibly different rank-one dimensions. The ordinary symmetric-double problem retains both orientations.",
+      "declarations": [
+        {
+          "name": "PlanarHom.RectangularUnweightedSourceForms.theorem91",
+          "file": "PlanarHom/WeightedTensorAndRectangularClosure.lean",
+          "line": 74
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "9.1",
+            "original": "PlanarHom.RectangularUnweightedSourceForms.theorem91",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_9_1_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_9_1_1",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "9.2",
+      "kind": "Proposition",
+      "title": "Positive matrices with nonproportional rows and columns",
+      "paper_pages": "60–64",
+      "review": "Both nonproportional-row and nonproportional-column assumptions remain. The conclusion includes equal power-of-two dimensions and 0 < rho < 1.",
+      "declarations": [
+        {
+          "name": "PlanarHom.RectangularCoreSourceRigidity.proposition92",
+          "file": "PlanarHom/BodyUnconditionalClassification.lean",
+          "line": 67
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "9.2",
+            "original": "PlanarHom.RectangularCoreSourceRigidity.proposition92",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_9_2_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_9_2_1",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "9.3",
+      "kind": "Lemma",
+      "title": "Vertex weights on the two parts",
+      "paper_pages": "64",
+      "review": "Prescribed-side problem, positive weights, and two independently constant side vectors. The ordinary/prescribed conversion is an actual reduction.",
+      "declarations": [
+        {
+          "name": "PlanarHom.PrescribedTensorWeight.lemma93",
+          "file": "PlanarHom/BodyCorollariesClosed.lean",
+          "line": 110
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "9.3",
+            "original": "PlanarHom.PrescribedTensorWeight.lemma93",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_9_3_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_9_3_1",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "11.1",
+      "kind": "Lemma",
+      "title": "Consequences of the unweighted classification",
+      "paper_pages": "67",
+      "review": "All three consequences are closed wrappers: positive unit-diagonal, rectangular core, and positive PD nonconstant diagonal. Their algebraic/unit-background conditions are retained.",
+      "declarations": [
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma111_a",
+          "file": "PlanarHom/SourceUnweightedConsequencesClosed.lean",
+          "line": 5
+        },
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma111_b",
+          "file": "PlanarHom/SourceUnweightedConsequencesClosed.lean",
+          "line": 16
+        },
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma111_c",
+          "file": "PlanarHom/SourceUnweightedConsequencesClosed.lean",
+          "line": 30
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "11.1",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma111_a",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_11_1_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_11_1_1",
+            "levels": []
+          },
+          {
+            "item": "11.1",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma111_b",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_11_1_2",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_11_1_2",
+            "levels": []
+          },
+          {
+            "item": "11.1",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma111_c",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_11_1_3",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_11_1_3",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "11.2",
+      "kind": "Corollary",
+      "title": "One fixed nonnegative vertex-weight vector",
+      "paper_pages": "72",
+      "review": "Delete zero-weight colors before taking the numerical twin quotient. The surviving empty-color case is handled by exact finite-sum semantics.",
+      "declarations": [
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary112",
+          "file": "PlanarHom/BodyCorollariesClosed.lean",
+          "line": 19
+        },
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.empty_surviving_evaluate",
+          "file": "PlanarHom/ZeroWeightEmptyAnswer.lean",
+          "line": 27
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "11.2",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary112",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_11_2_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_11_2_1",
+            "levels": []
+          },
+          {
+            "item": "11.2",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.empty_surviving_evaluate",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_11_2_2",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_11_2_2",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "12.1",
+      "kind": "Corollary",
+      "title": "The planar and general-graph tractable targets coincide",
+      "paper_pages": "72–73",
+      "review": "Boolean symmetric target with loops and no parallel target edges. Both planar and unrestricted natural-output problems have actual FP algorithms or #P completeness, not merely a structural equivalence.",
+      "declarations": [
+        {
+          "name": "PlanarHom.TargetGraphDichotomy.corollary121",
+          "file": "PlanarHom/TargetGraphDichotomy.lean",
+          "line": 139
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "12.1",
+            "original": "PlanarHom.TargetGraphDichotomy.corollary121",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_12_1_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_12_1_1",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "12.2",
+      "kind": "Corollary",
+      "title": "Domain doubling and prescribed sublattices",
+      "paper_pages": "73",
+      "review": "Weighted domain doubling and prescribed orientations have both reductions. The rectangular endpoint instantiates the proved Potts foundation without an extra parameter; its independent contract rejects any added premise.",
+      "declarations": [
+        {
+          "name": "PlanarHom.DomainDoublingClassification.corollary122_bipartite",
+          "file": "PlanarHom/BodyCorollariesClosed.lean",
+          "line": 44
+        },
+        {
+          "name": "PlanarHom.DomainDoublingClassification.corollary122_prescribed",
+          "file": "PlanarHom/BodyCorollariesClosed.lean",
+          "line": 54
+        },
+        {
+          "name": "PlanarHom.DomainDoublingClassification.corollary122_rectangular",
+          "file": "PlanarHom/BodyCorollariesClosed.lean",
+          "line": 88
+        },
+        {
+          "name": "PlanarHom.DomainDoublingClassification.corollary122_bipartite_unweighted",
+          "file": "PlanarHom/BodyCorollariesClosed.lean",
+          "line": 64
+        },
+        {
+          "name": "PlanarHom.DomainDoublingClassification.corollary122_prescribed_unweighted",
+          "file": "PlanarHom/BodyCorollariesClosed.lean",
+          "line": 72
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "12.2",
+            "original": "PlanarHom.DomainDoublingClassification.corollary122_bipartite",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_12_2_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_12_2_1",
+            "levels": []
+          },
+          {
+            "item": "12.2",
+            "original": "PlanarHom.DomainDoublingClassification.corollary122_prescribed",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_12_2_2",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_12_2_2",
+            "levels": []
+          },
+          {
+            "item": "12.2",
+            "original": "PlanarHom.DomainDoublingClassification.corollary122_rectangular",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_12_2_3",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_12_2_3",
+            "levels": []
+          },
+          {
+            "item": "12.2",
+            "original": "PlanarHom.DomainDoublingClassification.corollary122_bipartite_unweighted",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_12_2_4",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_12_2_4",
+            "levels": []
+          },
+          {
+            "item": "12.2",
+            "original": "PlanarHom.DomainDoublingClassification.corollary122_prescribed_unweighted",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_12_2_5",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_12_2_5",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": true,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "12.4",
+      "kind": "Lemma",
+      "title": "A centered entrywise-logarithm obstruction",
+      "paper_pages": "74",
+      "review": "Positive constant-diagonal distinct-row matrix and positive weights. Structure implies a nondegenerate Boolean tensor, constant weights, and exact centered entrywise-log rank; the tractable converse is separate.",
+      "declarations": [
+        {
+          "name": "PlanarHom.CenteredLogStructural.lemma124_structure_and_rank",
+          "file": "PlanarHom/CenteredLogStructural.lean",
+          "line": 20
+        },
+        {
+          "name": "PlanarHom.CenteredLogStructural.tensor_form_inFP",
+          "file": "PlanarHom/CenteredLogStructuralConverse.lean",
+          "line": 41
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "12.4",
+            "original": "PlanarHom.CenteredLogStructural.lemma124_structure_and_rank",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_12_4_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_12_4_1",
+            "levels": []
+          },
+          {
+            "item": "12.4",
+            "original": "PlanarHom.CenteredLogStructural.tensor_form_inFP",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_12_4_2",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_12_4_2",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "12.5",
+      "kind": "Corollary",
+      "title": "Every fixed-state standard clock model",
+      "paper_pages": "74",
+      "review": "Every fixed real coupling, either sign; q = 2 or 4 and constant weights for nonzero coupling. Zero coupling is separate. Transcendental entries use the prescribed fixed-real model.",
+      "declarations": [
+        {
+          "name": "PlanarHom.FixedRealClock.corollary125",
+          "file": "PlanarHom/FixedRealClockApplication.lean",
+          "line": 46
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "12.5",
+            "original": "PlanarHom.FixedRealClock.corollary125",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_12_5_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_12_5_1",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "12.6",
+      "kind": "Corollary",
+      "title": "Character criterion for coupled Ising interactions",
+      "paper_pages": "75",
+      "review": "Actual nonzero distinct F2 character labels and nonzero real couplings. Independence and constant sums on fibers of the literal character map determine the stated alternatives, including the empty label family.",
+      "declarations": [
+        {
+          "name": "PlanarHom.FixedRealCoupledIsing.corollary126_set",
+          "file": "PlanarHom/FixedRealCoupledIsingApplication.lean",
+          "line": 60
+        },
+        {
+          "name": "PlanarHom.FixedRealCoupledIsing.empty_labels_inFP",
+          "file": "PlanarHom/FixedRealCoupledIsingApplication.lean",
+          "line": 90
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "12.6",
+            "original": "PlanarHom.FixedRealCoupledIsing.corollary126_set",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_12_6_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_12_6_1",
+            "levels": []
+          },
+          {
+            "item": "12.6",
+            "original": "PlanarHom.FixedRealCoupledIsing.empty_labels_inFP",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_12_6_2",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_12_6_2",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "12.7",
+      "kind": "Corollary",
+      "title": "Spin-one Blume–Capel model",
+      "paper_pages": "76",
+      "review": "All finite real K,D,F; nonzero K hardness and zero K evaluation. No algebraicity assumption is placed on exponential entries.",
+      "declarations": [
+        {
+          "name": "PlanarHom.FixedRealBlumeCapel.corollary127",
+          "file": "PlanarHom/FixedRealBlumeCapelApplication.lean",
+          "line": 40
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "12.7",
+            "original": "PlanarHom.FixedRealBlumeCapel.corollary127",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_12_7_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_12_7_1",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "12.8",
+      "kind": "Corollary",
+      "title": "The same dichotomies at bounded orientable genus",
+      "paper_pages": "76–77",
+      "review": "Fixed orientable genus with supplied finite rotation/complement embedding codes. The code carries genera and boundary attachments, not a homology basis or Pfaffian oracle. The formal boundary is this combinatorial surface representation.",
+      "declarations": [
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary128_unweighted",
+          "file": "PlanarHom/SurfaceDichotomyClosed.lean",
+          "line": 14
+        },
+        {
+          "name": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary128_weighted",
+          "file": "PlanarHom/SurfaceDichotomyClosed.lean",
+          "line": 26
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "12.8",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary128_unweighted",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_12_8_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_12_8_1",
+            "levels": []
+          },
+          {
+            "item": "12.8",
+            "original": "PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary128_weighted",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_12_8_2",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_12_8_2",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "A.1",
+      "kind": "Lemma",
+      "title": "Exact arithmetic and output descent in fixed real fields",
+      "paper_pages": "80–82",
+      "review": "Actual FP field arithmetic, nonsingular systems, fixed products, output-size bounds, finite extensions, prescribed-subfield descent, and ordinary integer conversion. Output-size bounds are not evaluation algorithms.",
+      "declarations": [
+        {
+          "name": "PlanarHom.FixedRealLemmaA1.lemmaA1",
+          "file": "PlanarHom/FixedRealLemmaA1.lean",
+          "line": 28
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "A.1",
+            "original": "PlanarHom.FixedRealLemmaA1.lemmaA1",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_A_1_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_A_1_1",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "A.2",
+      "kind": "Corollary",
+      "title": "Root restrictions over a fixed real field",
+      "paper_pages": "82",
+      "review": "One-root restriction, common-support components, and prescribed bipartite orientations in finite mixed languages. Arbitrary retained labels require the explicit propagation policies; separate answer fields use actual descent.",
+      "declarations": [
+        {
+          "name": "PlanarHom.FixedRealMixedRootRestriction.corollaryA2_mixed_root_prescribed",
+          "file": "PlanarHom/FixedRealMixedRootPrescribedFields.lean",
+          "line": 33
+        },
+        {
+          "name": "PlanarHom.FixedRealMixedRootRestriction.corollaryA2_mixed_submatrix_prescribed",
+          "file": "PlanarHom/FixedRealMixedRootPrescribedFields.lean",
+          "line": 57
+        },
+        {
+          "name": "PlanarHom.FixedRealMixedOrientation.corollaryA2_mixed_orientation_prescribed",
+          "file": "PlanarHom/FixedRealMixedOrientationPrescribedFields.lean",
+          "line": 16
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "A.2",
+            "original": "PlanarHom.FixedRealMixedRootRestriction.corollaryA2_mixed_root_prescribed",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_A_2_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_A_2_1",
+            "levels": []
+          },
+          {
+            "item": "A.2",
+            "original": "PlanarHom.FixedRealMixedRootRestriction.corollaryA2_mixed_submatrix_prescribed",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_A_2_2",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_A_2_2",
+            "levels": []
+          },
+          {
+            "item": "A.2",
+            "original": "PlanarHom.FixedRealMixedOrientation.corollaryA2_mixed_orientation_prescribed",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_A_2_3",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_A_2_3",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "A.3",
+      "kind": "Theorem",
+      "title": "Signed joint interpolation over a fixed real field",
+      "paper_pages": "82–83",
+      "review": "Signed finite-joint binary/unary replacement with source zeros preserved and equal-length product maps. Arbitrary valid source representatives and separately prescribed fields are handled by programs.",
+      "declarations": [
+        {
+          "name": "PlanarHom.FixedRealMixedInterpolation.theoremA3_prescribed_joint",
+          "file": "PlanarHom/FixedRealJointPrescribedFields.lean",
+          "line": 14
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "A.3",
+            "original": "PlanarHom.FixedRealMixedInterpolation.theoremA3_prescribed_joint",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_A_3_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_A_3_1",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "A.4",
+      "kind": "Lemma",
+      "title": "Relation-preserving approximation",
+      "paper_pages": "83–84",
+      "review": "The pure rational approximation preserves signs and every integral multiplicative relation. Joint represented reductions retain backgrounds/labels; the canonical-rational unweighted corollary is a separate specialization.",
+      "declarations": [
+        {
+          "name": "PlanarHom.RelationApproximation.relation_preserving_approximation",
+          "file": "PlanarHom/RelationApproximation.lean",
+          "line": 158
+        },
+        {
+          "name": "PlanarHom.FixedRealApproximation.theoremA4_joint",
+          "file": "PlanarHom/RealApproximationRepresented.lean",
+          "line": 30
+        },
+        {
+          "name": "PlanarHom.FixedRealApproximation.theoremA4_prescribed_rational",
+          "file": "PlanarHom/RealAppendixApproximationPrescribedRational.lean",
+          "line": 15
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "A.4",
+            "original": "PlanarHom.RelationApproximation.relation_preserving_approximation",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_A_4_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_A_4_1",
+            "levels": [
+              "u_1"
+            ]
+          },
+          {
+            "item": "A.4",
+            "original": "PlanarHom.FixedRealApproximation.theoremA4_joint",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_A_4_2",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_A_4_2",
+            "levels": []
+          },
+          {
+            "item": "A.4",
+            "original": "PlanarHom.FixedRealApproximation.theoremA4_prescribed_rational",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_A_4_3",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_A_4_3",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "A.5",
+      "kind": "Lemma",
+      "title": "Limits with fixed support",
+      "paper_pages": "84–85",
+      "review": "Relative closedness is on a fixed support with a positive limit, not unrestricted closure in all matrices. Finite bounded charts/partitions and nonvanishing reconstruction denominators are used.",
+      "declarations": [
+        {
+          "name": "PlanarHom.FixedChartClosedness.isClosed_nonnegativeClass_support",
+          "file": "PlanarHom/FixedChartClosedness.lean",
+          "line": 874
+        },
+        {
+          "name": "PlanarHom.FixedChartClosedness.nonnegativeClass_of_tendsto_fixedSupport",
+          "file": "PlanarHom/FixedChartClosedness.lean",
+          "line": 886
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "A.5",
+            "original": "PlanarHom.FixedChartClosedness.isClosed_nonnegativeClass_support",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_A_5_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_A_5_1",
+            "levels": [
+              "u_1"
+            ]
+          },
+          {
+            "item": "A.5",
+            "original": "PlanarHom.FixedChartClosedness.nonnegativeClass_of_tendsto_fixedSupport",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_A_5_2",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_A_5_2",
+            "levels": [
+              "u_1",
+              "u_2"
+            ]
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "A.6",
+      "kind": "Theorem",
+      "title": "Nonnegative matrices with fixed real entries",
+      "paper_pages": "85",
+      "review": "Same unweighted nonnegative classification for a fixed finitely generated real field presentation. Approximation chooses fixed replacement constants, never approximate oracle answers.",
+      "declarations": [
+        {
+          "name": "PlanarHom.FixedRealApproximation.theoremA6",
+          "file": "PlanarHom/FixedRealNonnegativeDichotomy.lean",
+          "line": 11
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "A.6",
+            "original": "PlanarHom.FixedRealApproximation.theoremA6",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_A_6_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_A_6_1",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "A.7",
+      "kind": "Corollary",
+      "title": "Support, magnitude and sign in the fixed-real model",
+      "paper_pages": "86",
+      "review": "Signed support/magnitude/sign joint availability, extremal masks, weighted chains, and mixed equivalence in the represented model.",
+      "declarations": [
+        {
+          "name": "PlanarHom.FixedRealSignedTransforms.theoremA7_all_five",
+          "file": "PlanarHom/RealAppendixTransformEndpoints.lean",
+          "line": 10
+        },
+        {
+          "name": "PlanarHom.FixedRealSignedTransforms.theoremA7_chain",
+          "file": "PlanarHom/RealAppendixTransformEndpoints.lean",
+          "line": 33
+        },
+        {
+          "name": "PlanarHom.FixedRealSignedTransforms.theoremA7_mixed_equivalence",
+          "file": "PlanarHom/FixedRealSignedJointExtrema.lean",
+          "line": 41
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "A.7",
+            "original": "PlanarHom.FixedRealSignedTransforms.theoremA7_all_five",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_A_7_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_A_7_1",
+            "levels": []
+          },
+          {
+            "item": "A.7",
+            "original": "PlanarHom.FixedRealSignedTransforms.theoremA7_chain",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_A_7_2",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_A_7_2",
+            "levels": []
+          },
+          {
+            "item": "A.7",
+            "original": "PlanarHom.FixedRealSignedTransforms.theoremA7_mixed_equivalence",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_A_7_3",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_A_7_3",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "A.8",
+      "kind": "Theorem",
+      "title": "Positive vertex-weight removal for fixed real matrices",
+      "paper_pages": "86–88",
+      "review": "No zero/proportional rows and positive fixed real weights. Weight powers may use finite extensions; the original target output field is recovered by proved prescribed-subfield conversion.",
+      "declarations": [
+        {
+          "name": "PlanarHom.FixedRealWeightRemoval.theoremA8",
+          "file": "PlanarHom/FixedRealPrescribedWeightRemoval.lean",
+          "line": 55
+        },
+        {
+          "name": "PlanarHom.FixedRealWeightRemoval.constructedPowers_joint",
+          "file": "PlanarHom/FixedRealWeightPowerExtension.lean",
+          "line": 51
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "A.8",
+            "original": "PlanarHom.FixedRealWeightRemoval.theoremA8",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_A_8_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_A_8_1",
+            "levels": []
+          },
+          {
+            "item": "A.8",
+            "original": "PlanarHom.FixedRealWeightRemoval.constructedPowers_joint",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_A_8_2",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_A_8_2",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "A.9",
+      "kind": "Corollary",
+      "title": "Support hardness with fixed real edge and positive vertex weights",
+      "paper_pages": "88",
+      "review": "Nonbasic support gives signed hardness; zero-one basic supports have actual FP algorithms for all fixed positive real weights. The dependency precedes A.12 and is not circular.",
+      "declarations": [
+        {
+          "name": "PlanarHom.FixedRealSupportHardness.theoremA9_zeroOne",
+          "file": "PlanarHom/FixedRealSupportDichotomy.lean",
+          "line": 47
+        },
+        {
+          "name": "PlanarHom.FixedRealSupportHardness.theoremA9_hard",
+          "file": "PlanarHom/FixedRealSupportHardness.lean",
+          "line": 94
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "A.9",
+            "original": "PlanarHom.FixedRealSupportHardness.theoremA9_zeroOne",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_A_9_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_A_9_1",
+            "levels": []
+          },
+          {
+            "item": "A.9",
+            "original": "PlanarHom.FixedRealSupportHardness.theoremA9_hard",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_A_9_2",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_A_9_2",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "A.10",
+      "kind": "Lemma",
+      "title": "Positive symmetric core",
+      "paper_pages": "89",
+      "review": "Literal nondegenerate positive Boolean tensor: constant positive weights give FP and nonconstant weights hardness, with prescribed exact outputs.",
+      "declarations": [
+        {
+          "name": "PlanarHom.FixedRealLemmaA10.lemmaA10",
+          "file": "PlanarHom/FixedRealLemmaA10.lean",
+          "line": 76
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "A.10",
+            "original": "PlanarHom.FixedRealLemmaA10.lemmaA10",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_A_10_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_A_10_1",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "A.11",
+      "kind": "Lemma",
+      "title": "Positive bipartite core",
+      "paper_pages": "89–90",
+      "review": "Positive scaled nondegenerate tensor on two sides, with separately constant weights allowed. Both ordinary and prescribed endpoints are proved.",
+      "declarations": [
+        {
+          "name": "PlanarHom.FixedRealLemmaA11.lemmaA11",
+          "file": "PlanarHom/FixedRealLemmaA11.lean",
+          "line": 48
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "A.11",
+            "original": "PlanarHom.FixedRealLemmaA11.lemmaA11",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_A_11_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_A_11_1",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "A.12",
+      "kind": "Theorem",
+      "title": "One fixed positive real vertex-weight vector",
+      "paper_pages": "90–91",
+      "review": "Full original-row quotient and aggregated-weight classification for nonnegative fixed real edges and positive real weights. No rational/finite-dimensional-over-Q restriction is added.",
+      "declarations": [
+        {
+          "name": "PlanarHom.FixedRealWeightedClassification.theoremA12",
+          "file": "PlanarHom/FixedRealWeightedClassification.lean",
+          "line": 11
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "A.12",
+            "original": "PlanarHom.FixedRealWeightedClassification.theoremA12",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_A_12_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_A_12_1",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "A.13",
+      "kind": "Corollary",
+      "title": "Nonnegative real vertex weights",
+      "paper_pages": "91",
+      "review": "Remove zero-weight colors first, then use A.12 on the original-row quotient of the restriction; empty surviving domain is explicit.",
+      "declarations": [
+        {
+          "name": "PlanarHom.FixedRealSurvivingWeights.theoremA13",
+          "file": "PlanarHom/FixedRealNonnegativeVertexWeights.lean",
+          "line": 14
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "A.13",
+            "original": "PlanarHom.FixedRealSurvivingWeights.theoremA13",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_A_13_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_A_13_1",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    },
+    {
+      "item": "A.14",
+      "kind": "Corollary",
+      "title": "Real edge weights and positive vertex weights",
+      "paper_pages": "91–92",
+      "review": "Weighted support-to-magnitude-to-signed reductions, support hardness, zero-one classification, and the additional unit-weight magnitude obstruction. This is not a general signed-matrix dichotomy.",
+      "declarations": [
+        {
+          "name": "PlanarHom.FixedRealSignedConsequences.theoremA14",
+          "file": "PlanarHom/FixedRealSignedConsequences.lean",
+          "line": 28
+        }
+      ],
+      "verification_guarantees": {
+        "paper_and_model_review": true,
+        "fixed_full_type_contracts": [
+          {
+            "item": "A.14",
+            "original": "PlanarHom.FixedRealSignedConsequences.theoremA14",
+            "statement": "PlanarHomAudit.ReviewedStatements.item_A_14_1",
+            "solution": "PlanarHomAudit.ReviewedSolutions.item_A_14_1",
+            "levels": []
+          }
+        ],
+        "independently_written_primary_contract": false,
+        "note": "For 12.2 the independent primary contract covers the rectangular endpoint. All listed endpoints have fixed reviewed full-type comparisons. Local trusted-source comparison, not official comparator replay."
+      }
+    }
+  ]
+}

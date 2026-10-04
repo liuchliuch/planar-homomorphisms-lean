@@ -1,0 +1,400 @@
+{
+  "named_axiom_audits": {
+    "RectangularNormalizationAxiomAudit": 68,
+    "PromisedFPClosureAxiomAudit": 19,
+    "NormalizationSquareSourceAxiomAudit": 44,
+    "NormalizedMomentProgramAxiomAudit": 60,
+    "Theorem51Audit": 3,
+    "MainTheoremsAudit": 7,
+    "BodyStatementsAudit": 3,
+    "FinalBodyStatementsAudit": 3,
+    "AppendixFirstStatementsAudit": 23,
+    "A12ScopeEndpoints": 3
+  },
+  "aggregate_regression_modules": [
+    "PlanarHom.TypedBipartiteSpectralRegressions",
+    "PlanarHom.TypedBipartiteSpectralEffectiveRegressions",
+    "PlanarHom.TypedContextualSpectralRegressions",
+    "PlanarHom.RectangularNormalizationRegressions",
+    "PlanarHom.PromisedFPClosureRegressions",
+    "PlanarHom.TypedCoordinateTransportRegressions",
+    "PlanarHom.NormalizationSquareSourceRegressions",
+    "PlanarHom.NormalizedMomentProgramRegressions",
+    "PlanarHom.UnitBackgroundLanguageRegressions",
+    "PlanarHom.WeightedAmplitudeChartRegressions",
+    "PlanarHom.PfaffianMachineRegressions",
+    "PlanarHom.OccurrencePfaffianRegressions",
+    "PlanarHom.OccurrencePfaffianCoreRegressions",
+    "PlanarHom.OccurrencePfaffianShearRegressions",
+    "PlanarHom.PfaffianPivotSemanticsRegressions",
+    "PlanarHom.FktGeometryRegressions",
+    "PlanarHom.CoreSourceCoordinateRegressions",
+    "PlanarHom.HomogeneousSourceOrientationRegressions",
+    "PlanarHom.OrientationRuntimeRegressions",
+    "PlanarHom.FktIterationRegressions",
+    "PlanarHom.HomogeneousSourceOrientationFullRegressions",
+    "PlanarHom.FixedGadgetNetworkRegressions",
+    "PlanarHom.GadgetSemanticRegressions",
+    "PlanarHom.FktClippingRegressions",
+    "PlanarHom.DepthFirstSearchRegressions",
+    "PlanarHom.EdgeSubstitutionRegressions",
+    "PlanarHom.EdgeSubstitutionGeometryRegressions",
+    "PlanarHom.TypedGadgetAppendRegressions",
+    "PlanarHom.TypedGadgetAppendColoredRegressions",
+    "PlanarHom.RawLRRegressions",
+    "PlanarHom.ContextSortRegressions",
+    "PlanarHom.DirectRotationRegressions",
+    "PlanarHom.RectangularMixedFormsRegressions",
+    "PlanarHom.FullMixedPhysicalConsumerRegressions",
+    "PlanarHom.TypedMixedPhysicalAvailabilityRegressions",
+    "PlanarHom.RecoveredMixedDefinitionCompatibility",
+    "PlanarHom.PlanarityParityRegressions",
+    "PlanarHom.PlanarityLRBlockRegressions",
+    "PlanarHom.PlanarityLRRotationRegressions",
+    "PlanarHom.PlanarityLRAlignedRegressions",
+    "PlanarHom.PlanarityLRStructureRegressions",
+    "PlanarHom.PlanarityLRRawRegressions",
+    "PlanarHom.HammingPottsIsolationRegressions",
+    "PlanarHom.HammingPottsSourceRegressions",
+    "PlanarHom.CommonCubeConditionalRegressions",
+    "PlanarHom.PlanarityLRRoutingRegressions",
+    "PlanarHom.PlanarityLRFaceRegressions",
+    "PlanarHom.FaceTablesRegressions",
+    "PlanarHom.FaceRootsRegressions",
+    "PlanarHom.FaceDualRegressions",
+    "PlanarHom.LRWordsRegressions",
+    "PlanarHom.LRIntervalsRegressions"
+  ],
+  "embedded_audit_markers": {
+    "PlanarHom.TypedBipartiteSpectralAxiomAudit": "TYPED_BIPARTITE_SPECTRAL_AXIOM_AUDIT_PASS",
+    "PlanarHom.TypedContextualSpectralAxiomAudit": "TYPED_CONTEXTUAL_SPECTRAL_AXIOM_AUDIT_PASS",
+    "PlanarHom.TypedCoordinateTransportAxiomAudit": "RECONSTRUCTED_TYPED_COORDINATE_TRANSPORT_AXIOM_AUDIT_PASS",
+    "PlanarHom.PfaffianMachineAxiomAudit": "PFAFFIAN_MACHINE_AXIOM_AUDIT_PASS",
+    "PlanarHom.OccurrencePfaffianCoreAxiomAudit": "RECONSTRUCTED_OCCURRENCE_PFAFFIAN_CORE_AXIOM_AUDIT_PASS",
+    "PlanarHom.OccurrencePfaffianShearAxiomAudit": "RECONSTRUCTED_OCCURRENCE_PFAFFIAN_SHEAR_AXIOM_AUDIT_PASS",
+    "PlanarHom.FktGeometryAxiomAudit": "AXIOM_AUDIT_PASS:",
+    "PlanarHom.CoreSourceCoordinateAxiomAudit": "AXIOM_AUDIT_PASS:",
+    "PlanarHom.HomogeneousSourceOrientationAxiomAudit": "AXIOM_AUDIT_PASS:",
+    "PlanarHom.OrientationRuntimeAxiomAudit": "ORIENTATION_RUNTIME_AUDIT_PASS",
+    "PlanarHom.HomogeneousSourceOrientationFullAxiomAudit": "AXIOM_AUDIT_PASS:",
+    "PlanarHom.FixedGadgetNetworkAxiomAudit": "AXIOM_AUDIT_PASS",
+    "PlanarHom.GadgetSemanticAxiomAudit": "AXIOM_AUDIT_PASS",
+    "PlanarHom.FktClippingAxiomAudit": "AXIOM_AUDIT_PASS",
+    "PlanarHom.DepthFirstSearchAxiomAudit": "DFS_RUNTIME_AND_SEMANTICS_AUDIT_PASS",
+    "PlanarHom.EdgeSubstitutionAxiomAudit": "AXIOM_AUDIT_PASS",
+    "PlanarHom.EdgeSubstitutionGeometryAxiomAudit": "AXIOM_AUDIT_PASS",
+    "PlanarHom.FullTypedGadgetAxiomAudit": "AXIOM_AUDIT_PASS",
+    "PlanarHom.RawLRAxiomAudit": "RAW_LR_RUNTIME_AUDIT_PASS",
+    "PlanarHom.ContextSortAxiomAudit": "CONTEXT_SORT_AND_ROW_AUDIT_PASS",
+    "PlanarHom.DirectRotationAxiomAudit": "DIRECT_ROTATION_RUNTIME_AUDIT_PASS",
+    "PlanarHom.RectangularMixedFormsAxiomAudit": "AXIOM_AUDIT_PASS",
+    "PlanarHom.FullMixedPhysicalConsumerAxiomAudit": "AXIOM_AUDIT_PASS",
+    "PlanarHom.TypedMixedPhysicalAvailabilityAxiomAudit": "TYPED_MIXED_PHYSICAL_AVAILABILITY_AXIOM_AUDIT_PASS",
+    "PlanarHom.PlanarityLRRotationAxiomAudit": "RECONSTRUCTED_PLANARITY_LR_ROTATION_AXIOM_AUDIT_PASS",
+    "PlanarHom.HammingPottsIsolationAxiomAudit": "HAMMING_POTTS_ISOLATION_AXIOM_AUDIT_PASS: every imported project and regression declaration; only propext, Classical.choice, Quot.sound",
+    "PlanarHom.HammingPottsSourceAxiomAudit": "HAMMING_POTTS_SOURCE_AXIOM_AUDIT_PASS: every imported project and regression declaration; only propext, Classical.choice, Quot.sound",
+    "PlanarHom.CommonCubeConditionalAxiomAudit": "COMMON_CUBE_CONDITIONAL_AXIOM_AUDIT_PASS: every imported project and regression declaration; only propext, Classical.choice, Quot.sound",
+    "PlanarHom.PlanarityLRContourCyclesAxiomAudit": "RECONSTRUCTED_PLANARITY_LR_CONTOUR_CYCLES_AXIOM_AUDIT_PASS",
+    "PlanarHom.PlanarityLRContourAxiomAudit": "RECONSTRUCTED_PLANARITY_LR_CONTOUR_AXIOM_AUDIT_PASS",
+    "PlanarHom.PlanarityLRRoutingAxiomAudit": "RECONSTRUCTED_PLANARITY_LR_ROUTING_AXIOM_AUDIT_PASS",
+    "PlanarHom.PlanarityLRFaceAxiomAudit": "RECONSTRUCTED_PLANARITY_LR_FACE_AXIOM_AUDIT_PASS",
+    "PlanarHom.PlanarityLRDrawnTreeAxiomAudit": "RECONSTRUCTED_PLANARITY_LR_DRAWN_TREE_AXIOM_AUDIT_PASS",
+    "PlanarHom.FaceTablesAxiomAudit": "FULL_FACE_TABLE_RUNTIME_AUDIT_PASS",
+    "PlanarHom.FaceRootsAxiomAudit": "ROOT_OMISSION_ORIENTATION_RUNTIME_AUDIT_PASS",
+    "PlanarHom.FaceDualAxiomAudit": "RAW_DUAL_ORIENTATION_CORRECTNESS_AUDIT_PASS",
+    "PlanarHom.LRWordsAxiomAudit": "LR_WORD_PREFIX_FOUNDATIONS_AUDIT_PASS",
+    "PlanarHom.LRIntervalsAxiomAudit": "LR_SUBTREE_INTERVAL_ORDER_AUDIT_PASS"
+  },
+  "execution_output_checks": {
+    "PlanarHom.PfaffianMachineRegressions": {
+      "mkRat_lines": [
+        "mkRat 1 1",
+        "mkRat 0 1",
+        "mkRat 0 1",
+        "mkRat (-3) 1",
+        "mkRat 2 3",
+        "mkRat (-29) 1",
+        "mkRat 0 1",
+        "mkRat (-30) 1",
+        "mkRat 0 1",
+        "mkRat 2 1",
+        "mkRat (-6) 1",
+        "mkRat 0 1",
+        "mkRat (-6) 1"
+      ],
+      "boolean_lines": [
+        "true",
+        "false"
+      ]
+    },
+    "PlanarHom.OrientationRuntimeRegressions": {
+      "mkRat_lines": [],
+      "boolean_lines": [],
+      "list_lines": [
+        "[]",
+        "[]",
+        "[7]",
+        "[]",
+        "[]",
+        "[987654321]",
+        "[7, 8]",
+        "[7]"
+      ]
+    },
+    "PlanarHom.DepthFirstSearchRegressions": {
+      "mkRat_lines": [],
+      "boolean_lines": [],
+      "exact_lines": [
+        "[0, 1, 2]",
+        "[2, 1, 0]",
+        "[1, 0]",
+        "2",
+        "2",
+        "[0, 1, 2]",
+        "[1, 0, 2]",
+        "1",
+        "[]",
+        "[0, 1]",
+        "[0, 1]",
+        "[]"
+      ]
+    },
+    "PlanarHom.RawLRRegressions": {
+      "mkRat_lines": [],
+      "boolean_lines": [
+        "true",
+        "true",
+        "false",
+        "false",
+        "true",
+        "true",
+        "true"
+      ],
+      "exact_lines": [
+        "true",
+        "true",
+        "false",
+        "false",
+        "true",
+        "true",
+        "true",
+        "6",
+        "9",
+        "3"
+      ]
+    },
+    "PlanarHom.ContextSortRegressions": {
+      "mkRat_lines": [],
+      "boolean_lines": [],
+      "exact_lines": [
+        "[0, 1, 3, 5, 5]",
+        "[5, 5, 3, 1, 0]",
+        "[]",
+        "[0, 2, 987654321, 987654321]",
+        "[[0], [3], [1, 5], [2, 4]]",
+        "[[0], [3], [5, 1], [4, 2]]",
+        "[[0], [3], [1, 5], [2, 4]]"
+      ]
+    },
+    "PlanarHom.DirectRotationRegressions": {
+      "mkRat_lines": [],
+      "boolean_lines": [
+        "true",
+        "false"
+      ],
+      "exact_lines": [
+        "[(1, 4), (2, 5)]",
+        "true",
+        "false",
+        "1",
+        "3",
+        "(99, false)",
+        "(0, true)",
+        "[[(1, true), (0, true)], [(0, false), (2, true)], [(2, false), (1, false)]]",
+        "(2, true)",
+        "(1, false)",
+        "(0, true)",
+        "[[(2, true), (1, true), (0, true), (0, false)], [(1, false), (2, false)]]"
+      ]
+    },
+    "PlanarHom.PlanarityParityRegressions": {
+      "mkRat_lines": [],
+      "boolean_lines": [],
+      "exact_lines": [
+        "(true, [(0, false), (1, true)])",
+        "(false, [(0, false), (1, true)])",
+        "(some [(1000000, true), (8000000, false)], 16)"
+      ]
+    },
+    "PlanarHom.PlanarityLRBlockRegressions": {
+      "mkRat_lines": [],
+      "boolean_lines": [],
+      "exact_lines": [
+        "(true, [(0, true), (2, false), (1, true)])",
+        "(false, [(0, false), (1, true)])"
+      ]
+    },
+    "PlanarHom.PlanarityLRRotationRegressions": {
+      "mkRat_lines": [],
+      "boolean_lines": [],
+      "exact_lines": [
+        "[[], [[]], [[(0, true)], [(0, false)]]]",
+        "[0, 2]",
+        "[[(2, false), (1, true), (0, true), (0, false)], [(1, false), (2, true), (3, true), (3, false)]]"
+      ]
+    },
+    "PlanarHom.PlanarityLRAlignedRegressions": {
+      "mkRat_lines": [],
+      "boolean_lines": [
+        "false",
+        "false"
+      ],
+      "exact_lines": [
+        "(true, [false, false, false, false, false, false])",
+        "false",
+        "false"
+      ]
+    },
+    "PlanarHom.PlanarityLRRawRegressions": {
+      "mkRat_lines": [],
+      "boolean_lines": [],
+      "exact_lines": [
+        "(true, true, false, false)",
+        "[0, 1]",
+        "[(false, false), (true, false), (false, true), (false, false)]"
+      ]
+    },
+    "PlanarHom.HammingPottsSourceRegressions": {
+      "mkRat_lines": [],
+      "boolean_lines": [],
+      "exact_lines": [
+        "[(mkRat 2 1, 3, [(0, 2, 0), (2, 1, 0)])]",
+        "[(mkRat 3 1, 2, [(0, 1, 0), (1, 0, 0)])]",
+        "[(mkRat 1 1, 4, [(0, 2, 0), (2, 1, 0), (0, 3, 0), (3, 1, 0)])]",
+        "[(mkRat 2 1, 2, [(0, 1, 0)])]",
+        "[(mkRat 4 1, 3, [])]",
+        "2",
+        "1"
+      ]
+    },
+    "PlanarHom.PlanarityLRContourCyclesAxiomAudit": {
+      "mkRat_lines": [],
+      "boolean_lines": [],
+      "list_lines": [
+        "[(0, true), (2, true), (1, false), (2, false), (0, false), (1, true)]",
+        "[(0, true), (0, false)]"
+      ]
+    },
+    "PlanarHom.PlanarityLRFaceRegressions": {
+      "mkRat_lines": [],
+      "boolean_lines": [],
+      "exact_lines": [
+        "[]",
+        "[]",
+        "[(0, [(0, true), (0, false)])]",
+        "[(0, [(0, true)]), (1, [(0, false)])]"
+      ]
+    },
+    "PlanarHom.FaceTablesRegressions": {
+      "mkRat_lines": [],
+      "boolean_lines": [],
+      "exact_lines": [
+        "[5, 4]",
+        "[5, 4]",
+        "[1, 2]",
+        "[(0, true), (2, true), (1, false), (0, true), (2, true), (1, false)]",
+        "[(0, true), (2, true), (1, false)]",
+        "[(0, true), (1, true)]",
+        "[(0, [(0, true), (2, true), (1, false)]), (1, [(1, true), (2, false), (0, false)])]",
+        "4",
+        "[(0, [(0, true), (2, true), (1, false)]), (1, [(1, true), (2, false)]), (2, [(0, false)])]",
+        "[(0, [(0, true), (0, false)]), (1, [(1, true), (1, false)])]",
+        "[]",
+        "[(1000000000000000000000000000, false), (1000000000000000000000000000, true)]"
+      ]
+    },
+    "PlanarHom.FaceRootsRegressions": {
+      "mkRat_lines": [],
+      "boolean_lines": [],
+      "exact_lines": [
+        "[0, 0, 2, 2, 4]",
+        "[(1, [(1, true), (2, false), (0, false)])]",
+        "[]",
+        "[(1, [(1, true), (2, false)]), (2, [(0, false)])]",
+        "[0]",
+        "[]",
+        "[]",
+        "[(2, [(0, false)]), (3, [(1, false)])]",
+        "[0, 1]",
+        "[]",
+        "[]"
+      ]
+    },
+    "PlanarHom.FaceDualRegressions": {
+      "mkRat_lines": [],
+      "boolean_lines": [
+        "false",
+        "true",
+        "true",
+        "true",
+        "true",
+        "true"
+      ],
+      "exact_lines": [
+        "[0, 0]",
+        "[(0, true), (0, false)]",
+        "false",
+        "[0, 1]",
+        "[true, true]",
+        "[1, 1]",
+        "[]",
+        "true",
+        "true",
+        "true",
+        "true",
+        "true"
+      ]
+    },
+    "PlanarHom.LRWordsRegressions": {
+      "mkRat_lines": [],
+      "boolean_lines": [
+        "true",
+        "false",
+        "true"
+      ],
+      "exact_lines": [
+        "[[0], [0, 1], [0, 1, 2]]",
+        "[[], [0], [0, 0]]",
+        "[1, 2, 4]",
+        "[[0, 0, 1], [0, 0, 0, 1], [0, 0, 0, 0]]",
+        "[[true, false, false], [false, true, false], [false, false, true]]",
+        "true",
+        "false",
+        "true",
+        "[0, 3]"
+      ]
+    },
+    "PlanarHom.LRIntervalsRegressions": {
+      "mkRat_lines": [],
+      "boolean_lines": [
+        "true",
+        "false"
+      ],
+      "exact_lines": [
+        "[4, 2, 1, 7]",
+        "[[0, 0, 0, 0], [0, 0, 0, 1], [0, 0, 1], [1, 0, 0]]",
+        "[(4, true), (2, true), (1, true), (7, false)]",
+        "[(4, true), (2, true), (1, false), (7, false)]",
+        "[0, 6]",
+        "[0, 1]",
+        "[(4, 0), (2, 1), (1, 2), (7, 3)]",
+        "true",
+        "false"
+      ]
+    }
+  },
+  "script_origin_audit_markers": {
+    "FinalBodyStatementsAudit": "FINAL_BODY_STATEMENTS_IMPORTED_DECLARATIONS_STANDARD_AXIOMS_PASS",
+    "AppendixFirstStatementsAudit": "APPENDIX_FIRST_STATEMENTS_IMPORTED_DECLARATIONS_STANDARD_AXIOMS_PASS"
+  }
+}

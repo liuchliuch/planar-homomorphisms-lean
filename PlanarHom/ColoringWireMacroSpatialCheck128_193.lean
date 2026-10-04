@@ -1,0 +1,11 @@
+import PlanarHom.ColoringWireMacroSpatialCheck128_192
+noncomputable section
+namespace PlanarHom.ColoringWireMacroCoordinates
+open MultiGraph IntegerStraightDrawing IntegerDrawingSpatialCertificate
+set_option maxRecDepth 100000
+set_option maxHeartbeats 0
+
+theorem apart128_ev_19300 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_2624 vertexNode_1058=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_node apart128_ev_13894 apart128_ev_19299
+
+end PlanarHom.ColoringWireMacroCoordinates

@@ -1,0 +1,74 @@
+[
+  {
+    "name": "mathlib",
+    "expected_revision": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+    "actual_revision": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+    "tracked_source_clean": true,
+    "artifact_path": "/Users/liuch/draft-pinkfold/planar-homomorphisms/.lake/packages/mathlib/.lake/build/lib/lean",
+    "artifact_directory_present": true
+  },
+  {
+    "name": "plausible",
+    "expected_revision": "dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805",
+    "actual_revision": "dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805",
+    "tracked_source_clean": true,
+    "artifact_path": "/Users/liuch/draft-pinkfold/planar-homomorphisms/.lake/packages/plausible/.lake/build/lib/lean",
+    "artifact_directory_present": true
+  },
+  {
+    "name": "LeanSearchClient",
+    "expected_revision": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
+    "actual_revision": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
+    "tracked_source_clean": true,
+    "artifact_path": "/Users/liuch/draft-pinkfold/planar-homomorphisms/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+    "artifact_directory_present": true
+  },
+  {
+    "name": "importGraph",
+    "expected_revision": "d768126816be17600904726ca7976b185786e6b9",
+    "actual_revision": "d768126816be17600904726ca7976b185786e6b9",
+    "tracked_source_clean": true,
+    "artifact_path": "/Users/liuch/draft-pinkfold/planar-homomorphisms/.lake/packages/importGraph/.lake/build/lib/lean",
+    "artifact_directory_present": true
+  },
+  {
+    "name": "proofwidgets",
+    "expected_revision": "556caed0eadb7901e068131d1be208dd907d07a2",
+    "actual_revision": "556caed0eadb7901e068131d1be208dd907d07a2",
+    "tracked_source_clean": true,
+    "artifact_path": "/Users/liuch/draft-pinkfold/planar-homomorphisms/.lake/packages/proofwidgets/.lake/build/lib/lean",
+    "artifact_directory_present": true
+  },
+  {
+    "name": "aesop",
+    "expected_revision": "725ac8cd67acd70a7beaf47c3725e23484c1ef50",
+    "actual_revision": "725ac8cd67acd70a7beaf47c3725e23484c1ef50",
+    "tracked_source_clean": true,
+    "artifact_path": "/Users/liuch/draft-pinkfold/planar-homomorphisms/.lake/packages/aesop/.lake/build/lib/lean",
+    "artifact_directory_present": true
+  },
+  {
+    "name": "Qq",
+    "expected_revision": "dea6a3361fa36d5a13f87333dc506ada582e025c",
+    "actual_revision": "dea6a3361fa36d5a13f87333dc506ada582e025c",
+    "tracked_source_clean": true,
+    "artifact_path": "/Users/liuch/draft-pinkfold/planar-homomorphisms/.lake/packages/Qq/.lake/build/lib/lean",
+    "artifact_directory_present": true
+  },
+  {
+    "name": "batteries",
+    "expected_revision": "8da40b72fece29b7d3fe3d768bac4c8910ce9bee",
+    "actual_revision": "8da40b72fece29b7d3fe3d768bac4c8910ce9bee",
+    "tracked_source_clean": true,
+    "artifact_path": "/Users/liuch/draft-pinkfold/planar-homomorphisms/.lake/packages/batteries/.lake/build/lib/lean",
+    "artifact_directory_present": true
+  },
+  {
+    "name": "Cli",
+    "expected_revision": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
+    "actual_revision": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
+    "tracked_source_clean": true,
+    "artifact_path": "/Users/liuch/draft-pinkfold/planar-homomorphisms/.lake/packages/Cli/.lake/build/lib/lean",
+    "artifact_directory_present": false
+  }
+]

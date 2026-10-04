@@ -1,0 +1,308 @@
+import PlanarHom.ColoringFanMacroSpatialCheck128_384
+noncomputable section
+namespace PlanarHom.ColoringFanMacroCoordinates
+open MultiGraph IntegerStraightDrawing IntegerDrawingSpatialCertificate
+set_option maxRecDepth 100000
+set_option maxHeartbeats 0
+
+theorem apart128_ev_38500 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3800 vertexNode_1576=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38498 apart128_ev_38499
+
+theorem apart128_ev_38501 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3800 vertexNode_1577=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38497 apart128_ev_38500
+
+theorem apart128_ev_38502 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3800 vertexNode_2104=true :=
+  by decide +kernel
+
+theorem apart128_ev_38503 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3800 vertexNode_2105=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38501 apart128_ev_38502
+
+theorem apart128_ev_38504 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3800 vertexNode_2106=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38496 apart128_ev_38503
+
+theorem apart128_ev_38505 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3801 vertexNode_2106=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_node apart128_ev_38495 apart128_ev_38504
+
+theorem apart128_ev_38506 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3802 vertexNode_1052=true :=
+  by decide +kernel
+
+theorem apart128_ev_38507 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3802 vertexNode_1181=true :=
+  by decide +kernel
+
+theorem apart128_ev_38508 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3802 vertexNode_1312=true :=
+  by decide +kernel
+
+theorem apart128_ev_38509 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3802 vertexNode_1313=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38507 apart128_ev_38508
+
+theorem apart128_ev_38510 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3802 vertexNode_1444=true :=
+  by decide +kernel
+
+theorem apart128_ev_38511 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3802 vertexNode_1575=true :=
+  by decide +kernel
+
+theorem apart128_ev_38512 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3802 vertexNode_1576=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38510 apart128_ev_38511
+
+theorem apart128_ev_38513 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3802 vertexNode_1577=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38509 apart128_ev_38512
+
+theorem apart128_ev_38514 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3802 vertexNode_2104=true :=
+  by decide +kernel
+
+theorem apart128_ev_38515 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3802 vertexNode_2105=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38513 apart128_ev_38514
+
+theorem apart128_ev_38516 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3802 vertexNode_2106=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38506 apart128_ev_38515
+
+theorem apart128_ev_38517 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3803 vertexNode_1052=true :=
+  by decide +kernel
+
+theorem apart128_ev_38518 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3803 vertexNode_1313=true :=
+  by decide +kernel
+
+theorem apart128_ev_38519 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3803 vertexNode_1444=true :=
+  by decide +kernel
+
+theorem apart128_ev_38520 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3803 vertexNode_1575=true :=
+  by decide +kernel
+
+theorem apart128_ev_38521 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3803 vertexNode_1576=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38519 apart128_ev_38520
+
+theorem apart128_ev_38522 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3803 vertexNode_1577=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38518 apart128_ev_38521
+
+theorem apart128_ev_38523 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3803 vertexNode_2104=true :=
+  by decide +kernel
+
+theorem apart128_ev_38524 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3803 vertexNode_2105=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38522 apart128_ev_38523
+
+theorem apart128_ev_38525 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3803 vertexNode_2106=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38517 apart128_ev_38524
+
+theorem apart128_ev_38526 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3804 vertexNode_1052=true :=
+  by decide +kernel
+
+theorem apart128_ev_38527 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3804 vertexNode_1313=true :=
+  by decide +kernel
+
+theorem apart128_ev_38528 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3804 vertexNode_1444=true :=
+  by decide +kernel
+
+theorem apart128_ev_38529 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3804 vertexNode_1575=true :=
+  by decide +kernel
+
+theorem apart128_ev_38530 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3804 vertexNode_1576=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38528 apart128_ev_38529
+
+theorem apart128_ev_38531 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3804 vertexNode_1577=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38527 apart128_ev_38530
+
+theorem apart128_ev_38532 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3804 vertexNode_2104=true :=
+  by decide +kernel
+
+theorem apart128_ev_38533 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3804 vertexNode_2105=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38531 apart128_ev_38532
+
+theorem apart128_ev_38534 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3804 vertexNode_2106=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38526 apart128_ev_38533
+
+theorem apart128_ev_38535 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3805 vertexNode_2106=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_node apart128_ev_38525 apart128_ev_38534
+
+theorem apart128_ev_38536 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3806 vertexNode_2106=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_node apart128_ev_38516 apart128_ev_38535
+
+theorem apart128_ev_38537 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3807 vertexNode_2106=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_node apart128_ev_38505 apart128_ev_38536
+
+theorem apart128_ev_38538 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3808 vertexNode_1052=true :=
+  by decide +kernel
+
+theorem apart128_ev_38539 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3808 vertexNode_1313=true :=
+  by decide +kernel
+
+theorem apart128_ev_38540 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3808 vertexNode_1444=true :=
+  by decide +kernel
+
+theorem apart128_ev_38541 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3808 vertexNode_1575=true :=
+  by decide +kernel
+
+theorem apart128_ev_38542 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3808 vertexNode_1576=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38540 apart128_ev_38541
+
+theorem apart128_ev_38543 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3808 vertexNode_1577=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38539 apart128_ev_38542
+
+theorem apart128_ev_38544 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3808 vertexNode_2104=true :=
+  by decide +kernel
+
+theorem apart128_ev_38545 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3808 vertexNode_2105=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38543 apart128_ev_38544
+
+theorem apart128_ev_38546 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3808 vertexNode_2106=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38538 apart128_ev_38545
+
+theorem apart128_ev_38547 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3809 vertexNode_1052=true :=
+  by decide +kernel
+
+theorem apart128_ev_38548 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3809 vertexNode_1313=true :=
+  by decide +kernel
+
+theorem apart128_ev_38549 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3809 vertexNode_1444=true :=
+  by decide +kernel
+
+theorem apart128_ev_38550 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3809 vertexNode_1575=true :=
+  by decide +kernel
+
+theorem apart128_ev_38551 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3809 vertexNode_1576=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38549 apart128_ev_38550
+
+theorem apart128_ev_38552 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3809 vertexNode_1577=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38548 apart128_ev_38551
+
+theorem apart128_ev_38553 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3809 vertexNode_2104=true :=
+  by decide +kernel
+
+theorem apart128_ev_38554 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3809 vertexNode_2105=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38552 apart128_ev_38553
+
+theorem apart128_ev_38555 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3809 vertexNode_2106=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38547 apart128_ev_38554
+
+theorem apart128_ev_38556 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3810 vertexNode_2106=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_node apart128_ev_38546 apart128_ev_38555
+
+theorem apart128_ev_38557 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3811 vertexNode_1052=true :=
+  by decide +kernel
+
+theorem apart128_ev_38558 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3811 vertexNode_1313=true :=
+  by decide +kernel
+
+theorem apart128_ev_38559 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3811 vertexNode_1444=true :=
+  by decide +kernel
+
+theorem apart128_ev_38560 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3811 vertexNode_1575=true :=
+  by decide +kernel
+
+theorem apart128_ev_38561 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3811 vertexNode_1576=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38559 apart128_ev_38560
+
+theorem apart128_ev_38562 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3811 vertexNode_1577=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38558 apart128_ev_38561
+
+theorem apart128_ev_38563 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3811 vertexNode_2104=true :=
+  by decide +kernel
+
+theorem apart128_ev_38564 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3811 vertexNode_2105=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38562 apart128_ev_38563
+
+theorem apart128_ev_38565 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3811 vertexNode_2106=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38557 apart128_ev_38564
+
+theorem apart128_ev_38566 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3812 vertexNode_1052=true :=
+  by decide +kernel
+
+theorem apart128_ev_38567 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3812 vertexNode_1313=true :=
+  by decide +kernel
+
+theorem apart128_ev_38568 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3812 vertexNode_1444=true :=
+  by decide +kernel
+
+theorem apart128_ev_38569 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3812 vertexNode_1575=true :=
+  by decide +kernel
+
+theorem apart128_ev_38570 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3812 vertexNode_1576=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38568 apart128_ev_38569
+
+theorem apart128_ev_38571 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3812 vertexNode_1577=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38567 apart128_ev_38570
+
+theorem apart128_ev_38572 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3812 vertexNode_2104=true :=
+  by decide +kernel
+
+theorem apart128_ev_38573 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3812 vertexNode_2105=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38571 apart128_ev_38572
+
+theorem apart128_ev_38574 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3812 vertexNode_2106=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38566 apart128_ev_38573
+
+theorem apart128_ev_38575 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3813 vertexNode_1052=true :=
+  by decide +kernel
+
+theorem apart128_ev_38576 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3813 vertexNode_1313=true :=
+  by decide +kernel
+
+theorem apart128_ev_38577 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3813 vertexNode_1444=true :=
+  by decide +kernel
+
+theorem apart128_ev_38578 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3813 vertexNode_1575=true :=
+  by decide +kernel
+
+theorem apart128_ev_38579 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3813 vertexNode_1576=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38577 apart128_ev_38578
+
+theorem apart128_ev_38580 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3813 vertexNode_1577=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38576 apart128_ev_38579
+
+theorem apart128_ev_38581 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3813 vertexNode_2104=true :=
+  by decide +kernel
+
+theorem apart128_ev_38582 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3813 vertexNode_2105=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38580 apart128_ev_38581
+
+theorem apart128_ev_38583 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3813 vertexNode_2106=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38575 apart128_ev_38582
+
+theorem apart128_ev_38584 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3814 vertexNode_2106=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_node apart128_ev_38574 apart128_ev_38583
+
+theorem apart128_ev_38585 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3815 vertexNode_2106=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_node apart128_ev_38565 apart128_ev_38584
+
+theorem apart128_ev_38586 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3816 vertexNode_2106=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_node apart128_ev_38556 apart128_ev_38585
+
+theorem apart128_ev_38587 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3817 vertexNode_2106=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_node apart128_ev_38537 apart128_ev_38586
+
+theorem apart128_ev_38588 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3818 vertexNode_1052=true :=
+  by decide +kernel
+
+theorem apart128_ev_38589 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3818 vertexNode_1313=true :=
+  by decide +kernel
+
+theorem apart128_ev_38590 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3818 vertexNode_1444=true :=
+  by decide +kernel
+
+theorem apart128_ev_38591 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3818 vertexNode_1575=true :=
+  by decide +kernel
+
+theorem apart128_ev_38592 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3818 vertexNode_1576=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38590 apart128_ev_38591
+
+theorem apart128_ev_38593 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3818 vertexNode_1577=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38589 apart128_ev_38592
+
+theorem apart128_ev_38594 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3818 vertexNode_2104=true :=
+  by decide +kernel
+
+theorem apart128_ev_38595 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3818 vertexNode_2105=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38593 apart128_ev_38594
+
+theorem apart128_ev_38596 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3818 vertexNode_2106=true :=
+  IntegerDrawingSpatialCertificate.Tree.apart_leaf_node apart128_ev_38588 apart128_ev_38595
+
+theorem apart128_ev_38597 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3819 vertexNode_1052=true :=
+  by decide +kernel
+
+theorem apart128_ev_38598 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3819 vertexNode_1313=true :=
+  by decide +kernel
+
+theorem apart128_ev_38599 : IntegerDrawingSpatialCertificate.Tree.apart (edgeVertexCheck graph point) edgeNode_3819 vertexNode_1444=true :=
+  by decide +kernel
+
+end PlanarHom.ColoringFanMacroCoordinates

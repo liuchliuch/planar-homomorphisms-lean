@@ -1,0 +1,10 @@
+import PlanarHom.ColoringMacroFanFramedRotationTableHost
+import PlanarHom.ColoringMacroFanFramedRotationTableVertexroot
+import PlanarHom.ColoringMacroFanFramedRotationTableVertexrank
+import PlanarHom.ColoringMacroFanFramedRotationTableParent
+import PlanarHom.ColoringMacroFanFramedRotationTableParentedge
+import PlanarHom.ColoringMacroFanFramedRotationTableConnectrank
+import PlanarHom.ColoringMacroFanFramedFaceData
+namespace PlanarHom.ColoringMacroFaces.FanFramed
+def rotateValue (i : ℕ) : ℕ := nextValue (if i%2=0 then i+1 else i-1)
+end PlanarHom.ColoringMacroFaces.FanFramed

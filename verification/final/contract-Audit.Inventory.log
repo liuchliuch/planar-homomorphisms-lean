@@ -1,0 +1,1675 @@
+PAPER_TARGET 1.1 PlanarHom.MainDichotomyScope.theorem11
+PAPER_TYPE PlanarHom.MainDichotomyScope.theorem11: PlanarHom.MainDichotomyScope.Theorem11Statement
+PAPER_AXIOMS PlanarHom.MainDichotomyScope.theorem11: [propext, Classical.choice, Quot.sound]
+PAPER_ITEM_CHECKED 1.1
+PAPER_TARGET 1.3 PlanarHom.MainDichotomyScope.theorem13
+PAPER_TYPE PlanarHom.MainDichotomyScope.theorem13: PlanarHom.MainDichotomyScope.Theorem13Statement
+PAPER_AXIOMS PlanarHom.MainDichotomyScope.theorem13: [propext, Classical.choice, Quot.sound]
+PAPER_ITEM_CHECKED 1.3
+PAPER_TARGET 2.2 PlanarHom.AlgebraicProductInterpolation.RealLanguage.proposition22_i
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.proposition22_i: ∀
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage 2 1 0),
+  (∀ (i : Fin 2), L.weights i = 1) →
+    (∀ (i j : Fin 2), L.matrices 0 i j = L.matrices 0 j i) →
+      (∀ (i j : Fin 2), 0 < L.matrices 0 i j) →
+        (L.matrices 0 0 0 = L.matrices 0 1 1 → L.problem.InFP) ∧
+          (IsUnit (L.matrices 0) →
+            L.matrices 0 0 0 ≠ L.matrices 0 1 1 → PlanarHom.Complexity.PromisedSharpPHard L.problem)
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.proposition22_i: [propext,
+ Classical.choice,
+ Quot.sound]
+PAPER_TARGET 2.2 PlanarHom.AlgebraicProductInterpolation.RealLanguage.proposition22_potts
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.proposition22_potts: ∀ (q : ℕ),
+  3 ≤ q →
+    PlanarHom.Complexity.PromisedSharpPHard
+      (PlanarHom.AlgebraicProductInterpolation.RealLanguage.pottsRationalProblem q)
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.proposition22_potts: [propext,
+ Quot.sound,
+ Classical.choice]
+PAPER_ITEM_CHECKED 2.2
+PAPER_TARGET 2.3 PlanarHom.FixedRealSmallState.theorem23
+PAPER_TYPE PlanarHom.FixedRealSmallState.theorem23: ∀ {n e : ℕ} {K : Type} [inst : Field K]
+  [inst_1 : Algebra (PlanarHom.DensePolynomial.RationalFunction n) K]
+  (basis : Module.Basis (Fin e) (PlanarHom.DensePolynomial.RationalFunction n) K) (φ : K →+* ℝ)
+  (M : Matrix (Fin 3) (Fin 3) K),
+  (∀ (i j : Fin 3), M i j = M j i) →
+    ((PlanarHom.SignedThreeState.ThreeStateEasy fun i j => φ (M i j)) →
+        (PlanarHom.FixedRealMixedInterpolation.problem basis (fun x => M) (fun l => l.elim0) fun x => 1).InFP) ∧
+      ((¬PlanarHom.SignedThreeState.ThreeStateEasy fun i j => φ (M i j)) →
+        PlanarHom.RepresentedBit.SharpPHard
+          (PlanarHom.FixedRealMixedInterpolation.problem basis (fun x => M) (fun l => l.elim0) fun x => 1))
+PAPER_AXIOMS PlanarHom.FixedRealSmallState.theorem23: [propext, Quot.sound, Classical.choice]
+PAPER_ITEM_CHECKED 2.3
+PAPER_TARGET 2.4 PlanarHom.FixedRealSmallState.theorem24
+PAPER_TYPE PlanarHom.FixedRealSmallState.theorem24: ∀ {n e : ℕ} {K : Type} [inst : Field K]
+  [inst_1 : Algebra (PlanarHom.DensePolynomial.RationalFunction n) K]
+  (basis : Module.Basis (Fin e) (PlanarHom.DensePolynomial.RationalFunction n) K) (φ : K →+* ℝ)
+  (M : Matrix (Fin 4) (Fin 4) K),
+  (∀ (i j : Fin 4), M i j = M j i) →
+    (∀ (i j : Fin 4), 0 ≤ φ (M i j)) →
+      (Matrix.rank fun i j => φ (M i j)) = 4 →
+        ((PlanarHom.RankFour.FourStateClass fun i j => φ (M i j)) →
+            (PlanarHom.FixedRealMixedInterpolation.problem basis (fun x => M) (fun l => l.elim0) fun x => 1).InFP) ∧
+          ((¬PlanarHom.RankFour.FourStateClass fun i j => φ (M i j)) →
+            PlanarHom.RepresentedBit.SharpPHard
+              (PlanarHom.FixedRealMixedInterpolation.problem basis (fun x => M) (fun l => l.elim0) fun x => 1))
+PAPER_AXIOMS PlanarHom.FixedRealSmallState.theorem24: [propext, Quot.sound, Classical.choice]
+PAPER_TARGET 2.4 PlanarHom.FixedRealSmallState.theorem24_positive
+PAPER_TYPE PlanarHom.FixedRealSmallState.theorem24_positive: ∀ {n e : ℕ} {K : Type} [inst : Field K]
+  [inst_1 : Algebra (PlanarHom.DensePolynomial.RationalFunction n) K]
+  (basis : Module.Basis (Fin e) (PlanarHom.DensePolynomial.RationalFunction n) K) (φ : K →+* ℝ)
+  (M : Matrix (Fin 4) (Fin 4) K),
+  (∀ (i j : Fin 4), M i j = M j i) →
+    (∀ (i j : Fin 4), 0 < φ (M i j)) →
+      (Matrix.rank fun i j => φ (M i j)) = 4 →
+        ((PlanarHom.RankFour.PositiveFourTensor fun i j => φ (M i j)) →
+            (PlanarHom.FixedRealMixedInterpolation.problem basis (fun x => M) (fun l => l.elim0) fun x => 1).InFP) ∧
+          ((¬PlanarHom.RankFour.PositiveFourTensor fun i j => φ (M i j)) →
+            PlanarHom.RepresentedBit.SharpPHard
+              (PlanarHom.FixedRealMixedInterpolation.problem basis (fun x => M) (fun l => l.elim0) fun x => 1))
+PAPER_AXIOMS PlanarHom.FixedRealSmallState.theorem24_positive: [propext, Quot.sound, Classical.choice]
+PAPER_ITEM_CHECKED 2.4
+PAPER_TARGET 2.5 PlanarHom.GadgetDiagonalSeparation.proposition25
+PAPER_TYPE PlanarHom.GadgetDiagonalSeparation.proposition25: ∀ {q : ℕ}
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q 1 0),
+  (∀ (i : Fin q), L.weights i = 1) →
+    ∀ (hs : ∀ (i j : Fin q), L.matrices 0 i j = L.matrices 0 j i),
+      (∀ (i j : Fin q), 0 ≤ L.matrices 0 i j) →
+        ((∀ (i j : Fin q), 0 < L.matrices 0 i j) →
+            (Function.Injective fun i => L.matrices 0 i i) →
+              ((L.matrices 0).rank = 1 → L.problem.InFP) ∧
+                (1 < (L.matrices 0).rank → PlanarHom.Complexity.PromisedSharpPHard L.problem)) ∧
+          (PlanarHom.GadgetDiagonalSeparation.Separates (L.matrices 0) →
+            (PlanarHom.GadgetDiagonalSeparation.SupportRankCondition (L.matrices 0) hs → L.problem.InFP) ∧
+              (¬PlanarHom.GadgetDiagonalSeparation.SupportRankCondition (L.matrices 0) hs →
+                PlanarHom.Complexity.PromisedSharpPHard L.problem))
+PAPER_AXIOMS PlanarHom.GadgetDiagonalSeparation.proposition25: [propext, Classical.choice, Quot.sound]
+PAPER_ITEM_CHECKED 2.5
+PAPER_TARGET 2.6 PlanarHom.AlgebraicProductInterpolation.RealLanguage.proposition26
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.proposition26: ∀ {q r : ℕ}
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q 1 0),
+  (∀ (i : Fin q), L.weights i = 1) →
+    (∀ (i j : Fin q), L.matrices 0 i j = L.matrices 0 j i) →
+      ∀ (block : Fin q → Fin r),
+        (∀ (i j : Fin q), block i ≠ block j → L.matrices 0 i j = 0) →
+          (∀ (b : Fin r), PlanarHom.TractableBlockComposition.Form fun i j => L.matrices 0 ↑i ↑j) → L.problem.InFP
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.proposition26: [propext, Classical.choice, Quot.sound]
+PAPER_ITEM_CHECKED 2.6
+PAPER_TARGET 3.1 PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma31_binary
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma31_binary: {q bt ut : ℕ} →
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q bt ut) →
+    (N : Matrix (Fin q) (Fin q) ℝ) →
+      (hN : ∀ (i j : Fin q), IsAlgebraic ℚ (N i j)) →
+        (old : Fin bt) →
+          (∀ (i j : Fin q), L.matrices old i j = 0 → N i j = 0) →
+            (PlanarHom.ProductCompatibility.HasProductMaps (fun p => L.matrices old p.1 p.2) fun p => N p.1 p.2) →
+              (base : PlanarHom.Complexity.PromiseProblem) →
+                PlanarHom.Complexity.PromisePolyTimeTuringReduction L.problem base →
+                  PlanarHom.Complexity.PromisePolyTimeTuringReduction (L.binaryTargetProblem N hN) base
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma31_binary: [propext,
+ Classical.choice,
+ Quot.sound]
+PAPER_TARGET 3.1 PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma31_unary
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma31_unary: {q bt ut : ℕ} →
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q bt ut) →
+    (N : Fin q → ℝ) →
+      (hN : ∀ (i : Fin q), IsAlgebraic ℚ (N i)) →
+        (old : Fin ut) →
+          (∀ (i : Fin q), L.unaries old i = 0 → N i = 0) →
+            PlanarHom.ProductCompatibility.HasProductMaps (L.unaries old) N →
+              (base : PlanarHom.Complexity.PromiseProblem) →
+                PlanarHom.Complexity.PromisePolyTimeTuringReduction L.problem base →
+                  PlanarHom.Complexity.PromisePolyTimeTuringReduction (L.unaryTargetProblem N hN) base
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma31_unary: [propext, Classical.choice, Quot.sound]
+PAPER_TARGET 3.1 PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma31_domain_binary
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma31_domain_binary: {q bt ut dt : ℕ} →
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q bt ut) →
+    (D : Fin dt → Set (Fin q)) →
+      (B : Fin bt → Fin dt → Fin dt → Prop) →
+        (T : Fin ut → Fin dt → Prop) →
+          (N : Matrix (Fin q) (Fin q) ℝ) →
+            (hN : ∀ (i j : Fin q), IsAlgebraic ℚ (N i j)) →
+              (old : Fin bt) →
+                (∀ (i j : Fin q), L.matrices old i j = 0 → N i j = 0) →
+                  (PlanarHom.ProductCompatibility.HasProductMaps (fun p => L.matrices old p.1 p.2) fun p => N p.1 p.2) →
+                    (base : PlanarHom.Complexity.PromiseProblem) →
+                      PlanarHom.Complexity.PromisePolyTimeTuringReduction (L.domainProblem D B T) base →
+                        PlanarHom.Complexity.PromisePolyTimeTuringReduction (L.domainBinaryTargetProblem D B T N hN old)
+                          base
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma31_domain_binary: [propext,
+ Classical.choice,
+ Quot.sound]
+PAPER_TARGET 3.1 PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma31_domain_unary
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma31_domain_unary: {q bt ut dt : ℕ} →
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q bt ut) →
+    (D : Fin dt → Set (Fin q)) →
+      (B : Fin bt → Fin dt → Fin dt → Prop) →
+        (T : Fin ut → Fin dt → Prop) →
+          (N : Fin q → ℝ) →
+            (hN : ∀ (i : Fin q), IsAlgebraic ℚ (N i)) →
+              (old : Fin ut) →
+                (∀ (i : Fin q), L.unaries old i = 0 → N i = 0) →
+                  PlanarHom.ProductCompatibility.HasProductMaps (L.unaries old) N →
+                    (base : PlanarHom.Complexity.PromiseProblem) →
+                      PlanarHom.Complexity.PromisePolyTimeTuringReduction (L.domainProblem D B T) base →
+                        PlanarHom.Complexity.PromisePolyTimeTuringReduction (L.domainUnaryTargetProblem D B T N hN old)
+                          base
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma31_domain_unary: [propext,
+ Classical.choice,
+ Quot.sound]
+PAPER_ITEM_CHECKED 3.1
+PAPER_TARGET 3.2 PlanarHom.Corollary32.support_chains
+PAPER_TYPE PlanarHom.Corollary32.support_chains: ∀ {q u : ℕ}
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q 1 u),
+  Nonempty
+      (PlanarHom.Complexity.PromisePolyTimeTuringReduction (PlanarHom.Corollary32.supportProblem L)
+        (PlanarHom.Corollary32.squareProblem L)) ∧
+    Nonempty (PlanarHom.Complexity.PromisePolyTimeTuringReduction (PlanarHom.Corollary32.squareProblem L) L.problem) ∧
+      Nonempty
+          (PlanarHom.Complexity.PromisePolyTimeTuringReduction (PlanarHom.Corollary32.supportProblem L)
+            (PlanarHom.Corollary32.magnitudeProblem L)) ∧
+        Nonempty
+          (PlanarHom.Complexity.PromisePolyTimeTuringReduction (PlanarHom.Corollary32.magnitudeProblem L) L.problem)
+PAPER_AXIOMS PlanarHom.Corollary32.support_chains: [propext, Classical.choice, Quot.sound]
+PAPER_TARGET 3.2 PlanarHom.Corollary32.mixed_equivalence
+PAPER_TYPE PlanarHom.Corollary32.mixed_equivalence: ∀ {q u : ℕ}
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q 1 u),
+  Nonempty (PlanarHom.Complexity.PromisePolyTimeTuringReduction L.problem (PlanarHom.Corollary32.mixedProblem L)) ∧
+    Nonempty (PlanarHom.Complexity.PromisePolyTimeTuringReduction (PlanarHom.Corollary32.mixedProblem L) L.problem)
+PAPER_AXIOMS PlanarHom.Corollary32.mixed_equivalence: [propext, Classical.choice, Quot.sound]
+PAPER_TARGET 3.2 PlanarHom.Corollary32.joint_extremal_transforms
+PAPER_TYPE PlanarHom.Corollary32.joint_extremal_transforms: ∀ {q u : ℕ}
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q 1 u),
+  L.matrices 0 ≠ 0 →
+    ∃ a b,
+      0 < a ∧
+        0 < b ∧
+          (∃ i j, |L.matrices 0 i j| = a) ∧
+            (∃ i j, |L.matrices 0 i j| = b) ∧
+              (∀ (i j : Fin q), L.matrices 0 i j ≠ 0 → a ≤ |L.matrices 0 i j|) ∧
+                (∀ (i j : Fin q), |L.matrices 0 i j| ≤ b) ∧
+                  Nonempty
+                    (PlanarHom.Complexity.PromisePolyTimeTuringReduction
+                      (L.mixedFiniteTargetProblem
+                        (PlanarHom.SupportTransformAvailability.fiveTransforms (L.matrices 0) a b) (fun i => i.elim0) ⋯
+                        ⋯)
+                      L.problem)
+PAPER_AXIOMS PlanarHom.Corollary32.joint_extremal_transforms: [propext, Classical.choice, Quot.sound]
+PAPER_ITEM_CHECKED 3.2
+PAPER_TARGET 3.3 PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma33_range
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma33_range: {q bt ut : ℕ} →
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q bt ut) →
+    (∀ (i : Fin q), L.weights i = 1) →
+      (old : Fin bt) →
+        (hC : (L.matrices old).PosSemidef) →
+          (base : PlanarHom.Complexity.PromiseProblem) →
+            PlanarHom.Complexity.PromisePolyTimeTuringReduction L.problem base →
+              PlanarHom.Complexity.PromisePolyTimeTuringReduction (L.rangeTargetProblem old hC) base
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma33_range: [propext, Classical.choice, Quot.sound]
+PAPER_TARGET 3.3 PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma33_rationalPower
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma33_rationalPower: {q bt ut : ℕ} →
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q bt ut) →
+    (∀ (i : Fin q), L.weights i = 1) →
+      (old : Fin bt) →
+        (hC : (L.matrices old).PosDef) →
+          (r : ℚ) →
+            (base : PlanarHom.Complexity.PromiseProblem) →
+              PlanarHom.Complexity.PromisePolyTimeTuringReduction L.problem base →
+                PlanarHom.Complexity.PromisePolyTimeTuringReduction (L.rationalPowerTargetProblem old hC r) base
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma33_rationalPower: [propext,
+ Classical.choice,
+ Quot.sound]
+PAPER_ITEM_CHECKED 3.3
+PAPER_TARGET 3.5 PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma35_root
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma35_root: {q : ℕ} →
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q 1 0) →
+    (∀ (i : Fin q), 0 < L.weights i) →
+      (X : Set (Fin q)) → PlanarHom.Complexity.PromisePolyTimeTuringReduction (L.singleRootProblem X) L.problem
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma35_root: [propext, Classical.choice, Quot.sound]
+PAPER_TARGET 3.5 PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma35_component
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma35_component: {q : ℕ} →
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q 1 0) →
+    (hs : ∀ (i j : Fin q), L.matrices 0 i j = L.matrices 0 j i) →
+      (∀ (i : Fin q), 0 < L.weights i) →
+        (c : (PlanarHom.RootedRestriction.colorSupport (L.matrices 0) hs).ConnectedComponent) →
+          PlanarHom.Complexity.PromisePolyTimeTuringReduction (L.supportRestrictionProblem c.supp) L.problem
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma35_component: [propext,
+ Classical.choice,
+ Quot.sound]
+PAPER_TARGET 3.5 PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma35_inFP
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma35_inFP: ∀ {q : ℕ}
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q 1 0)
+  (hs : ∀ (i j : Fin q), L.matrices 0 i j = L.matrices 0 j i),
+  (∀ (c : (PlanarHom.RootedRestriction.colorSupport (L.matrices 0) hs).ConnectedComponent),
+      (L.supportRestrictionProblem c.supp).InFP) →
+    L.problem.InFP
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma35_inFP: [propext, Classical.choice, Quot.sound]
+PAPER_ITEM_CHECKED 3.5
+PAPER_TARGET 3.6 PlanarHom.tensorPower_linearIndependent
+PAPER_TYPE PlanarHom.tensorPower_linearIndependent: ∀ {n r : ℕ} (v : Fin r → Fin n → ℝ),
+  (∀ (i : Fin r), v i ≠ 0) →
+    (∀ (i j : Fin r), i ≠ j → ∀ (c : ℝ), v i ≠ c • v j) →
+      LinearIndependent ℝ fun i => (PiTensorProduct.tprod ℝ) fun x => v i
+PAPER_AXIOMS PlanarHom.tensorPower_linearIndependent: [propext, Classical.choice, Quot.sound]
+PAPER_TARGET 3.6 PlanarHom.hadamard_weighted_gram_posDef
+PAPER_TYPE PlanarHom.hadamard_weighted_gram_posDef: ∀ {n r : ℕ} (B : Matrix (Fin r) (Fin n) ℝ) (d : Fin n → ℝ),
+  (∀ (k : Fin n), 0 < d k) →
+    (∀ (i : Fin r), B i ≠ 0) →
+      (∀ (i j : Fin r), i ≠ j → ∀ (t : ℝ), B i ≠ t • B j) →
+        Matrix.PosDef fun i j => (B * Matrix.diagonal d * B.transpose) i j ^ max 1 (r - 1)
+PAPER_AXIOMS PlanarHom.hadamard_weighted_gram_posDef: [propext, Classical.choice, Quot.sound]
+PAPER_ITEM_CHECKED 3.6
+PAPER_TARGET 3.7 PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma37_inverseDiagonal
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma37_inverseDiagonal: {q bt ut : ℕ} →
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q bt ut) →
+    (old : Fin bt) →
+      (∀ (i j : Fin q), L.matrices old i j = L.matrices old j i) →
+        (∀ (i : Fin q), 0 < L.weights i) →
+          (∀ (i : Fin q), L.matrices old i ≠ 0) →
+            (∀ (i j : Fin q), i ≠ j → ∀ (t : ℝ), L.matrices old i ≠ t • L.matrices old j) →
+              (base : PlanarHom.Complexity.PromiseProblem) →
+                PlanarHom.Complexity.PromisePolyTimeTuringReduction L.problem base →
+                  PlanarHom.Complexity.PromisePolyTimeTuringReduction L.inverseWeightProblem base
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma37_inverseDiagonal: [propext,
+ Classical.choice,
+ Quot.sound]
+PAPER_TARGET 3.7 PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma37_removeWeights
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma37_removeWeights: {q bt ut : ℕ} →
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q bt ut) →
+    (old : Fin bt) →
+      (∀ (i j : Fin q), L.matrices old i j = L.matrices old j i) →
+        (∀ (i : Fin q), 0 < L.weights i) →
+          (∀ (i : Fin q), L.matrices old i ≠ 0) →
+            (∀ (i j : Fin q), i ≠ j → ∀ (t : ℝ), L.matrices old i ≠ t • L.matrices old j) →
+              (base : PlanarHom.Complexity.PromiseProblem) →
+                PlanarHom.Complexity.PromisePolyTimeTuringReduction L.problem base →
+                  PlanarHom.Complexity.PromisePolyTimeTuringReduction L.unitWeightProblem base
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma37_removeWeights: [propext,
+ Classical.choice,
+ Quot.sound]
+PAPER_TARGET 3.7 PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma37_rational
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma37_rational: {q bt ut : ℕ} →
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q bt ut) →
+    (old : Fin bt) →
+      (∀ (i j : Fin q), L.matrices old i j = L.matrices old j i) →
+        (hw : ∀ (i : Fin q), 0 < L.weights i) →
+          (∀ (i : Fin q), L.matrices old i ≠ 0) →
+            (∀ (i j : Fin q), i ≠ j → ∀ (t : ℝ), L.matrices old i ≠ t • L.matrices old j) →
+              (r : ℚ) →
+                (base : PlanarHom.Complexity.PromiseProblem) →
+                  PlanarHom.Complexity.PromisePolyTimeTuringReduction L.problem base →
+                    PlanarHom.Complexity.PromisePolyTimeTuringReduction (L.rationalWeightProblem hw r) base
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma37_rational: [propext,
+ Classical.choice,
+ Quot.sound]
+PAPER_TARGET 3.7 PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma37_finiteRationalPowers
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma37_finiteRationalPowers: {q bt ut n : ℕ} →
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q bt ut) →
+    (old : Fin bt) →
+      (∀ (i j : Fin q), L.matrices old i j = L.matrices old j i) →
+        (hw : ∀ (i : Fin q), 0 < L.weights i) →
+          (∀ (i : Fin q), L.matrices old i ≠ 0) →
+            (∀ (i j : Fin q), i ≠ j → ∀ (t : ℝ), L.matrices old i ≠ t • L.matrices old j) →
+              (rs : Fin n → ℚ) →
+                (base : PlanarHom.Complexity.PromiseProblem) →
+                  PlanarHom.Complexity.PromisePolyTimeTuringReduction L.problem base →
+                    PlanarHom.Complexity.PromisePolyTimeTuringReduction (L.finiteWeightPowerProblem hw rs) base
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma37_finiteRationalPowers: [propext,
+ Classical.choice,
+ Quot.sound]
+PAPER_ITEM_CHECKED 3.7
+PAPER_TARGET 3.8 PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary38_identity
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary38_identity: ∀ {q : ℕ}
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q 1 0) {V E : Type} [inst : Fintype V] [inst_1 : Fintype E]
+  (G : PlanarHom.MultiGraph V E) (hs : ∀ (i j : Fin q), L.matrices 0 i j = L.matrices 0 j i),
+  G.partition (L.matrices 0) L.weights =
+    G.partition (PlanarHom.Twins.quotientMatrix (L.matrices 0) hs)
+      (PlanarHom.Twins.quotientWeight (L.matrices 0) L.weights)
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary38_identity: [propext,
+ Classical.choice,
+ Quot.sound]
+PAPER_TARGET 3.8 PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary38
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary38: {q : ℕ} →
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q 1 0) →
+    (hs : ∀ (i j : Fin q), L.matrices 0 i j = L.matrices 0 j i) →
+      (∀ (i : Fin q), 0 < L.weights i) →
+        (∀ (i j : Fin (PlanarHom.ActualTwins.reducedCount (L.matricesK 0) ⋯)),
+            i ≠ j → ∀ (t : ℝ), L.actualTwinMatrix hs i ≠ t • L.actualTwinMatrix hs j) →
+          PlanarHom.Complexity.PromisePolyTimeTuringReduction (L.actualTwinProblem hs) L.problem
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary38: [propext, Classical.choice, Quot.sound]
+PAPER_TARGET 3.8 PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary38_zeroOne
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary38_zeroOne: {q : ℕ} →
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q 1 0) →
+    (hs : ∀ (i j : Fin q), L.matrices 0 i j = L.matrices 0 j i) →
+      (∀ (i : Fin q), 0 < L.weights i) →
+        (∀ (i j : Fin q), L.matrices 0 i j = 0 ∨ L.matrices 0 i j = 1) →
+          PlanarHom.Complexity.PromisePolyTimeTuringReduction (L.actualTwinProblem hs) L.problem
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary38_zeroOne: [propext,
+ Classical.choice,
+ Quot.sound]
+PAPER_TARGET 3.8 PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary38_zeroOne_hardnessLift
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary38_zeroOne_hardnessLift: {q : ℕ} →
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q 1 0) →
+    (hs : ∀ (i j : Fin q), L.matrices 0 i j = L.matrices 0 j i) →
+      (∀ (i : Fin q), 0 < L.weights i) →
+        (∀ (i j : Fin q), L.matrices 0 i j = 0 ∨ L.matrices 0 i j = 1) →
+          (P : PlanarHom.Complexity.PromiseProblem) →
+            PlanarHom.Complexity.PromisePolyTimeTuringReduction P (L.actualTwinProblem hs) →
+              PlanarHom.Complexity.PromisePolyTimeTuringReduction P L.problem
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary38_zeroOne_hardnessLift: [propext,
+ Classical.choice,
+ Quot.sound]
+PAPER_ITEM_CHECKED 3.8
+PAPER_TARGET 3.9 PlanarHom.lemma_3_9
+PAPER_TYPE PlanarHom.lemma_3_9: ∀ {n : ℕ} (μ c : Fin n → ℝ),
+  (∀ (i : Fin n), 0 < μ i) → StrictMono μ → c ≠ 0 → {t | ∑ i, c i * μ i ^ t = 0}.encard ≤ ↑(n - 1)
+PAPER_AXIOMS PlanarHom.lemma_3_9: [propext, Classical.choice, Quot.sound]
+PAPER_ITEM_CHECKED 3.9
+PAPER_TARGET 3.10 PlanarHom.EffectiveProductTransfer.lemma310_polynomial_parameter
+PAPER_TYPE PlanarHom.EffectiveProductTransfer.lemma310_polynomial_parameter: {K₀ : IntermediateField ℚ ℝ} →
+  {sourceDimension q bt ut : ℕ} →
+    (sourceBasis : Module.Basis (Fin sourceDimension) ℚ ↥K₀) →
+      (X : Set ℚ) →
+        (fields :
+            PlanarHom.EffectiveProductTransfer.PresentedExtensions sourceBasis
+              (PlanarHom.EffectiveProductTransfer.rationalParameters X)) →
+          (M : Fin bt → Matrix (Fin q) (Fin q) ↥K₀) →
+            (U : Fin ut → Fin q → ↥K₀) →
+              (F : Matrix (Fin q) (Fin q) (Polynomial ↥K₀)) →
+                (B : (x : ↑X) → Matrix (Fin q) (Fin q) ↥(fields.fields x)) →
+                  (d n₀ : ℕ) →
+                    1 ≤ n₀ →
+                      (∀ (i j : Fin q), (F i j).natDegree ≤ d) →
+                        (∀ (x : ℝ) (i j : Fin q),
+                            PlanarHom.EffectiveProductTransfer.polynomialRealFamily F x i j =
+                              PlanarHom.EffectiveProductTransfer.polynomialRealFamily F x j i) →
+                          (∀ (x : ↑X) (i j : Fin q), B x i j = B x j i) →
+                            (PlanarHom.Complexity.FP (PlanarHom.EffectiveProductTransfer.rationalParameters X)
+                                (PlanarHom.DependentFieldCodecs.sigma
+                                  (PlanarHom.EffectiveProductTransfer.rationalParameters X) fun x =>
+                                  (PlanarHom.Complexity.numberFieldEncoding (fields.basis x)).vector (q * q))
+                                fun x => ⟨x, PlanarHom.Complexity.MixedCode.binaryAlphabet (B x)⟩) →
+                              (∀ (n : ℕ),
+                                  n₀ ≤ n →
+                                    ∀ (i j : Fin q),
+                                      0 < PlanarHom.EffectiveProductTransfer.polynomialRealFamily F (↑n) i j) →
+                                (∀ (x : ↑X),
+                                    PlanarHom.EffectiveProductTransfer.ProductIdentities
+                                      (PlanarHom.EffectiveProductTransfer.polynomialRealFamily F) fun i j =>
+                                      ↑(B x i j)) →
+                                  (base : PlanarHom.Complexity.PromiseProblem) →
+                                    PlanarHom.Complexity.PromisePolyTimeTuringReduction
+                                        (PlanarHom.DynamicMatrixFamilySource.problem sourceBasis M U (fun x => 1)
+                                          (PlanarHom.EffectiveProductTransfer.polynomialFamily F))
+                                        base →
+                                      PlanarHom.Complexity.PromisePolyTimeTuringReduction
+                                        (PlanarHom.EffectiveProductTransfer.variableTargetProblem sourceBasis
+                                          (PlanarHom.EffectiveProductTransfer.rationalParameters X) fields M U B)
+                                        base
+PAPER_AXIOMS PlanarHom.EffectiveProductTransfer.lemma310_polynomial_parameter: [propext, Classical.choice, Quot.sound]
+PAPER_TARGET 3.10 PlanarHom.EffectiveProductTransfer.lemma310_spectral_parameter
+PAPER_TYPE PlanarHom.EffectiveProductTransfer.lemma310_spectral_parameter: {K₀ : IntermediateField ℚ ℝ} →
+  [FiniteDimensional ℚ ↥K₀] →
+    {sourceDimension q bt ut : ℕ} →
+      (sourceBasis : Module.Basis (Fin sourceDimension) ℚ ↥K₀) →
+        (X : Set ℚ) →
+          (fields :
+              PlanarHom.EffectiveProductTransfer.PresentedExtensions sourceBasis
+                (PlanarHom.EffectiveProductTransfer.rationalParameters X)) →
+            (M : Fin bt → Matrix (Fin q) (Fin q) ↥K₀) →
+              (U : Fin ut → Fin q → ↥K₀) →
+                (A : Matrix (Fin q) (Fin q) ↥K₀) →
+                  (B : (x : ↑X) → Matrix (Fin q) (Fin q) ↥(fields.fields x)) →
+                    (PlanarHom.SpectralFieldPresentation.realMatrix A).PosDef →
+                      (∀ (x : ↑X) (i j : Fin q), B x i j = B x j i) →
+                        (PlanarHom.Complexity.FP (PlanarHom.EffectiveProductTransfer.rationalParameters X)
+                            (PlanarHom.DependentFieldCodecs.sigma
+                              (PlanarHom.EffectiveProductTransfer.rationalParameters X) fun x =>
+                              (PlanarHom.Complexity.numberFieldEncoding (fields.basis x)).vector (q * q))
+                            fun x => ⟨x, PlanarHom.Complexity.MixedCode.binaryAlphabet (B x)⟩) →
+                          (n₀ : ℕ) →
+                            1 ≤ n₀ →
+                              (∀ (n : ℕ),
+                                  n₀ ≤ n →
+                                    ∀ (i j : Fin q),
+                                      0 < PlanarHom.EffectiveProductTransfer.matrixPowerRealFamily A (↑n) i j) →
+                                (∀ (x : ↑X),
+                                    PlanarHom.EffectiveProductTransfer.ProductIdentities
+                                      (PlanarHom.EffectiveProductTransfer.matrixPowerRealFamily A) fun i j =>
+                                      ↑(B x i j)) →
+                                  (base : PlanarHom.Complexity.PromiseProblem) →
+                                    PlanarHom.Complexity.PromisePolyTimeTuringReduction
+                                        (PlanarHom.DynamicMatrixFamilySource.problem sourceBasis M U (fun x => 1)
+                                          fun n => A ^ n)
+                                        base →
+                                      PlanarHom.Complexity.PromisePolyTimeTuringReduction
+                                        (PlanarHom.EffectiveProductTransfer.variableTargetProblem sourceBasis
+                                          (PlanarHom.EffectiveProductTransfer.rationalParameters X) fields M U B)
+                                        base
+PAPER_AXIOMS PlanarHom.EffectiveProductTransfer.lemma310_spectral_parameter: [propext, Classical.choice, Quot.sound]
+PAPER_TARGET 3.10 PlanarHom.EffectiveProductTransfer.lemma310_polynomial_domain_parameter
+PAPER_TYPE PlanarHom.EffectiveProductTransfer.lemma310_polynomial_domain_parameter: {K₀ : IntermediateField ℚ ℝ} →
+  {sourceDimension q bt ut dt : ℕ} →
+    (sourceBasis : Module.Basis (Fin sourceDimension) ℚ ↥K₀) →
+      (X : Set ℚ) →
+        (fields :
+            PlanarHom.EffectiveProductTransfer.PresentedExtensions sourceBasis
+              (PlanarHom.EffectiveProductTransfer.rationalParameters X)) →
+          (M : Fin bt → Matrix (Fin q) (Fin q) ↥K₀) →
+            (U : Fin ut → Fin q → ↥K₀) →
+              (D : Fin dt → Set (Fin q)) →
+                (policy : Fin (bt + 1) → Fin dt → Fin dt → Prop) →
+                  (typing : Fin ut → Fin dt → Prop) →
+                    (F : Matrix (Fin q) (Fin q) (Polynomial ↥K₀)) →
+                      (B : (x : ↑X) → Matrix (Fin q) (Fin q) ↥(fields.fields x)) →
+                        (d n₀ : ℕ) →
+                          1 ≤ n₀ →
+                            (∀ (i j : Fin q), (F i j).natDegree ≤ d) →
+                              (∀ (x : ℝ) (i j : Fin q),
+                                  PlanarHom.EffectiveProductTransfer.polynomialRealFamily F x i j =
+                                    PlanarHom.EffectiveProductTransfer.polynomialRealFamily F x j i) →
+                                (∀ (x : ↑X) (i j : Fin q), B x i j = B x j i) →
+                                  (PlanarHom.Complexity.FP (PlanarHom.EffectiveProductTransfer.rationalParameters X)
+                                      (PlanarHom.DependentFieldCodecs.sigma
+                                        (PlanarHom.EffectiveProductTransfer.rationalParameters X) fun x =>
+                                        (PlanarHom.Complexity.numberFieldEncoding (fields.basis x)).vector (q * q))
+                                      fun x => ⟨x, PlanarHom.Complexity.MixedCode.binaryAlphabet (B x)⟩) →
+                                    (∀ (n : ℕ),
+                                        n₀ ≤ n →
+                                          ∀ (i j : Fin q),
+                                            0 < PlanarHom.EffectiveProductTransfer.polynomialRealFamily F (↑n) i j) →
+                                      (∀ (x : ↑X),
+                                          PlanarHom.EffectiveProductTransfer.ProductIdentities
+                                            (PlanarHom.EffectiveProductTransfer.polynomialRealFamily F) fun i j =>
+                                            ↑(B x i j)) →
+                                        (base : PlanarHom.Complexity.PromiseProblem) →
+                                          PlanarHom.Complexity.PromisePolyTimeTuringReduction
+                                              (PlanarHom.RestrictedMatrixFamilyReduction.sourceProblem sourceBasis M
+                                                (PlanarHom.PrescribedDomains.extendedUnaries U D) (fun x => 1)
+                                                (PlanarHom.EffectiveProductTransfer.polynomialFamily F)
+                                                (PlanarHom.PrescribedDomains.EncodedGraph policy typing))
+                                              base →
+                                            PlanarHom.Complexity.PromisePolyTimeTuringReduction
+                                              (PlanarHom.EffectiveProductTransfer.variableDomainTargetProblem
+                                                sourceBasis (PlanarHom.EffectiveProductTransfer.rationalParameters X)
+                                                fields M U D policy typing B)
+                                              base
+PAPER_AXIOMS PlanarHom.EffectiveProductTransfer.lemma310_polynomial_domain_parameter: [propext,
+ Classical.choice,
+ Quot.sound]
+PAPER_TARGET 3.10 PlanarHom.EffectiveProductTransfer.lemma310_spectral_domain_parameter
+PAPER_TYPE PlanarHom.EffectiveProductTransfer.lemma310_spectral_domain_parameter: {K₀ : IntermediateField ℚ ℝ} →
+  [FiniteDimensional ℚ ↥K₀] →
+    {sourceDimension q bt ut dt : ℕ} →
+      (sourceBasis : Module.Basis (Fin sourceDimension) ℚ ↥K₀) →
+        (X : Set ℚ) →
+          (fields :
+              PlanarHom.EffectiveProductTransfer.PresentedExtensions sourceBasis
+                (PlanarHom.EffectiveProductTransfer.rationalParameters X)) →
+            (M : Fin bt → Matrix (Fin q) (Fin q) ↥K₀) →
+              (U : Fin ut → Fin q → ↥K₀) →
+                (D : Fin dt → Set (Fin q)) →
+                  (policy : Fin (bt + 1) → Fin dt → Fin dt → Prop) →
+                    (typing : Fin ut → Fin dt → Prop) →
+                      (A : Matrix (Fin q) (Fin q) ↥K₀) →
+                        (B : (x : ↑X) → Matrix (Fin q) (Fin q) ↥(fields.fields x)) →
+                          (PlanarHom.SpectralFieldPresentation.realMatrix A).PosDef →
+                            (∀ (x : ↑X) (i j : Fin q), B x i j = B x j i) →
+                              (PlanarHom.Complexity.FP (PlanarHom.EffectiveProductTransfer.rationalParameters X)
+                                  (PlanarHom.DependentFieldCodecs.sigma
+                                    (PlanarHom.EffectiveProductTransfer.rationalParameters X) fun x =>
+                                    (PlanarHom.Complexity.numberFieldEncoding (fields.basis x)).vector (q * q))
+                                  fun x => ⟨x, PlanarHom.Complexity.MixedCode.binaryAlphabet (B x)⟩) →
+                                (n₀ : ℕ) →
+                                  1 ≤ n₀ →
+                                    (∀ (n : ℕ),
+                                        n₀ ≤ n →
+                                          ∀ (i j : Fin q),
+                                            0 < PlanarHom.EffectiveProductTransfer.matrixPowerRealFamily A (↑n) i j) →
+                                      (∀ (x : ↑X),
+                                          PlanarHom.EffectiveProductTransfer.ProductIdentities
+                                            (PlanarHom.EffectiveProductTransfer.matrixPowerRealFamily A) fun i j =>
+                                            ↑(B x i j)) →
+                                        (base : PlanarHom.Complexity.PromiseProblem) →
+                                          PlanarHom.Complexity.PromisePolyTimeTuringReduction
+                                              (PlanarHom.RestrictedMatrixFamilyReduction.sourceProblem sourceBasis M
+                                                (PlanarHom.PrescribedDomains.extendedUnaries U D) (fun x => 1)
+                                                (fun n => A ^ n)
+                                                (PlanarHom.PrescribedDomains.EncodedGraph policy typing))
+                                              base →
+                                            PlanarHom.Complexity.PromisePolyTimeTuringReduction
+                                              (PlanarHom.EffectiveProductTransfer.variableDomainTargetProblem
+                                                sourceBasis (PlanarHom.EffectiveProductTransfer.rationalParameters X)
+                                                fields M U D policy typing B)
+                                              base
+PAPER_AXIOMS PlanarHom.EffectiveProductTransfer.lemma310_spectral_domain_parameter: [propext,
+ Classical.choice,
+ Quot.sound]
+PAPER_ITEM_CHECKED 3.10
+PAPER_TARGET 3.11 PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma311_source
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma311_source: ∀ {q bt ut : ℕ}
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q bt ut),
+  (∀ (i : Fin q), L.weights i = 1) →
+    ∀ (old : Fin bt),
+      3 ≤ q →
+        ∀ (hpd : (L.matrices old).PosDef),
+          (∀ (i j : Fin q), 0 ≤ L.matrices old i j) →
+            (PlanarHom.LogarithmicSupport.offDiagonalSupport (L.matrices old) ⋯).Connected →
+              (∀ (i j : Fin q), i ≠ j → PlanarHom.EntropyCompletion.matrixLog (L.matrices old) i j ≠ 0) →
+                PlanarHom.Complexity.PromisedSharpPHard L.problem
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma311_source: [propext,
+ Classical.choice,
+ Quot.sound]
+PAPER_TARGET 3.11 PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma311
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma311: ∀ {q bt ut : ℕ}
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q bt ut),
+  (∀ (i : Fin q), L.weights i = 1) →
+    ∀ (old : Fin bt),
+      3 ≤ q →
+        ∀ (hpd : (L.matrices old).PosDef),
+          (∀ (i j : Fin q), 0 ≤ L.matrices old i j) →
+            (PlanarHom.LogarithmicSupport.offDiagonalSupport (L.matrices old) ⋯).Connected →
+              (∀ (i j : Fin q), i ≠ j → PlanarHom.EntropyCompletion.matrixLog (L.matrices old) i j ≠ 0) →
+                ∀ (P : PlanarHom.Complexity.PromiseProblem)
+                  (available : PlanarHom.Complexity.PromisePolyTimeTuringReduction L.problem P),
+                  PlanarHom.Complexity.PromisedSharpPHard P
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma311: [propext, Classical.choice, Quot.sound]
+PAPER_ITEM_CHECKED 3.11
+PAPER_TARGET 4.1 PlanarHom.ClosedMatrixFamily.lemma41
+PAPER_TYPE PlanarHom.ClosedMatrixFamily.lemma41: ∀ {V : Type} [inst : Fintype V] [inst_1 : DecidableEq V]
+  (A : Set (Matrix V V ℝ)),
+  PlanarHom.ClosedMatrixFamily.AlgebraicSourceClosed A →
+    (∃ H, PlanarHom.ClosedMatrixFamily.Admissible A H) →
+      ∃ M,
+        PlanarHom.ClosedMatrixFamily.Admissible A M ∧
+          PlanarHom.ClosedMatrixFamily.IsMaximum A M ∧
+            (PlanarHom.LogarithmicSupport.logSupport M).Connected ∧
+              ∀ (i j : V),
+                (PlanarHom.LogarithmicSupport.logSupport M).Adj i j → 0 < PlanarHom.EntropyCompletion.matrixLog M i j
+PAPER_AXIOMS PlanarHom.ClosedMatrixFamily.lemma41: [propext, Quot.sound, Classical.choice]
+PAPER_ITEM_CHECKED 4.1
+PAPER_TARGET 4.2 PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma42_uniform
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma42_uniform: {q bt ut : ℕ} →
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q bt ut) →
+    (∀ (i : Fin q), L.weights i = 1) →
+      (old : Fin bt) →
+        (L.matrices old).PosDef →
+          (PlanarHom.LogarithmicSupport.logSupport (L.matrices old)).Connected →
+            (∀ (i j : Fin q),
+                (PlanarHom.LogarithmicSupport.logSupport (L.matrices old)).Adj i j →
+                  0 < PlanarHom.EntropyCompletion.matrixLog (L.matrices old) i j) →
+              (base : PlanarHom.Complexity.PromiseProblem) →
+                PlanarHom.Complexity.PromisePolyTimeTuringReduction L.problem base →
+                  PlanarHom.Complexity.PromisePolyTimeTuringReduction (L.distanceKernelTargetProblem old) base
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma42_uniform: [propext,
+ Classical.choice,
+ Quot.sound]
+PAPER_TARGET 4.2 PlanarHom.ClosedMatrixFamily.lemma42_structural
+PAPER_TYPE PlanarHom.ClosedMatrixFamily.lemma42_structural: ∀ {q : ℕ} (A : Set (Matrix (Fin q) (Fin q) ℝ)),
+  PlanarHom.ClosedMatrixFamily.AlgebraicSourceClosed A →
+    PlanarHom.ClosedMatrixFamily.EffectiveSpectralClosed A →
+      ∀ (M : Matrix (Fin q) (Fin q) ℝ),
+        PlanarHom.ClosedMatrixFamily.Admissible A M →
+          PlanarHom.ClosedMatrixFamily.IsMaximum A M →
+            (∀ (i j : Fin q),
+                (PlanarHom.LogarithmicSupport.logSupport M).Adj i j → 0 < PlanarHom.EntropyCompletion.matrixLog M i j) →
+              (∀ (x : ℚ),
+                  0 < x →
+                    PlanarHom.EntropyCompletion.distanceKernel (PlanarHom.LogarithmicSupport.logSupport M) ↑x ∈ A) ∧
+                ∃ ε,
+                  0 < ε ∧
+                    ∀ (x : ℝ),
+                      0 < x →
+                        x < ε →
+                          (PlanarHom.EntropyCompletion.distanceKernel (PlanarHom.LogarithmicSupport.logSupport M)
+                                x).PosDef ∧
+                            PlanarHom.EntropyCompletion.logVanishesOnNonedges
+                              (PlanarHom.LogarithmicSupport.logSupport M)
+                              (PlanarHom.EntropyCompletion.distanceKernel (PlanarHom.LogarithmicSupport.logSupport M) x)
+PAPER_AXIOMS PlanarHom.ClosedMatrixFamily.lemma42_structural: [propext, Classical.choice, Quot.sound]
+PAPER_ITEM_CHECKED 4.2
+PAPER_TARGET 4.3 PlanarHom.ClosedMatrixFamily.lemma43
+PAPER_TYPE PlanarHom.ClosedMatrixFamily.lemma43: ∀ {V : Type} [inst : Fintype V] [inst_1 : DecidableEq V]
+  (A : Set (Matrix V V ℝ)),
+  PlanarHom.ClosedMatrixFamily.AlgebraicSourceClosed A →
+    ∀ (M N : Matrix V V ℝ),
+      PlanarHom.ClosedMatrixFamily.Admissible A M →
+        PlanarHom.ClosedMatrixFamily.IsMaximum A M →
+          N ∈ A →
+            N.PosDef →
+              PlanarHom.LogarithmicSupport.logSupport N = PlanarHom.LogarithmicSupport.logSupport M →
+                (∀ (i j : V),
+                    (PlanarHom.LogarithmicSupport.logSupport M).Adj i j →
+                      0 < PlanarHom.EntropyCompletion.matrixLog N i j) →
+                  ∀ (i j : V),
+                    PlanarHom.ClosedMatrixFamily.PathRigidity (PlanarHom.LogarithmicSupport.logSupport M)
+                      (PlanarHom.EntropyCompletion.matrixLog N) i j
+PAPER_AXIOMS PlanarHom.ClosedMatrixFamily.lemma43: [propext, Quot.sound, Classical.choice]
+PAPER_ITEM_CHECKED 4.3
+PAPER_TARGET 4.4 PlanarHom.ClosedMatrixFamily.lemma44
+PAPER_TYPE PlanarHom.ClosedMatrixFamily.lemma44: ∀ {q : ℕ} (A : Set (Matrix (Fin q) (Fin q) ℝ)),
+  PlanarHom.ClosedMatrixFamily.AlgebraicSourceClosed A →
+    PlanarHom.ClosedMatrixFamily.EffectiveSpectralClosed A →
+      PlanarHom.ClosedMatrixFamily.PlanarGadgetClosed A →
+        ∀ (M : Matrix (Fin q) (Fin q) ℝ),
+          PlanarHom.ClosedMatrixFamily.Admissible A M →
+            PlanarHom.ClosedMatrixFamily.IsMaximum A M →
+              (∀ (i j : Fin q),
+                  (PlanarHom.LogarithmicSupport.logSupport M).Adj i j →
+                    0 < PlanarHom.EntropyCompletion.matrixLog M i j) →
+                PlanarHom.CartesianGeometry.TwoCommonNeighbors (PlanarHom.LogarithmicSupport.logSupport M) ∧
+                  PlanarHom.CartesianGeometry.NeighborhoodCliques (PlanarHom.LogarithmicSupport.logSupport M)
+PAPER_AXIOMS PlanarHom.ClosedMatrixFamily.lemma44: [propext, Classical.choice, Quot.sound]
+PAPER_ITEM_CHECKED 4.4
+PAPER_TARGET 4.5 PlanarHom.KernelContinuation.posDef_distanceKernel
+PAPER_TYPE PlanarHom.KernelContinuation.posDef_distanceKernel: ∀ {V : Type u_1} [inst : Fintype V]
+  [inst_1 : DecidableEq V] (G : SimpleGraph V),
+  G.Connected →
+    PlanarHom.EntropyCompletion.initiallyLogSparse G →
+      ∀ {x : ℝ}, 0 < x → x < 1 → (PlanarHom.EntropyCompletion.distanceKernel G x).PosDef
+PAPER_AXIOMS PlanarHom.KernelContinuation.posDef_distanceKernel: [propext, Quot.sound, Classical.choice]
+PAPER_ITEM_CHECKED 4.5
+PAPER_TARGET 4.6 PlanarHom.CartesianGeometry.cartesian_product_characterization
+PAPER_TYPE PlanarHom.CartesianGeometry.cartesian_product_characterization: ∀ {V : Type u_1} [inst : Fintype V]
+  [DecidableEq V] (G : SimpleGraph V),
+  G.Connected →
+    (∀ (x : ℝ), 0 < x → x < 1 → (PlanarHom.EntropyCompletion.distanceKernel G x).PosSemidef) →
+      PlanarHom.CartesianGeometry.NeighborhoodCliques G →
+        PlanarHom.CartesianGeometry.TwoCommonNeighbors G →
+          ∃ d s, (∀ (i : Fin d), 2 ≤ s i) ∧ Nonempty (G ≃g PlanarHom.CartesianGeometry.hammingGraph fun i => Fin (s i))
+PAPER_AXIOMS PlanarHom.CartesianGeometry.cartesian_product_characterization: [propext, Quot.sound, Classical.choice]
+PAPER_ITEM_CHECKED 4.6
+PAPER_TARGET 4.7 PlanarHom.ClosedMatrixFamily.lemma47
+PAPER_TYPE PlanarHom.ClosedMatrixFamily.lemma47: ∀ {q : ℕ} (A : Set (Matrix (Fin q) (Fin q) ℝ)),
+  PlanarHom.ClosedMatrixFamily.AlgebraicSourceClosed A →
+    PlanarHom.ClosedMatrixFamily.EffectiveSpectralClosed A →
+      PlanarHom.ClosedMatrixFamily.PlanarGadgetClosed A →
+        ∀ (M : Matrix (Fin q) (Fin q) ℝ),
+          PlanarHom.ClosedMatrixFamily.Admissible A M →
+            PlanarHom.ClosedMatrixFamily.IsMaximum A M →
+              ∃ d s,
+                (∀ (i : Fin d), 2 ≤ s i) ∧
+                  Nonempty
+                    (PlanarHom.LogarithmicSupport.logSupport M ≃g
+                      PlanarHom.CartesianGeometry.hammingGraph fun i => Fin (s i))
+PAPER_AXIOMS PlanarHom.ClosedMatrixFamily.lemma47: [propext, Classical.choice, Quot.sound]
+PAPER_ITEM_CHECKED 4.7
+PAPER_TARGET 4.8 PlanarHom.ClosedMatrixFamily.proposition48_fixed_maximum
+PAPER_TYPE PlanarHom.ClosedMatrixFamily.proposition48_fixed_maximum: ∀ {q d : ℕ} (A : Set (Matrix (Fin q) (Fin q) ℝ)),
+  PlanarHom.ClosedMatrixFamily.AlgebraicSourceClosed A →
+    PlanarHom.ClosedMatrixFamily.EffectiveSpectralClosed A →
+      PlanarHom.ClosedMatrixFamily.MixedPlanarGadgetClosed A →
+        ∀ (M : Matrix (Fin q) (Fin q) ℝ),
+          PlanarHom.ClosedMatrixFamily.Admissible A M →
+            PlanarHom.ClosedMatrixFamily.IsMaximum A M →
+              ∀ (e : PlanarHom.LogarithmicSupport.logSupport M ≃g PlanarHom.Boolean.cubeGraph d),
+                ∀ N ∈ A,
+                  ∀ (hNpd : N.PosDef),
+                    (∀ (i j : Fin q), 0 ≤ N i j) →
+                      (∀ (i j : Fin q),
+                          N i j =
+                            N (e.symm PlanarHom.CubeTensorExponential.zeroColor)
+                                (e.symm PlanarHom.CubeTensorExponential.zeroColor) *
+                              ∏ r, PlanarHom.CubeTensorExponential.factorInCoordinates e.toEquiv N r (e i r) (e j r)) ∧
+                        0 <
+                            N (e.symm PlanarHom.CubeTensorExponential.zeroColor)
+                              (e.symm PlanarHom.CubeTensorExponential.zeroColor) ∧
+                          IsAlgebraic ℚ
+                              (N (e.symm PlanarHom.CubeTensorExponential.zeroColor)
+                                (e.symm PlanarHom.CubeTensorExponential.zeroColor)) ∧
+                            (∀ (r : Fin d),
+                                (PlanarHom.CubeTensorExponential.factorInCoordinates e.toEquiv N r).PosDef ∧
+                                  (∀ (a b : Bool),
+                                      0 ≤ PlanarHom.CubeTensorExponential.factorInCoordinates e.toEquiv N r a b) ∧
+                                    (∀ (a b : Bool),
+                                        IsAlgebraic ℚ
+                                          (PlanarHom.CubeTensorExponential.factorInCoordinates e.toEquiv N r a b)) ∧
+                                      PlanarHom.CubeTensorExponential.factorInCoordinates e.toEquiv N r false false =
+                                        1) ∧
+                              ((PlanarHom.LogarithmicSupport.offDiagonalSupport N ⋯).Connected ↔
+                                ∀ (r : Fin d) (a b : Bool),
+                                  0 < PlanarHom.CubeTensorExponential.factorInCoordinates e.toEquiv N r a b)
+PAPER_AXIOMS PlanarHom.ClosedMatrixFamily.proposition48_fixed_maximum: [propext, Classical.choice, Quot.sound]
+PAPER_ITEM_CHECKED 4.8
+PAPER_TARGET 5.1 PlanarHom.BooleanTensorDichotomy.theorem5_1_literal
+PAPER_TYPE PlanarHom.BooleanTensorDichotomy.theorem5_1_literal: ∀ {d : ℕ} (F : Fin d → Matrix Bool Bool ℝ),
+  (∀ (r : Fin d), (F r).PosDef) →
+    (∀ (r : Fin d) (i j : Bool), 0 < F r i j) →
+      ∀ (halg : ∀ (r : Fin d) (i j : Bool), IsAlgebraic ℚ (F r i j)),
+        ((∀ (r : Fin d), F r false false = F r true true) →
+            (PlanarHom.BooleanTensorDichotomy.tensorLanguage F halg).problem.InFP) ∧
+          ((∃ r, F r false false ≠ F r true true) →
+            PlanarHom.Complexity.PromisedSharpPHard (PlanarHom.BooleanTensorDichotomy.tensorLanguage F halg).problem)
+PAPER_AXIOMS PlanarHom.BooleanTensorDichotomy.theorem5_1_literal: [propext, Classical.choice, Quot.sound]
+PAPER_ITEM_CHECKED 5.1
+PAPER_TARGET 6.1 PlanarHom.AlgebraicProductInterpolation.RealLanguage.theorem61
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.theorem61: ∀ {q : ℕ}
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q 1 0),
+  (∀ (i : Fin q), L.weights i = 1) →
+    ∀ (hpd : (L.matrices 0).PosDef),
+      (∀ (i j : Fin q), 0 ≤ L.matrices 0 i j) →
+        (PlanarHom.LogarithmicSupport.offDiagonalSupport (L.matrices 0) ⋯).Connected →
+          (PlanarHom.AlgebraicProductInterpolation.RealLanguage.DisplayedPositiveDefiniteForm (L.matrices 0) →
+              L.problem.InFP) ∧
+            (¬PlanarHom.AlgebraicProductInterpolation.RealLanguage.DisplayedPositiveDefiniteForm (L.matrices 0) →
+              PlanarHom.Complexity.PromisedSharpPHard L.problem)
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.theorem61: [propext, Classical.choice, Quot.sound]
+PAPER_ITEM_CHECKED 6.1
+PAPER_TARGET 6.2 PlanarHom.ClosedMatrixFamily.corollary62
+PAPER_TYPE PlanarHom.ClosedMatrixFamily.corollary62: ∀ {q : ℕ} (S : Set (Matrix (Fin q) (Fin q) ℝ))
+  (hA : PlanarHom.ClosedMatrixFamily.AlgebraicSourceClosed S),
+  PlanarHom.ClosedMatrixFamily.EffectiveSpectralClosed S →
+    PlanarHom.ClosedMatrixFamily.MixedPlanarGadgetClosed S →
+      ∀ (P : PlanarHom.Complexity.PromiseProblem),
+        (∀ (N : Matrix (Fin q) (Fin q) ℝ) (hN : N ∈ S),
+            Nonempty
+              (PlanarHom.Complexity.PromisePolyTimeTuringReduction
+                (PlanarHom.AlgebraicProductInterpolation.RealLanguage.unitLanguage (fun x => N) ⋯).problem P)) →
+          (∃ H, PlanarHom.ClosedMatrixFamily.Admissible S H) →
+            ¬PlanarHom.Complexity.PromisedSharpPHard P →
+              ∃ W,
+                q = 2 ^ W.dimension ∧
+                  (∀ N ∈ S,
+                      N.PosDef →
+                        (∀ (i j : Fin q), 0 ≤ N i j) →
+                          ∃ γ A,
+                            0 < γ ∧
+                              (∀ (r : Fin W.dimension), (A r).PosDef ∧ ∀ (i j : Bool), 0 ≤ A r i j) ∧
+                                (Matrix.reindex W.graphIso.toEquiv W.graphIso.toEquiv) N =
+                                  γ • PlanarHom.CubeTensorExponential.tensor A) ∧
+                    (∀ (N : Matrix (Fin q) (Fin q) ℝ),
+                        PlanarHom.ClosedMatrixFamily.Admissible S N →
+                          ∃ γ ρ,
+                            0 < γ ∧
+                              (∀ (r : Fin W.dimension), 0 < ρ r ∧ ρ r < 1) ∧
+                                (Matrix.reindex W.graphIso.toEquiv W.graphIso.toEquiv) N =
+                                  γ • PlanarHom.Boolean.tensor ρ) ∧
+                      ∀ N ∈ S,
+                        (∀ (i j : Fin q), 0 < N i j) →
+                          ∃ γ ρ,
+                            0 < γ ∧
+                              (∀ (r : Fin W.dimension), 0 < ρ r) ∧
+                                (Matrix.reindex W.graphIso.toEquiv W.graphIso.toEquiv) N =
+                                  γ • PlanarHom.Boolean.tensor ρ
+PAPER_AXIOMS PlanarHom.ClosedMatrixFamily.corollary62: [propext, Classical.choice, Quot.sound]
+PAPER_ITEM_CHECKED 6.2
+PAPER_TARGET 7.1 PlanarHom.AlgebraicProductInterpolation.RealLanguage.theorem71_weighted
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.theorem71_weighted: ∀ {q : ℕ}
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q 1 0),
+  (∀ (i : Fin q), 0 < L.weights i) →
+    ∀ (hs : ∀ (i j : Fin q), L.matrices 0 i j = L.matrices 0 j i),
+      (∀ (i j : Fin q), L.matrices 0 i j = 0 ∨ L.matrices 0 i j = 1) →
+        (L.BasicZeroOneSupport hs → L.problem.InFP) ∧
+          (¬L.BasicZeroOneSupport hs → PlanarHom.Complexity.PromisedSharpPHard L.problem)
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.theorem71_weighted: [propext,
+ Classical.choice,
+ Quot.sound]
+PAPER_TARGET 7.1 PlanarHom.AlgebraicProductInterpolation.RealLanguage.theorem71_unweighted
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.theorem71_unweighted: ∀ {q : ℕ}
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q 1 0),
+  (∀ (i : Fin q), L.weights i = 1) →
+    ∀ (hs : ∀ (i j : Fin q), L.matrices 0 i j = L.matrices 0 j i),
+      (∀ (i j : Fin q), L.matrices 0 i j = 0 ∨ L.matrices 0 i j = 1) →
+        (L.BasicZeroOneSupport hs → L.problem.InFP) ∧
+          (¬L.BasicZeroOneSupport hs → PlanarHom.Complexity.PromisedSharpPHard L.problem) ∧
+            ∃ f,
+              PlanarHom.Complexity.SharpP f ∧
+                ∀ (raw : PlanarHom.Complexity.Bits),
+                  L.problem.valid raw →
+                    L.problem.value raw = (PlanarHom.Complexity.numberFieldEncoding L.basis).encode ↑(f raw)
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.theorem71_unweighted: [propext,
+ Classical.choice,
+ Quot.sound]
+PAPER_ITEM_CHECKED 7.1
+PAPER_TARGET 8.1 PlanarHom.AlgebraicProductInterpolation.RealLanguage.theorem81
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.theorem81: ∀ {q : ℕ} [Nonempty (Fin q)]
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q 1 0),
+  (∀ (i : Fin q), L.weights i = 1) →
+    (∀ (i j : Fin q), L.matrices 0 i j = L.matrices 0 j i) →
+      (∀ (i j : Fin q), 0 < L.matrices 0 i j) →
+        (PlanarHom.AlgebraicProductInterpolation.RealLanguage.PositiveTensorForm (L.matrices 0) → L.problem.InFP) ∧
+          (¬PlanarHom.AlgebraicProductInterpolation.RealLanguage.PositiveTensorForm (L.matrices 0) →
+            PlanarHom.Complexity.PromisedSharpPHard L.problem)
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.theorem81: [propext, Classical.choice, Quot.sound]
+PAPER_ITEM_CHECKED 8.1
+PAPER_TARGET 8.2 PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma82
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma82: ∀ {q : ℕ} [Nonempty (Fin q)]
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q 1 0),
+  (∀ (i : Fin q), L.weights i = 1) →
+    (∀ (i j : Fin q), L.matrices 0 i j = L.matrices 0 j i) →
+      (∀ (i j : Fin q), 0 < L.matrices 0 i j) →
+        (∀ (i : Fin q), L.matrices 0 i i = 1) →
+          Function.Injective (L.matrices 0) →
+            PlanarHom.Complexity.PromisedSharpPHard L.problem ∨
+              ∃ d e ρ,
+                (∀ (r : Fin d), 0 < ρ r ∧ ρ r ≠ 1) ∧
+                  (Matrix.reindex e e) (L.matrices 0) = PlanarHom.Boolean.tensor ρ ∧ IsUnit (L.matrices 0)
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma82: [propext, Classical.choice, Quot.sound]
+PAPER_ITEM_CHECKED 8.2
+PAPER_TARGET 8.3 PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma83
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma83: ∀ {q d : ℕ}
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q 1 0) (e : Fin q ≃ PlanarHom.Boolean.Cube d)
+  (ρ : Fin d → ℝ),
+  (∀ (r : Fin d), 0 < ρ r) →
+    (∀ (r : Fin d), ρ r ≠ 1) →
+      (∀ (i j : Fin q), L.matrices 0 i j = PlanarHom.Boolean.tensor ρ (e i) (e j)) →
+        (∀ (i : Fin q), 0 < L.weights i) →
+          ((∀ (i j : Fin q), L.weights i = L.weights j) → L.problem.InFP) ∧
+            ((∃ i j, L.weights i ≠ L.weights j) → PlanarHom.Complexity.PromisedSharpPHard L.problem)
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma83: [propext, Classical.choice, Quot.sound]
+PAPER_ITEM_CHECKED 8.3
+PAPER_TARGET 9.1 PlanarHom.RectangularUnweightedSourceForms.theorem91
+PAPER_TYPE PlanarHom.RectangularUnweightedSourceForms.theorem91: ∀ {p s : ℕ} [Nonempty (Fin p)] [Nonempty (Fin s)]
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage (p + s) 1 0) (V : Matrix (Fin p) (Fin s) ℝ),
+  (∀ (i : Fin p) (j : Fin s), 0 < V i j) →
+    L.matrices 0 = PlanarHom.RectangularSourceNormSimulation.block V →
+      (∀ (i : Fin (p + s)), L.weights i = 1) →
+        (PlanarHom.RectangularUnweightedSourceForms.RectangularTensorForm V → L.problem.InFP) ∧
+          (¬PlanarHom.RectangularUnweightedSourceForms.RectangularTensorForm V →
+            PlanarHom.Complexity.PromisedSharpPHard L.problem)
+PAPER_AXIOMS PlanarHom.RectangularUnweightedSourceForms.theorem91: [propext, Classical.choice, Quot.sound]
+PAPER_ITEM_CHECKED 9.1
+PAPER_TARGET 9.2 PlanarHom.RectangularCoreSourceRigidity.proposition92
+PAPER_TYPE PlanarHom.RectangularCoreSourceRigidity.proposition92: ∀ {x y : ℕ} [Nonempty (Fin x)] [Nonempty (Fin y)]
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage (x + y) 1 0),
+  (∀ (i : Fin (x + y)), L.weights i = 1) →
+    ∀ (B : Matrix (Fin x) (Fin y) ℝ),
+      (∀ (i : Fin x) (j : Fin y), 0 < B i j) →
+        L.matrices 0 = PlanarHom.RectangularSourceNormSimulation.block B →
+          (∀ (i j : Fin x), i ≠ j → ∀ (t : ℝ), B i ≠ t • B j) →
+            (∀ (i j : Fin y), i ≠ j → ∀ (t : ℝ), B.transpose i ≠ t • B.transpose j) →
+              PlanarHom.Complexity.PromisedSharpPHard L.problem ∨
+                ∃ d,
+                  x = 2 ^ d ∧
+                    y = 2 ^ d ∧
+                      ∃ eX eY γ ρ,
+                        0 < γ ∧
+                          (∀ (i : Fin d), 0 < ρ i ∧ ρ i < 1) ∧
+                            ∀ (i : Fin x) (j : Fin y), B i j = γ * PlanarHom.Boolean.tensor ρ (eX i) (eY j)
+PAPER_AXIOMS PlanarHom.RectangularCoreSourceRigidity.proposition92: [propext, Classical.choice, Quot.sound]
+PAPER_ITEM_CHECKED 9.2
+PAPER_TARGET 9.3 PlanarHom.PrescribedTensorWeight.lemma93
+PAPER_TYPE PlanarHom.PrescribedTensorWeight.lemma93: ∀ {q d : ℕ}
+  (e : Fin q ≃ PlanarHom.Boolean.Cube d ⊕ PlanarHom.Boolean.Cube d)
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q 1 0) (c : ℝ),
+  0 < c →
+    ∀ (ρ : Fin d → ℝ),
+      (∀ (r : Fin d), 0 < ρ r) →
+        (∀ (r : Fin d), ρ r ≠ 1) →
+          ∀ (μ ν : PlanarHom.Boolean.Cube d → ℝ),
+            (∀ (i : PlanarHom.Boolean.Cube d), 0 < μ i) →
+              (∀ (i : PlanarHom.Boolean.Cube d), 0 < ν i) →
+                (∀ (i j : Fin q),
+                    L.matrices 0 i j =
+                      PlanarHom.PositiveRealCore.doubleMatrix (PlanarHom.PositiveRealCore.scaledTensor c ρ) (e i)
+                        (e j)) →
+                  (∀ (i : Fin q), L.weights i = Sum.elim μ ν (e i)) →
+                    (PlanarHom.PrescribedTensorWeight.SideConstant μ ν →
+                        (PlanarHom.PrescribedTensorWeight.problem e L).InFP) ∧
+                      (¬PlanarHom.PrescribedTensorWeight.SideConstant μ ν →
+                        PlanarHom.Complexity.PromisedSharpPHard (PlanarHom.PrescribedTensorWeight.problem e L))
+PAPER_AXIOMS PlanarHom.PrescribedTensorWeight.lemma93: [propext, Classical.choice, Quot.sound]
+PAPER_ITEM_CHECKED 9.3
+PAPER_TARGET 11.1 PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma111_a
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma111_a: ∀ {q : ℕ} [Nonempty (Fin q)]
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q 1 0),
+  (∀ (i : Fin q), L.weights i = 1) →
+    (∀ (i j : Fin q), L.matrices 0 i j = L.matrices 0 j i) →
+      (∀ (i j : Fin q), 0 < L.matrices 0 i j) →
+        (∀ (i : Fin q), L.matrices 0 i i = 1) →
+          Function.Injective (L.matrices 0) →
+            PlanarHom.Complexity.PromisedSharpPHard L.problem ∨
+              ∃ d e ρ,
+                (∀ (r : Fin d), 0 < ρ r ∧ ρ r ≠ 1) ∧ (Matrix.reindex e e) (L.matrices 0) = PlanarHom.Boolean.tensor ρ
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma111_a: [propext, Classical.choice, Quot.sound]
+PAPER_TARGET 11.1 PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma111_b
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma111_b: ∀ {x y : ℕ} [Nonempty (Fin x)]
+  [Nonempty (Fin y)] (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage (x + y) 1 0),
+  (∀ (i : Fin (x + y)), L.weights i = 1) →
+    ∀ (B : Matrix (Fin x) (Fin y) ℝ),
+      (∀ (i : Fin x) (j : Fin y), 0 < B i j) →
+        L.matrices 0 = PlanarHom.RectangularSourceNormSimulation.block B →
+          (∀ (i j : Fin x), i ≠ j → ∀ (t : ℝ), B i ≠ t • B j) →
+            (∀ (i j : Fin y), i ≠ j → ∀ (t : ℝ), B.transpose i ≠ t • B.transpose j) →
+              PlanarHom.Complexity.PromisedSharpPHard L.problem ∨
+                ∃ d eX eY γ ρ,
+                  0 < γ ∧
+                    (∀ (i : Fin d), 0 < ρ i ∧ ρ i ≠ 1) ∧
+                      ∀ (i : Fin x) (j : Fin y), B i j = γ * PlanarHom.Boolean.tensor ρ (eX i) (eY j)
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma111_b: [propext, Classical.choice, Quot.sound]
+PAPER_TARGET 11.1 PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma111_c
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma111_c: ∀ {q : ℕ}
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q 1 0),
+  (∀ (i : Fin q), L.weights i = 1) →
+    (L.matrices 0).PosDef →
+      (∀ (i j : Fin q), 0 < L.matrices 0 i j) →
+        (∃ i j, L.matrices 0 i i ≠ L.matrices 0 j j) → PlanarHom.Complexity.PromisedSharpPHard L.problem
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.lemma111_c: [propext, Classical.choice, Quot.sound]
+PAPER_ITEM_CHECKED 11.1
+PAPER_TARGET 11.2 PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary112
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary112: ∀ {q : ℕ}
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q 1 0)
+  (hs : ∀ (i j : Fin q), L.matrices 0 i j = L.matrices 0 j i),
+  (∀ (i j : Fin q), 0 ≤ L.matrices 0 i j) →
+    (∀ (i : Fin q), 0 ≤ L.weights i) →
+      (L.SurvivingWeightedClass hs → L.problem.InFP) ∧
+        (¬L.SurvivingWeightedClass hs → PlanarHom.Complexity.PromisedSharpPHard L.problem)
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary112: [propext, Classical.choice, Quot.sound]
+PAPER_TARGET 11.2 PlanarHom.AlgebraicProductInterpolation.RealLanguage.empty_surviving_evaluate
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.empty_surviving_evaluate: ∀ {q : ℕ}
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q 1 0),
+  (∀ (i : Fin q), 0 ≤ L.weights i) →
+    (∀ (i : Fin q), ¬0 < L.weights i) →
+      ∀ (g : PlanarHom.Complexity.MixedCode) (hg : PlanarHom.Complexity.MixedCode.Valid 1 0 g),
+        g.evaluate hg L.matricesK L.unariesK L.weightsK = if g.vertices = 0 then 1 else 0
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.empty_surviving_evaluate: [propext,
+ Classical.choice,
+ Quot.sound]
+PAPER_ITEM_CHECKED 11.2
+PAPER_TARGET 12.1 PlanarHom.TargetGraphDichotomy.corollary121
+PAPER_TYPE PlanarHom.TargetGraphDichotomy.corollary121: ∀ {q : ℕ} (H : PlanarHom.TargetGraphDichotomy.Target q),
+  (H.Basic → H.planarProblem.InFP ∧ H.generalProblem.InFP) ∧
+    (¬H.Basic →
+      PlanarHom.TargetGraphDichotomy.CountingComplete H.planarProblem ∧
+        PlanarHom.TargetGraphDichotomy.CountingComplete H.generalProblem)
+PAPER_AXIOMS PlanarHom.TargetGraphDichotomy.corollary121: [propext, Classical.choice, Quot.sound]
+PAPER_ITEM_CHECKED 12.1
+PAPER_TARGET 12.2 PlanarHom.DomainDoublingClassification.corollary122_bipartite
+PAPER_TYPE PlanarHom.DomainDoublingClassification.corollary122_bipartite: ∀ {q : ℕ}
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q 1 0)
+  (hs : ∀ (i j : Fin q), L.matrices 0 i j = L.matrices 0 j i),
+  (∀ (i j : Fin q), 0 ≤ L.matrices 0 i j) →
+    (∀ (i : Fin q), 0 < L.weights i) →
+      (PlanarHom.Structures.PositiveVertexWeightClass
+            ((PlanarHom.DomainDoublingClassification.doubledLanguage L).matrices 0)
+            (PlanarHom.DomainDoublingClassification.doubledLanguage L).weights ⋯ →
+          (PlanarHom.DomainDoublingClassification.bipartiteProblem L).InFP) ∧
+        (¬PlanarHom.Structures.PositiveVertexWeightClass
+              ((PlanarHom.DomainDoublingClassification.doubledLanguage L).matrices 0)
+              (PlanarHom.DomainDoublingClassification.doubledLanguage L).weights ⋯ →
+          PlanarHom.Complexity.PromisedSharpPHard (PlanarHom.DomainDoublingClassification.bipartiteProblem L))
+PAPER_AXIOMS PlanarHom.DomainDoublingClassification.corollary122_bipartite: [propext, Classical.choice, Quot.sound]
+PAPER_TARGET 12.2 PlanarHom.DomainDoublingClassification.corollary122_prescribed
+PAPER_TYPE PlanarHom.DomainDoublingClassification.corollary122_prescribed: ∀ {q : ℕ}
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q 1 0) (side : Fin q → Bool),
+  (∀ (i j : Fin q), L.matrices 0 i j ≠ 0 → side i ≠ side j) →
+    ∀ (hs : ∀ (i j : Fin q), L.matrices 0 i j = L.matrices 0 j i),
+      (∀ (i j : Fin q), 0 ≤ L.matrices 0 i j) →
+        (∀ (i : Fin q), 0 < L.weights i) →
+          (PlanarHom.Structures.PositiveVertexWeightClass (L.matrices 0) L.weights hs →
+              (PlanarHom.DomainDoublingClassification.prescribedProblem L side).InFP) ∧
+            (¬PlanarHom.Structures.PositiveVertexWeightClass (L.matrices 0) L.weights hs →
+              PlanarHom.Complexity.PromisedSharpPHard (PlanarHom.DomainDoublingClassification.prescribedProblem L side))
+PAPER_AXIOMS PlanarHom.DomainDoublingClassification.corollary122_prescribed: [propext, Classical.choice, Quot.sound]
+PAPER_TARGET 12.2 PlanarHom.DomainDoublingClassification.corollary122_rectangular
+PAPER_TYPE PlanarHom.DomainDoublingClassification.corollary122_rectangular: ∀ {x y : ℕ} (V : Matrix (Fin x) (Fin y) ℝ)
+  (μ : Fin x → ℝ) (ν : Fin y → ℝ) (hV : ∀ (i : Fin x) (j : Fin y), IsAlgebraic ℚ (V i j))
+  (hμ : ∀ (i : Fin x), IsAlgebraic ℚ (μ i)) (hν : ∀ (i : Fin y), IsAlgebraic ℚ (ν i)),
+  (∀ (i : Fin x) (j : Fin y), 0 ≤ V i j) →
+    (∀ (i : Fin x), 0 < μ i) →
+      (∀ (i : Fin y), 0 < ν i) →
+        have L := PlanarHom.DomainDoublingClassification.rectangularLanguage V μ ν hV hμ hν;
+        (PlanarHom.Structures.PositiveVertexWeightClass (PlanarHom.DomainDoublingClassification.rectangularMatrix V)
+              L.weights ⋯ →
+            (PlanarHom.DomainDoublingClassification.prescribedProblem L
+                PlanarHom.DomainDoublingClassification.rectangularSide).InFP) ∧
+          (¬PlanarHom.Structures.PositiveVertexWeightClass (PlanarHom.DomainDoublingClassification.rectangularMatrix V)
+                L.weights ⋯ →
+            PlanarHom.Complexity.PromisedSharpPHard
+              (PlanarHom.DomainDoublingClassification.prescribedProblem L
+                PlanarHom.DomainDoublingClassification.rectangularSide))
+PAPER_AXIOMS PlanarHom.DomainDoublingClassification.corollary122_rectangular: [propext, Classical.choice, Quot.sound]
+PAPER_TARGET 12.2 PlanarHom.DomainDoublingClassification.corollary122_bipartite_unweighted
+PAPER_TYPE PlanarHom.DomainDoublingClassification.corollary122_bipartite_unweighted: ∀ {q : ℕ}
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q 1 0),
+  (∀ (i j : Fin q), L.matrices 0 i j = L.matrices 0 j i) →
+    (∀ (i j : Fin q), 0 ≤ L.matrices 0 i j) →
+      (∀ (i : Fin q), L.weights i = 1) →
+        (PlanarHom.Structures.NonnegativeClass ((PlanarHom.DomainDoublingClassification.doubledLanguage L).matrices 0) →
+            (PlanarHom.DomainDoublingClassification.bipartiteProblem L).InFP) ∧
+          (¬PlanarHom.Structures.NonnegativeClass
+                ((PlanarHom.DomainDoublingClassification.doubledLanguage L).matrices 0) →
+            PlanarHom.Complexity.PromisedSharpPHard (PlanarHom.DomainDoublingClassification.bipartiteProblem L))
+PAPER_AXIOMS PlanarHom.DomainDoublingClassification.corollary122_bipartite_unweighted: [propext,
+ Classical.choice,
+ Quot.sound]
+PAPER_TARGET 12.2 PlanarHom.DomainDoublingClassification.corollary122_prescribed_unweighted
+PAPER_TYPE PlanarHom.DomainDoublingClassification.corollary122_prescribed_unweighted: ∀ {q : ℕ}
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q 1 0) (side : Fin q → Bool),
+  (∀ (i j : Fin q), L.matrices 0 i j ≠ 0 → side i ≠ side j) →
+    (∀ (i j : Fin q), L.matrices 0 i j = L.matrices 0 j i) →
+      (∀ (i j : Fin q), 0 ≤ L.matrices 0 i j) →
+        (∀ (i : Fin q), L.weights i = 1) →
+          (PlanarHom.Structures.NonnegativeClass (L.matrices 0) →
+              (PlanarHom.DomainDoublingClassification.prescribedProblem L side).InFP) ∧
+            (¬PlanarHom.Structures.NonnegativeClass (L.matrices 0) →
+              PlanarHom.Complexity.PromisedSharpPHard (PlanarHom.DomainDoublingClassification.prescribedProblem L side))
+PAPER_AXIOMS PlanarHom.DomainDoublingClassification.corollary122_prescribed_unweighted: [propext,
+ Classical.choice,
+ Quot.sound]
+PAPER_ITEM_CHECKED 12.2
+PAPER_TARGET 12.4 PlanarHom.CenteredLogStructural.lemma124_structure_and_rank
+PAPER_TYPE PlanarHom.CenteredLogStructural.lemma124_structure_and_rank: ∀ {q : ℕ} [Nonempty (Fin q)]
+  (M : Matrix (Fin q) (Fin q) ℝ) (w : Fin q → ℝ) (hs : ∀ (i j : Fin q), M i j = M j i),
+  (∀ (i j : Fin q), 0 < M i j) →
+    (∀ (i j : Fin q), M i i = M j j) →
+      Function.Injective M →
+        (∀ (i : Fin q), 0 < w i) →
+          PlanarHom.Structures.PositiveVertexWeightClass M w hs →
+            ∃ d e γ μ ρ,
+              q = 2 ^ d ∧
+                0 < γ ∧
+                  0 < μ ∧
+                    (∀ (r : Fin d), 0 < ρ r ∧ ρ r ≠ 1) ∧
+                      (∀ (i j : Fin q), M i j = γ * PlanarHom.Boolean.tensor ρ (e i) (e j)) ∧
+                        (∀ (i : Fin q), w i = μ) ∧
+                          (PlanarHom.CenteredLogTensorExpansion.sourceCentering q *
+                                  PlanarHom.CenteredLogTensorExpansion.entrywiseLog M *
+                                PlanarHom.CenteredLogTensorExpansion.sourceCentering q).rank =
+                            d
+PAPER_AXIOMS PlanarHom.CenteredLogStructural.lemma124_structure_and_rank: [propext, Classical.choice, Quot.sound]
+PAPER_TARGET 12.4 PlanarHom.CenteredLogStructural.tensor_form_inFP
+PAPER_TYPE PlanarHom.CenteredLogStructural.tensor_form_inFP: ∀ {q d : ℕ}
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q 1 0) (e : Fin q ≃ PlanarHom.Boolean.Cube d) (γ μ : ℝ),
+  0 < γ →
+    0 < μ →
+      ∀ (ρ : Fin d → ℝ),
+        (∀ (r : Fin d), 0 < ρ r ∧ ρ r ≠ 1) →
+          (∀ (i j : Fin q), L.matrices 0 i j = γ * PlanarHom.Boolean.tensor ρ (e i) (e j)) →
+            (∀ (i : Fin q), L.weights i = μ) → L.problem.InFP
+PAPER_AXIOMS PlanarHom.CenteredLogStructural.tensor_form_inFP: [propext, Classical.choice, Quot.sound]
+PAPER_ITEM_CHECKED 12.4
+PAPER_TARGET 12.5 PlanarHom.FixedRealClock.corollary125
+PAPER_TYPE PlanarHom.FixedRealClock.corollary125: ∀ {d e q : ℕ} {F : Type} [inst : Field F]
+  [inst_1 : Algebra (PlanarHom.DensePolynomial.RationalFunction d) F]
+  (basis : Module.Basis (Fin e) (PlanarHom.DensePolynomial.RationalFunction d) F) (φ : F →+* ℝ),
+  2 ≤ q →
+    ∀ (K : ℝ) (M : Matrix (Fin q) (Fin q) F) (w : Fin q → F),
+      (∀ (i j : Fin q), φ (M i j) = PlanarHom.ClockModel.interaction q K i j) →
+        (∀ (i : Fin q), 0 < φ (w i)) →
+          (K = 0 → (PlanarHom.FixedRealPhysicalModels.problem basis M w).InFP) ∧
+            (K ≠ 0 →
+              (((q = 2 ∨ q = 4) ∧ ∃ μ, 0 < μ ∧ ∀ (i : Fin q), φ (w i) = μ) →
+                  (PlanarHom.FixedRealPhysicalModels.problem basis M w).InFP) ∧
+                (¬((q = 2 ∨ q = 4) ∧ ∃ μ, 0 < μ ∧ ∀ (i : Fin q), φ (w i) = μ) →
+                  PlanarHom.RepresentedBit.SharpPHard (PlanarHom.FixedRealPhysicalModels.problem basis M w)))
+PAPER_AXIOMS PlanarHom.FixedRealClock.corollary125: [propext, Quot.sound, Classical.choice]
+PAPER_ITEM_CHECKED 12.5
+PAPER_TARGET 12.6 PlanarHom.FixedRealCoupledIsing.corollary126_set
+PAPER_TYPE PlanarHom.FixedRealCoupledIsing.corollary126_set: ∀ {d e n : ℕ} {F : Type} [inst : Field F]
+  [inst_1 : Algebra (PlanarHom.DensePolynomial.RationalFunction d) F]
+  (basis : Module.Basis (Fin e) (PlanarHom.DensePolynomial.RationalFunction d) F) (φ : F →+* ℝ)
+  (A : Finset (PlanarHom.BinaryCharacters.Space n)),
+  0 ∉ A →
+    ∀ (J : PlanarHom.BinaryCharacters.Space n → ℝ),
+      (∀ a ∈ A, J a ≠ 0) →
+        ∀ (M : Matrix (PlanarHom.BinaryCharacters.Space n) (PlanarHom.BinaryCharacters.Space n) F)
+          (w : PlanarHom.BinaryCharacters.Space n → F),
+          (∀ (x y : PlanarHom.BinaryCharacters.Space n),
+              φ (M x y) =
+                PlanarHom.CoupledIsing.interaction (PlanarHom.CoupledIsing.setLabels A)
+                  (PlanarHom.CoupledIsing.setCouplings A J) x y) →
+            (∀ (x : PlanarHom.BinaryCharacters.Space n), 0 < φ (w x)) →
+              (((LinearIndependent PlanarHom.BinaryCharacters.F₂ fun a => ↑a) ∧
+                    ∃ μ,
+                      0 < μ ∧
+                        ∀ (z : ↥(PlanarHom.CoupledIsing.ImageSpace (PlanarHom.CoupledIsing.setLabels A))),
+                          PlanarHom.CoupledIsing.aggregatedWeight (PlanarHom.CoupledIsing.setLabels A)
+                              (fun x => φ (w x)) z =
+                            μ) →
+                  (PlanarHom.FixedRealPhysicalModels.problem basis M w).InFP) ∧
+                (¬((LinearIndependent PlanarHom.BinaryCharacters.F₂ fun a => ↑a) ∧
+                      ∃ μ,
+                        0 < μ ∧
+                          ∀ (z : ↥(PlanarHom.CoupledIsing.ImageSpace (PlanarHom.CoupledIsing.setLabels A))),
+                            PlanarHom.CoupledIsing.aggregatedWeight (PlanarHom.CoupledIsing.setLabels A)
+                                (fun x => φ (w x)) z =
+                              μ) →
+                  PlanarHom.RepresentedBit.SharpPHard (PlanarHom.FixedRealPhysicalModels.problem basis M w))
+PAPER_AXIOMS PlanarHom.FixedRealCoupledIsing.corollary126_set: [propext, Quot.sound, Classical.choice]
+PAPER_TARGET 12.6 PlanarHom.FixedRealCoupledIsing.empty_labels_inFP
+PAPER_TYPE PlanarHom.FixedRealCoupledIsing.empty_labels_inFP: ∀ {d e n : ℕ} {F : Type} [inst : Field F]
+  [inst_1 : Algebra (PlanarHom.DensePolynomial.RationalFunction d) F]
+  (basis : Module.Basis (Fin e) (PlanarHom.DensePolynomial.RationalFunction d) F) (φ : F →+* ℝ)
+  (a : Fin 0 → PlanarHom.BinaryCharacters.Space n) (J : Fin 0 → ℝ)
+  (M : Matrix (PlanarHom.BinaryCharacters.Space n) (PlanarHom.BinaryCharacters.Space n) F)
+  (w : PlanarHom.BinaryCharacters.Space n → F),
+  (∀ (x y : PlanarHom.BinaryCharacters.Space n), φ (M x y) = PlanarHom.CoupledIsing.interaction a J x y) →
+    (PlanarHom.FixedRealPhysicalModels.problem basis M w).InFP
+PAPER_AXIOMS PlanarHom.FixedRealCoupledIsing.empty_labels_inFP: [propext, Quot.sound, Classical.choice]
+PAPER_ITEM_CHECKED 12.6
+PAPER_TARGET 12.7 PlanarHom.FixedRealBlumeCapel.corollary127
+PAPER_TYPE PlanarHom.FixedRealBlumeCapel.corollary127: ∀ {d e : ℕ} {F : Type} [inst : Field F]
+  [inst_1 : Algebra (PlanarHom.DensePolynomial.RationalFunction d) F]
+  (basis : Module.Basis (Fin e) (PlanarHom.DensePolynomial.RationalFunction d) F) (φ : F →+* ℝ) (K D H : ℝ)
+  (M : Matrix (Fin 3) (Fin 3) F) (w : Fin 3 → F),
+  (∀ (i j : Fin 3), φ (M i j) = PlanarHom.BlumeCapel.interaction K i j) →
+    (∀ (i : Fin 3), φ (w i) = PlanarHom.BlumeCapel.weight D H i) →
+      (K = 0 → (PlanarHom.FixedRealPhysicalModels.problem basis M w).InFP) ∧
+        (K ≠ 0 → PlanarHom.RepresentedBit.SharpPHard (PlanarHom.FixedRealPhysicalModels.problem basis M w))
+PAPER_AXIOMS PlanarHom.FixedRealBlumeCapel.corollary127: [propext, Quot.sound, Classical.choice]
+PAPER_ITEM_CHECKED 12.7
+PAPER_TARGET 12.8 PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary128_unweighted
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary128_unweighted: ∀ {q : ℕ}
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q 1 0) (ambient : ℕ),
+  (∀ (i : Fin q), L.weights i = 1) →
+    (∀ (i j : Fin q), L.matrices 0 i j = L.matrices 0 j i) →
+      (∀ (i j : Fin q), 0 ≤ L.matrices 0 i j) →
+        (PlanarHom.Structures.NonnegativeClass (L.matrices 0) →
+            (PlanarHom.SurfaceRawEmbedding.evaluationProblem ambient L.basis L.matricesK L.unariesK L.weightsK).InFP) ∧
+          (¬PlanarHom.Structures.NonnegativeClass (L.matrices 0) →
+            PlanarHom.Complexity.PromisedSharpPHard
+              (PlanarHom.SurfaceRawEmbedding.evaluationProblem ambient L.basis L.matricesK L.unariesK L.weightsK))
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary128_unweighted: [propext,
+ Classical.choice,
+ Quot.sound]
+PAPER_TARGET 12.8 PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary128_weighted
+PAPER_TYPE PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary128_weighted: ∀ {q : ℕ}
+  (L : PlanarHom.AlgebraicProductInterpolation.RealLanguage q 1 0) (ambient : ℕ)
+  (hs : ∀ (i j : Fin q), L.matrices 0 i j = L.matrices 0 j i),
+  (∀ (i j : Fin q), 0 ≤ L.matrices 0 i j) →
+    (∀ (i : Fin q), 0 < L.weights i) →
+      (PlanarHom.Structures.PositiveVertexWeightClass (L.matrices 0) L.weights hs →
+          (PlanarHom.SurfaceRawEmbedding.evaluationProblem ambient L.basis L.matricesK L.unariesK L.weightsK).InFP) ∧
+        (¬PlanarHom.Structures.PositiveVertexWeightClass (L.matrices 0) L.weights hs →
+          PlanarHom.Complexity.PromisedSharpPHard
+            (PlanarHom.SurfaceRawEmbedding.evaluationProblem ambient L.basis L.matricesK L.unariesK L.weightsK))
+PAPER_AXIOMS PlanarHom.AlgebraicProductInterpolation.RealLanguage.corollary128_weighted: [propext,
+ Classical.choice,
+ Quot.sound]
+PAPER_ITEM_CHECKED 12.8
+PAPER_TARGET A.1 PlanarHom.FixedRealLemmaA1.lemmaA1
+PAPER_TYPE PlanarHom.FixedRealLemmaA1.lemmaA1: ∀ {d e : ℕ} {K : Type} [inst : Field K]
+  [inst_1 : Algebra (PlanarHom.DensePolynomial.RationalFunction d) K]
+  (basis : PlanarHom.FixedRealLemmaA1.PresentationBasis d e K), PlanarHom.FixedRealLemmaA1.LemmaA1Statement basis
+PAPER_AXIOMS PlanarHom.FixedRealLemmaA1.lemmaA1: [propext, Quot.sound, Classical.choice]
+PAPER_ITEM_CHECKED A.1
+PAPER_TARGET A.2 PlanarHom.FixedRealMixedRootRestriction.corollaryA2_mixed_root_prescribed
+PAPER_TYPE PlanarHom.FixedRealMixedRootRestriction.corollaryA2_mixed_root_prescribed: {d e c f s z b u : ℕ} →
+  {K F S C : Type} →
+    [inst : Field K] →
+      [inst_1 : Field F] →
+        [inst_2 : Field S] →
+          [inst_3 : Fintype C] →
+            [inst_4 : Algebra (PlanarHom.DensePolynomial.RationalFunction d) K] →
+              [inst_5 : Algebra (PlanarHom.DensePolynomial.RationalFunction c) F] →
+                [inst_6 : Algebra (PlanarHom.DensePolynomial.RationalFunction s) S] →
+                  [inst_7 : LinearOrder K] →
+                    [IsStrictOrderedRing K] →
+                      Module.Basis (Fin e) (PlanarHom.DensePolynomial.RationalFunction d) K →
+                        (targetBasis : Module.Basis (Fin f) (PlanarHom.DensePolynomial.RationalFunction c) F) →
+                          (targetEmbed : F →+* K) →
+                            (sourceBasis : Module.Basis (Fin z) (PlanarHom.DensePolynomial.RationalFunction s) S) →
+                              (sourceEmbed : S →+* K) →
+                                (MS : Fin b → Matrix C C S) →
+                                  (US : Fin u → C → S) →
+                                    (wS : C → S) →
+                                      (MT : Fin b → Matrix C C F) →
+                                        (UT : Fin u → C → F) →
+                                          (wT : C → F) →
+                                            ((fun l i j => targetEmbed (MT l i j)) = fun l i j =>
+                                                sourceEmbed (MS l i j)) →
+                                              ((fun l i => targetEmbed (UT l i)) = fun l i => sourceEmbed (US l i)) →
+                                                ((fun i => targetEmbed (wT i)) = fun i => sourceEmbed (wS i)) →
+                                                  (∀ (i : C), 0 < sourceEmbed (wS i)) →
+                                                    (X : Set C) →
+                                                      PlanarHom.RepresentedBit.Reduction
+                                                        (PlanarHom.FixedRealMixedRootRestriction.rootProblem targetBasis
+                                                          MT UT wT X)
+                                                        (PlanarHom.FixedRealComponents.problem sourceBasis MS US wS)
+PAPER_AXIOMS PlanarHom.FixedRealMixedRootRestriction.corollaryA2_mixed_root_prescribed: [propext,
+ Quot.sound,
+ Classical.choice]
+PAPER_TARGET A.2 PlanarHom.FixedRealMixedRootRestriction.corollaryA2_mixed_submatrix_prescribed
+PAPER_TYPE PlanarHom.FixedRealMixedRootRestriction.corollaryA2_mixed_submatrix_prescribed: {d e c f s z b u : ℕ} →
+  {K F S C : Type} →
+    [inst : Field K] →
+      [inst_1 : Field F] →
+        [inst_2 : Field S] →
+          [inst_3 : Fintype C] →
+            [inst_4 : Algebra (PlanarHom.DensePolynomial.RationalFunction d) K] →
+              [inst_5 : Algebra (PlanarHom.DensePolynomial.RationalFunction c) F] →
+                [inst_6 : Algebra (PlanarHom.DensePolynomial.RationalFunction s) S] →
+                  [inst_7 : LinearOrder K] →
+                    [IsStrictOrderedRing K] →
+                      Module.Basis (Fin e) (PlanarHom.DensePolynomial.RationalFunction d) K →
+                        (targetBasis : Module.Basis (Fin f) (PlanarHom.DensePolynomial.RationalFunction c) F) →
+                          (targetEmbed : F →+* K) →
+                            (sourceBasis : Module.Basis (Fin z) (PlanarHom.DensePolynomial.RationalFunction s) S) →
+                              (sourceEmbed : S →+* K) →
+                                (MS : Fin b → Matrix C C S) →
+                                  (US : Fin u → C → S) →
+                                    (wS : C → S) →
+                                      (MT : Fin b → Matrix C C F) →
+                                        (UT : Fin u → C → F) →
+                                          (wT : C → F) →
+                                            ((fun l i j => targetEmbed (MT l i j)) = fun l i j =>
+                                                sourceEmbed (MS l i j)) →
+                                              ((fun l i => targetEmbed (UT l i)) = fun l i => sourceEmbed (US l i)) →
+                                                ((fun i => targetEmbed (wT i)) = fun i => sourceEmbed (wS i)) →
+                                                  (∀ (i : C), 0 < sourceEmbed (wS i)) →
+                                                    (∀ (l : Fin b) (i j : C),
+                                                        sourceEmbed (MS l i j) = sourceEmbed (MS l j i)) →
+                                                      (X : Set C) →
+                                                        PlanarHom.MixedRootedRestriction.CommonClosed
+                                                            (fun l i j => sourceEmbed (MS l i j)) X →
+                                                          PlanarHom.RepresentedBit.Reduction
+                                                            (PlanarHom.FixedRealComponents.problem targetBasis
+                                                              (fun l i j => MT l ↑i ↑j) (fun l i => UT l ↑i) fun i =>
+                                                              wT ↑i)
+                                                            (PlanarHom.FixedRealComponents.problem sourceBasis MS US wS)
+PAPER_AXIOMS PlanarHom.FixedRealMixedRootRestriction.corollaryA2_mixed_submatrix_prescribed: [propext,
+ Quot.sound,
+ Classical.choice]
+PAPER_TARGET A.2 PlanarHom.FixedRealMixedOrientation.corollaryA2_mixed_orientation_prescribed
+PAPER_TYPE PlanarHom.FixedRealMixedOrientation.corollaryA2_mixed_orientation_prescribed: {d e c f s z b u : ℕ} →
+  {K F S C : Type} →
+    [inst : Field K] →
+      [inst_1 : Field F] →
+        [inst_2 : Field S] →
+          [inst_3 : Fintype C] →
+            [inst_4 : Algebra (PlanarHom.DensePolynomial.RationalFunction d) K] →
+              [inst_5 : Algebra (PlanarHom.DensePolynomial.RationalFunction c) F] →
+                [inst_6 : Algebra (PlanarHom.DensePolynomial.RationalFunction s) S] →
+                  [inst_7 : LinearOrder K] →
+                    [IsStrictOrderedRing K] →
+                      Module.Basis (Fin e) (PlanarHom.DensePolynomial.RationalFunction d) K →
+                        (targetBasis : Module.Basis (Fin f) (PlanarHom.DensePolynomial.RationalFunction c) F) →
+                          (targetEmbed : F →+* K) →
+                            (sourceBasis : Module.Basis (Fin z) (PlanarHom.DensePolynomial.RationalFunction s) S) →
+                              (sourceEmbed : S →+* K) →
+                                (MS : Fin b → Matrix C C S) →
+                                  (US : Fin u → C → S) →
+                                    (wS : C → S) →
+                                      (MT : Fin b → Matrix C C F) →
+                                        (UT : Fin u → C → F) →
+                                          (wT : C → F) →
+                                            ((fun l i j => targetEmbed (MT l i j)) = fun l i j =>
+                                                sourceEmbed (MS l i j)) →
+                                              ((fun l i => targetEmbed (UT l i)) = fun l i => sourceEmbed (US l i)) →
+                                                ((fun i => targetEmbed (wT i)) = fun i => sourceEmbed (wS i)) →
+                                                  (∀ (i : C), 0 < sourceEmbed (wS i)) →
+                                                    (∀ (l : Fin b) (i j : C),
+                                                        sourceEmbed (MS l i j) = sourceEmbed (MS l j i)) →
+                                                      (side : C → Bool) →
+                                                        (∀ (l : Fin b) (i j : C),
+                                                            sourceEmbed (MS l i j) ≠ 0 → side i ≠ side j) →
+                                                          PlanarHom.RepresentedBit.Reduction
+                                                            (PlanarHom.FixedRealMixedOrientation.problem targetBasis MT
+                                                              UT wT side)
+                                                            (PlanarHom.FixedRealComponents.problem sourceBasis MS US wS)
+PAPER_AXIOMS PlanarHom.FixedRealMixedOrientation.corollaryA2_mixed_orientation_prescribed: [propext,
+ Quot.sound,
+ Classical.choice]
+PAPER_ITEM_CHECKED A.2
+PAPER_TARGET A.3 PlanarHom.FixedRealMixedInterpolation.theoremA3_prescribed_joint
+PAPER_TYPE PlanarHom.FixedRealMixedInterpolation.theoremA3_prescribed_joint: {d e c f s z q b u r v : ℕ} →
+  {K F S : Type} →
+    [inst : Field K] →
+      [inst_1 : Field F] →
+        [inst_2 : Field S] →
+          [inst_3 : Algebra (PlanarHom.DensePolynomial.RationalFunction d) K] →
+            [inst_4 : Algebra (PlanarHom.DensePolynomial.RationalFunction c) F] →
+              [inst_5 : Algebra (PlanarHom.DensePolynomial.RationalFunction s) S] →
+                Module.Basis (Fin e) (PlanarHom.DensePolynomial.RationalFunction d) K →
+                  (targetBasis : Module.Basis (Fin f) (PlanarHom.DensePolynomial.RationalFunction c) F) →
+                    (targetEmbed : F →+* K) →
+                      (sourceBasis : Module.Basis (Fin z) (PlanarHom.DensePolynomial.RationalFunction s) S) →
+                        (sourceEmbed : S →+* K) →
+                          (MS : Fin b → Matrix (Fin q) (Fin q) S) →
+                            (US : Fin u → Fin q → S) →
+                              (wS : Fin q → S) →
+                                (MT : Fin b → Matrix (Fin q) (Fin q) F) →
+                                  (UT : Fin u → Fin q → F) →
+                                    (wT : Fin q → F) →
+                                      (N : Fin r → Matrix (Fin q) (Fin q) F) →
+                                        (V : Fin v → Fin q → F) →
+                                          (∀ (l : Fin b) (i j : Fin q),
+                                              targetEmbed (MT l i j) = sourceEmbed (MS l i j)) →
+                                            (∀ (l : Fin u) (i : Fin q), targetEmbed (UT l i) = sourceEmbed (US l i)) →
+                                              (∀ (i : Fin q), targetEmbed (wT i) = sourceEmbed (wS i)) →
+                                                (oldM : Fin r → Fin b) →
+                                                  (oldU : Fin v → Fin u) →
+                                                    (∀ (l : Fin r) (i j : Fin q),
+                                                        sourceEmbed (MS (oldM l) i j) = 0 → targetEmbed (N l i j) = 0) →
+                                                      (∀ (l : Fin r),
+                                                          PlanarHom.ProductCompatibility.HasProductMaps
+                                                            (fun p => sourceEmbed (MS (oldM l) p.1 p.2)) fun p =>
+                                                            targetEmbed (N l p.1 p.2)) →
+                                                        (∀ (l : Fin v) (i : Fin q),
+                                                            sourceEmbed (US (oldU l) i) = 0 → targetEmbed (V l i) = 0) →
+                                                          (∀ (l : Fin v),
+                                                              PlanarHom.ProductCompatibility.HasProductMaps
+                                                                (fun i => sourceEmbed (US (oldU l) i)) fun i =>
+                                                                targetEmbed (V l i)) →
+                                                            (base : PlanarHom.RepresentedBit.Problem) →
+                                                              PlanarHom.RepresentedBit.Reduction
+                                                                  (PlanarHom.FixedRealMixedInterpolation.problem
+                                                                    sourceBasis MS US wS)
+                                                                  base →
+                                                                PlanarHom.RepresentedBit.Reduction
+                                                                  (PlanarHom.FixedRealMixedInterpolation.problem
+                                                                    targetBasis
+                                                                    (PlanarHom.FiniteLanguageAliases.appendFamily MT N)
+                                                                    (PlanarHom.FiniteLanguageAliases.appendFamily UT V)
+                                                                    wT)
+                                                                  base
+PAPER_AXIOMS PlanarHom.FixedRealMixedInterpolation.theoremA3_prescribed_joint: [propext, Quot.sound, Classical.choice]
+PAPER_ITEM_CHECKED A.3
+PAPER_TARGET A.4 PlanarHom.RelationApproximation.relation_preserving_approximation
+PAPER_TYPE PlanarHom.RelationApproximation.relation_preserving_approximation: ∀ {ι : Type u_1} [inst : Fintype ι]
+  (m : ι → ℝ),
+  (∀ (i : ι), m i ≠ 0) →
+    ∀ (δ : ℝ),
+      0 < δ →
+        ∃ q,
+          (∀ (i : ι), q i ≠ 0) ∧
+            (∀ (i : ι), |↑(q i) - m i| < δ) ∧
+              (∀ (i : ι), (↑(q i)).sign = (m i).sign) ∧ ∀ (z : ι → ℤ), ∏ i, m i ^ z i = 1 → ∏ i, q i ^ z i = 1
+PAPER_AXIOMS PlanarHom.RelationApproximation.relation_preserving_approximation: [propext, Quot.sound, Classical.choice]
+PAPER_TARGET A.4 PlanarHom.FixedRealApproximation.theoremA4_joint
+PAPER_TYPE PlanarHom.FixedRealApproximation.theoremA4_joint: ∀ {n e q b u : ℕ} {K : Type} [inst : Field K]
+  [inst_1 : Algebra (PlanarHom.DensePolynomial.RationalFunction n) K]
+  (basis : Module.Basis (Fin e) (PlanarHom.DensePolynomial.RationalFunction n) K) (φ : K →+* ℝ)
+  (M : Fin b → Matrix (Fin q) (Fin q) K) (U : Fin u → Fin q → K) (w : Fin q → K),
+  (∀ (l : Fin b) (i j : Fin q), M l i j = M l j i) →
+    ∀ (δ : ℝ),
+      0 < δ →
+        ∀ (base : PlanarHom.RepresentedBit.Problem)
+          (available :
+            PlanarHom.RepresentedBit.Reduction (PlanarHom.FixedRealMixedInterpolation.problem basis M U w) base),
+          ∃ N,
+            (∀ (l : Fin b) (i j : Fin q), N l i j = N l j i) ∧
+              (∀ (l : Fin b) (i j : Fin q), N l i j = 0 ↔ M l i j = 0) ∧
+                (∀ (l : Fin b) (i j : Fin q), |↑(N l i j) - φ (M l i j)| < δ) ∧
+                  (∀ (l : Fin b) (i j : Fin q), (↑(N l i j)).sign = (φ (M l i j)).sign) ∧
+                    Nonempty
+                      (PlanarHom.RepresentedBit.Reduction
+                        (PlanarHom.FixedRealMixedInterpolation.problem basis
+                          (PlanarHom.FiniteLanguageAliases.appendFamily M fun l i j => ↑(N l i j)) U w)
+                        base)
+PAPER_AXIOMS PlanarHom.FixedRealApproximation.theoremA4_joint: [propext, Quot.sound, Classical.choice]
+PAPER_TARGET A.4 PlanarHom.FixedRealApproximation.theoremA4_prescribed_rational
+PAPER_TYPE PlanarHom.FixedRealApproximation.theoremA4_prescribed_rational: ∀ {n e q : ℕ} {K : Type} [inst : Field K]
+  [inst_1 : Algebra (PlanarHom.DensePolynomial.RationalFunction n) K]
+  (basis : Module.Basis (Fin e) (PlanarHom.DensePolynomial.RationalFunction n) K) (φ : K →+* ℝ)
+  (M : Matrix (Fin q) (Fin q) K),
+  (∀ (i j : Fin q), M i j = M j i) →
+    ∀ (δ : ℝ),
+      0 < δ →
+        ∃ N,
+          (∀ (i j : Fin q), N i j = N j i) ∧
+            (∀ (i j : Fin q), N i j = 0 ↔ M i j = 0) ∧
+              (∀ (i j : Fin q), |↑(N i j) - φ (M i j)| < δ) ∧
+                (∀ (i j : Fin q), (↑(N i j)).sign = (φ (M i j)).sign) ∧
+                  Nonempty
+                    (PlanarHom.RepresentedBit.Reduction
+                      (PlanarHom.RepresentedBit.ofCanonical
+                        (PlanarHom.FixedRealApproximation.rationalLanguage N).problem)
+                      (PlanarHom.FixedRealMixedInterpolation.problem basis (fun x => M) (fun l => l.elim0) fun x => 1))
+PAPER_AXIOMS PlanarHom.FixedRealApproximation.theoremA4_prescribed_rational: [propext, Quot.sound, Classical.choice]
+PAPER_ITEM_CHECKED A.4
+PAPER_TARGET A.5 PlanarHom.FixedChartClosedness.isClosed_nonnegativeClass_support
+PAPER_TYPE PlanarHom.FixedChartClosedness.isClosed_nonnegativeClass_support: ∀ {C : Type u_1} [Fintype C]
+  (P : C → C → Prop), IsClosed {M | PlanarHom.Structures.NonnegativeClass ↑M}
+PAPER_AXIOMS PlanarHom.FixedChartClosedness.isClosed_nonnegativeClass_support: [propext, Quot.sound, Classical.choice]
+PAPER_TARGET A.5 PlanarHom.FixedChartClosedness.nonnegativeClass_of_tendsto_fixedSupport
+PAPER_TYPE PlanarHom.FixedChartClosedness.nonnegativeClass_of_tendsto_fixedSupport: ∀ {C : Type u_1} {A : Type u_2}
+  [Fintype C] {f : Filter A} [f.NeBot] (P : C → C → Prop) (M : A → C → C → ℝ) (L : C → C → ℝ),
+  (∀ (n : A), PlanarHom.FixedChartClosedness.HasSupport P (M n)) →
+    PlanarHom.FixedChartClosedness.HasSupport P L →
+      (∀ (n : A), PlanarHom.Structures.NonnegativeClass (M n)) →
+        (∀ (i j : C), Filter.Tendsto (fun n => M n i j) f (nhds (L i j))) → PlanarHom.Structures.NonnegativeClass L
+PAPER_AXIOMS PlanarHom.FixedChartClosedness.nonnegativeClass_of_tendsto_fixedSupport: [propext,
+ Quot.sound,
+ Classical.choice]
+PAPER_ITEM_CHECKED A.5
+PAPER_TARGET A.6 PlanarHom.FixedRealApproximation.theoremA6
+PAPER_TYPE PlanarHom.FixedRealApproximation.theoremA6: ∀ {n e q : ℕ} {K : Type} [inst : Field K]
+  [inst_1 : Algebra (PlanarHom.DensePolynomial.RationalFunction n) K]
+  (basis : Module.Basis (Fin e) (PlanarHom.DensePolynomial.RationalFunction n) K) (φ : K →+* ℝ)
+  (M : Matrix (Fin q) (Fin q) K),
+  (∀ (i j : Fin q), M i j = M j i) →
+    (∀ (i j : Fin q), 0 ≤ φ (M i j)) →
+      ((PlanarHom.Structures.NonnegativeClass fun i j => φ (M i j)) →
+          (PlanarHom.FixedRealMixedInterpolation.problem basis (fun x => M) (fun l => l.elim0) fun x => 1).InFP) ∧
+        ((¬PlanarHom.Structures.NonnegativeClass fun i j => φ (M i j)) →
+          PlanarHom.RepresentedBit.SharpPHard
+            (PlanarHom.FixedRealMixedInterpolation.problem basis (fun x => M) (fun l => l.elim0) fun x => 1))
+PAPER_AXIOMS PlanarHom.FixedRealApproximation.theoremA6: [propext, Quot.sound, Classical.choice]
+PAPER_ITEM_CHECKED A.6
+PAPER_TARGET A.7 PlanarHom.FixedRealSignedTransforms.theoremA7_all_five
+PAPER_TYPE PlanarHom.FixedRealSignedTransforms.theoremA7_all_five: ∀ {n e q b u : ℕ} {K : Type} [inst : Field K]
+  [inst_1 : Algebra (PlanarHom.DensePolynomial.RationalFunction n) K]
+  (basis : Module.Basis (Fin e) (PlanarHom.DensePolynomial.RationalFunction n) K) (φ : K →+* ℝ)
+  (M : Fin b → Matrix (Fin q) (Fin q) K) (U : Fin u → Fin q → K) (w : Fin q → K) (selected : Fin b),
+  M selected ≠ 0 →
+    ∀ (base : PlanarHom.RepresentedBit.Problem)
+      (available : PlanarHom.RepresentedBit.Reduction (PlanarHom.FixedRealMixedInterpolation.problem basis M U w) base),
+      ∃ a z,
+        0 < a ∧
+          0 < z ∧
+            (∃ i j, |φ (M selected i j)| = a) ∧
+              (∃ i j, |φ (M selected i j)| = z) ∧
+                (∀ (i j : Fin q), M selected i j ≠ 0 → a ≤ |φ (M selected i j)|) ∧
+                  (∀ (i j : Fin q), |φ (M selected i j)| ≤ z) ∧
+                    Nonempty
+                      (PlanarHom.RepresentedBit.Reduction
+                        (PlanarHom.FixedRealMixedInterpolation.problem basis
+                          (PlanarHom.FiniteLanguageAliases.appendFamily
+                            (PlanarHom.FiniteLanguageAliases.appendFamily M
+                              (PlanarHom.FixedRealSignedTransforms.transform φ (M selected)))
+                            (PlanarHom.FixedRealSignedTransforms.extremalTransforms φ (M selected) a z))
+                          U w)
+                        base)
+PAPER_AXIOMS PlanarHom.FixedRealSignedTransforms.theoremA7_all_five: [propext, Quot.sound, Classical.choice]
+PAPER_TARGET A.7 PlanarHom.FixedRealSignedTransforms.theoremA7_chain
+PAPER_TYPE PlanarHom.FixedRealSignedTransforms.theoremA7_chain: ∀ {n e q u : ℕ} {K : Type} [inst : Field K]
+  [inst_1 : Algebra (PlanarHom.DensePolynomial.RationalFunction n) K]
+  (basis : Module.Basis (Fin e) (PlanarHom.DensePolynomial.RationalFunction n) K) (φ : K →+* ℝ)
+  (M : Matrix (Fin q) (Fin q) K) (U : Fin u → Fin q → K) (w : Fin q → K),
+  Nonempty
+      (PlanarHom.RepresentedBit.Reduction
+        (PlanarHom.FixedRealMixedInterpolation.problem basis
+          (fun x i j => PlanarHom.FixedRealSignedTransforms.support (M i j)) U w)
+        (PlanarHom.FixedRealMixedInterpolation.problem basis
+          (fun x i j => PlanarHom.FixedRealSignedTransforms.magnitude φ (M i j)) U w)) ∧
+    Nonempty
+      (PlanarHom.RepresentedBit.Reduction
+        (PlanarHom.FixedRealMixedInterpolation.problem basis
+          (fun x i j => PlanarHom.FixedRealSignedTransforms.magnitude φ (M i j)) U w)
+        (PlanarHom.FixedRealMixedInterpolation.problem basis (fun x => M) U w))
+PAPER_AXIOMS PlanarHom.FixedRealSignedTransforms.theoremA7_chain: [propext, Quot.sound, Classical.choice]
+PAPER_TARGET A.7 PlanarHom.FixedRealSignedTransforms.theoremA7_mixed_equivalence
+PAPER_TYPE PlanarHom.FixedRealSignedTransforms.theoremA7_mixed_equivalence: ∀ {n e q u : ℕ} {K : Type} [inst : Field K]
+  [inst_1 : Algebra (PlanarHom.DensePolynomial.RationalFunction n) K]
+  (basis : Module.Basis (Fin e) (PlanarHom.DensePolynomial.RationalFunction n) K) (φ : K →+* ℝ)
+  (M : Matrix (Fin q) (Fin q) K) (U : Fin u → Fin q → K) (w : Fin q → K),
+  Nonempty
+      (PlanarHom.RepresentedBit.Reduction (PlanarHom.FixedRealMixedInterpolation.problem basis (fun x => M) U w)
+        (PlanarHom.FixedRealMixedInterpolation.problem basis (PlanarHom.FixedRealSignedTransforms.mixed φ M) U w)) ∧
+    Nonempty
+      (PlanarHom.RepresentedBit.Reduction
+        (PlanarHom.FixedRealMixedInterpolation.problem basis (PlanarHom.FixedRealSignedTransforms.mixed φ M) U w)
+        (PlanarHom.FixedRealMixedInterpolation.problem basis (fun x => M) U w))
+PAPER_AXIOMS PlanarHom.FixedRealSignedTransforms.theoremA7_mixed_equivalence: [propext, Quot.sound, Classical.choice]
+PAPER_ITEM_CHECKED A.7
+PAPER_TARGET A.8 PlanarHom.FixedRealWeightRemoval.theoremA8
+PAPER_TYPE PlanarHom.FixedRealWeightRemoval.theoremA8: {n e c f q bt ut : ℕ} →
+  {K F : Type} →
+    [inst : Field K] →
+      [inst_1 : Field F] →
+        [inst_2 : Algebra (PlanarHom.DensePolynomial.RationalFunction n) K] →
+          [inst_3 : Algebra (PlanarHom.DensePolynomial.RationalFunction c) F] →
+            [inst_4 : Algebra K ℝ] →
+              (sourceBasis : Module.Basis (Fin e) (PlanarHom.DensePolynomial.RationalFunction n) K) →
+                (targetBasis : Module.Basis (Fin f) (PlanarHom.DensePolynomial.RationalFunction c) F) →
+                  (embed : F →+* K) →
+                    (M : Fin bt → Matrix (Fin q) (Fin q) F) →
+                      (U : Fin ut → Fin q → F) →
+                        (w : Fin q → K) →
+                          (old : Fin bt) →
+                            (∀ (i j : Fin q),
+                                (algebraMap K ℝ) (embed (M old i j)) = (algebraMap K ℝ) (embed (M old j i))) →
+                              (∀ (i : Fin q), 0 < PlanarHom.RelativeWeightedSpectralField.realWeights w i) →
+                                (∀ (i : Fin q), (fun j => (algebraMap K ℝ) (embed (M old i j))) ≠ 0) →
+                                  (∀ (i j : Fin q),
+                                      i ≠ j →
+                                        ∀ (t : ℝ),
+                                          (fun k => (algebraMap K ℝ) (embed (M old i k))) ≠
+                                            t • fun k => (algebraMap K ℝ) (embed (M old j k))) →
+                                    PlanarHom.RepresentedBit.Reduction
+                                      (PlanarHom.FixedRealMixedInterpolation.problem targetBasis M U fun x => 1)
+                                      (PlanarHom.FixedRealMixedInterpolation.problem sourceBasis
+                                        (fun l i j => embed (M l i j)) (fun l i => embed (U l i)) w)
+PAPER_AXIOMS PlanarHom.FixedRealWeightRemoval.theoremA8: [propext, Quot.sound, Classical.choice]
+PAPER_TARGET A.8 PlanarHom.FixedRealWeightRemoval.constructedPowers_joint
+PAPER_TYPE PlanarHom.FixedRealWeightRemoval.constructedPowers_joint: {n e q bt ut s : ℕ} →
+  {F : Type} →
+    [inst : Field F] →
+      [inst_1 : Algebra (PlanarHom.DensePolynomial.RationalFunction n) F] →
+        [inst_2 : Algebra F ℝ] →
+          (basis : Module.Basis (Fin e) (PlanarHom.DensePolynomial.RationalFunction n) F) →
+            (M : Fin bt → Matrix (Fin q) (Fin q) F) →
+              (U : Fin ut → Fin q → F) →
+                (w : Fin q → F) →
+                  (old : Fin bt) →
+                    (∀ (i j : Fin q),
+                        PlanarHom.RelativeWeightedSpectralField.realMatrix (M old) i j =
+                          PlanarHom.RelativeWeightedSpectralField.realMatrix (M old) j i) →
+                      (hw : ∀ (i : Fin q), 0 < PlanarHom.RelativeWeightedSpectralField.realWeights w i) →
+                        (∀ (i : Fin q), PlanarHom.RelativeWeightedSpectralField.realMatrix (M old) i ≠ 0) →
+                          (∀ (i j : Fin q),
+                              i ≠ j →
+                                ∀ (t : ℝ),
+                                  PlanarHom.RelativeWeightedSpectralField.realMatrix (M old) i ≠
+                                    t • PlanarHom.RelativeWeightedSpectralField.realMatrix (M old) j) →
+                            (r : Fin s → ℚ) →
+                              have P := PlanarHom.FixedRealWeightRemoval.powerModel basis w hw r;
+                              PlanarHom.RepresentedBit.Reduction
+                                (PlanarHom.FixedRealMixedInterpolation.problem P.basis
+                                  (PlanarHom.FixedRealWeightRemoval.powerMatrices (fun l i j => P.inclusion (M l i j))
+                                    (fun i => P.inclusion (w i)) P.powers)
+                                  (PlanarHom.FixedRealWeightRemoval.powerUnaries (fun l i => P.inclusion (U l i))
+                                    P.powers)
+                                  fun x => 1)
+                                (PlanarHom.FixedRealMixedInterpolation.problem basis M U w)
+PAPER_AXIOMS PlanarHom.FixedRealWeightRemoval.constructedPowers_joint: [propext, Quot.sound, Classical.choice]
+PAPER_ITEM_CHECKED A.8
+PAPER_TARGET A.9 PlanarHom.FixedRealSupportHardness.theoremA9_zeroOne
+PAPER_TYPE PlanarHom.FixedRealSupportHardness.theoremA9_zeroOne: ∀ {n e q : ℕ} {K : Type} [inst : Field K]
+  [inst_1 : Algebra (PlanarHom.DensePolynomial.RationalFunction n) K]
+  (basis : Module.Basis (Fin e) (PlanarHom.DensePolynomial.RationalFunction n) K) (φ : K →+* ℝ)
+  (M : Matrix (Fin q) (Fin q) K) (hs : ∀ (i j : Fin q), M i j = M j i) (w : Fin q → K),
+  (∀ (i : Fin q), 0 < φ (w i)) →
+    (∀ (i j : Fin q), M i j = 0 ∨ M i j = 1) →
+      (PlanarHom.FixedRealSupportHardness.BasicSupport φ M hs →
+          (PlanarHom.FixedRealComponents.problem basis (fun x => M) (fun i => i.elim0) w).InFP) ∧
+        (¬PlanarHom.FixedRealSupportHardness.BasicSupport φ M hs →
+          PlanarHom.RepresentedBit.SharpPHard
+            (PlanarHom.FixedRealComponents.problem basis (fun x => M) (fun i => i.elim0) w))
+PAPER_AXIOMS PlanarHom.FixedRealSupportHardness.theoremA9_zeroOne: [propext, Quot.sound, Classical.choice]
+PAPER_TARGET A.9 PlanarHom.FixedRealSupportHardness.theoremA9_hard
+PAPER_TYPE PlanarHom.FixedRealSupportHardness.theoremA9_hard: ∀ {n e q : ℕ} {K : Type} [inst : Field K]
+  [inst_1 : Algebra (PlanarHom.DensePolynomial.RationalFunction n) K]
+  (basis : Module.Basis (Fin e) (PlanarHom.DensePolynomial.RationalFunction n) K) (φ : K →+* ℝ)
+  (M : Matrix (Fin q) (Fin q) K) (hs : ∀ (i j : Fin q), M i j = M j i) (w : Fin q → K),
+  (∀ (i : Fin q), 0 < φ (w i)) →
+    (∃ c, ¬PlanarHom.ZeroOneBasicStructure.BasicZeroOneComponent fun i j => if φ (M ↑i ↑j) = 0 then 0 else 1) →
+      PlanarHom.RepresentedBit.SharpPHard
+        (PlanarHom.FixedRealComponents.problem basis (fun x => M) (fun i => i.elim0) w)
+PAPER_AXIOMS PlanarHom.FixedRealSupportHardness.theoremA9_hard: [propext, Quot.sound, Classical.choice]
+PAPER_ITEM_CHECKED A.9
+PAPER_TARGET A.10 PlanarHom.FixedRealLemmaA10.lemmaA10
+PAPER_TYPE PlanarHom.FixedRealLemmaA10.lemmaA10: ∀ {n e d : ℕ} {F : Type} [inst : Field F]
+  [inst_1 : Algebra (PlanarHom.DensePolynomial.RationalFunction n) F] [inst_2 : Algebra F ℝ]
+  (basis : Module.Basis (Fin e) (PlanarHom.DensePolynomial.RationalFunction n) F) (ρ : Fin d → F),
+  (∀ (j : Fin d), 0 < (algebraMap F ℝ) (ρ j)) →
+    (∀ (j : Fin d), (algebraMap F ℝ) (ρ j) ≠ 1) →
+      ∀ (u : PlanarHom.Boolean.Cube d → F),
+        (∀ (i : PlanarHom.Boolean.Cube d), 0 < (algebraMap F ℝ) (u i)) →
+          ((∀ (i j : PlanarHom.Boolean.Cube d), u i = u j) → (PlanarHom.FixedRealLemmaA10.problem basis ρ u).InFP) ∧
+            ((∃ i j, u i ≠ u j) → PlanarHom.RepresentedBit.SharpPHard (PlanarHom.FixedRealLemmaA10.problem basis ρ u))
+PAPER_AXIOMS PlanarHom.FixedRealLemmaA10.lemmaA10: [propext, Quot.sound, Classical.choice]
+PAPER_ITEM_CHECKED A.10
+PAPER_TARGET A.11 PlanarHom.FixedRealLemmaA11.lemmaA11
+PAPER_TYPE PlanarHom.FixedRealLemmaA11.lemmaA11: ∀ {n e d : ℕ} {F : Type} [inst : Field F]
+  [inst_1 : Algebra (PlanarHom.DensePolynomial.RationalFunction n) F] [inst_2 : Algebra F ℝ]
+  (basis : Module.Basis (Fin e) (PlanarHom.DensePolynomial.RationalFunction n) F) (c : F),
+  0 < (algebraMap F ℝ) c →
+    ∀ (ρ : Fin d → F),
+      (∀ (j : Fin d), 0 < (algebraMap F ℝ) (ρ j)) →
+        (∀ (j : Fin d), (algebraMap F ℝ) (ρ j) ≠ 1) →
+          ∀ (μ ν : PlanarHom.Boolean.Cube d → F),
+            (∀ (i : PlanarHom.Boolean.Cube d), 0 < (algebraMap F ℝ) (μ i)) →
+              (∀ (i : PlanarHom.Boolean.Cube d), 0 < (algebraMap F ℝ) (ν i)) →
+                (((∀ (i j : PlanarHom.Boolean.Cube d), μ i = μ j) ∧ ∀ (i j : PlanarHom.Boolean.Cube d), ν i = ν j) →
+                    (PlanarHom.FixedRealLemmaA11.problem basis c ρ μ ν).InFP ∧
+                      (PlanarHom.FixedRealLemmaA11.prescribedProblem basis c ρ μ ν).InFP) ∧
+                  (((∃ i j, μ i ≠ μ j) ∨ ∃ i j, ν i ≠ ν j) →
+                    PlanarHom.RepresentedBit.SharpPHard (PlanarHom.FixedRealLemmaA11.problem basis c ρ μ ν) ∧
+                      PlanarHom.RepresentedBit.SharpPHard (PlanarHom.FixedRealLemmaA11.prescribedProblem basis c ρ μ ν))
+PAPER_AXIOMS PlanarHom.FixedRealLemmaA11.lemmaA11: [propext, Quot.sound, Classical.choice]
+PAPER_ITEM_CHECKED A.11
+PAPER_TARGET A.12 PlanarHom.FixedRealWeightedClassification.theoremA12
+PAPER_TYPE PlanarHom.FixedRealWeightedClassification.theoremA12: ∀ {n e q : ℕ} {K : Type} [inst : Field K]
+  [inst_1 : Algebra (PlanarHom.DensePolynomial.RationalFunction n) K]
+  (basis : Module.Basis (Fin e) (PlanarHom.DensePolynomial.RationalFunction n) K) (φ : K →+* ℝ)
+  (M : Matrix (Fin q) (Fin q) K) (hs : ∀ (i j : Fin q), M i j = M j i),
+  (∀ (i j : Fin q), 0 ≤ φ (M i j)) →
+    ∀ (w : Fin q → K),
+      (∀ (i : Fin q), 0 < φ (w i)) →
+        (PlanarHom.Structures.PositiveVertexWeightClass (fun i j => φ (M i j)) (fun i => φ (w i)) ⋯ →
+            (PlanarHom.FixedRealMixedInterpolation.problem basis (fun x => M) (fun l => l.elim0) w).InFP) ∧
+          (¬PlanarHom.Structures.PositiveVertexWeightClass (fun i j => φ (M i j)) (fun i => φ (w i)) ⋯ →
+            PlanarHom.RepresentedBit.SharpPHard
+              (PlanarHom.FixedRealMixedInterpolation.problem basis (fun x => M) (fun l => l.elim0) w))
+PAPER_AXIOMS PlanarHom.FixedRealWeightedClassification.theoremA12: [propext, Quot.sound, Classical.choice]
+PAPER_ITEM_CHECKED A.12
+PAPER_TARGET A.13 PlanarHom.FixedRealSurvivingWeights.theoremA13
+PAPER_TYPE PlanarHom.FixedRealSurvivingWeights.theoremA13: ∀ {n e q : ℕ} {K : Type} [inst : Field K]
+  [inst_1 : Algebra (PlanarHom.DensePolynomial.RationalFunction n) K]
+  (basis : Module.Basis (Fin e) (PlanarHom.DensePolynomial.RationalFunction n) K) (φ : K →+* ℝ)
+  (M : Matrix (Fin q) (Fin q) K) (hs : ∀ (i j : Fin q), M i j = M j i),
+  (∀ (i j : Fin q), 0 ≤ φ (M i j)) →
+    ∀ (w : Fin q → K),
+      (∀ (i : Fin q), 0 ≤ φ (w i)) →
+        (PlanarHom.FixedRealSurvivingWeights.SurvivingClass φ M w hs →
+            (PlanarHom.FixedRealMixedInterpolation.problem basis (fun x => M) (fun l => l.elim0) w).InFP) ∧
+          (¬PlanarHom.FixedRealSurvivingWeights.SurvivingClass φ M w hs →
+            PlanarHom.RepresentedBit.SharpPHard
+              (PlanarHom.FixedRealMixedInterpolation.problem basis (fun x => M) (fun l => l.elim0) w))
+PAPER_AXIOMS PlanarHom.FixedRealSurvivingWeights.theoremA13: [propext, Quot.sound, Classical.choice]
+PAPER_ITEM_CHECKED A.13
+PAPER_TARGET A.14 PlanarHom.FixedRealSignedConsequences.theoremA14
+PAPER_TYPE PlanarHom.FixedRealSignedConsequences.theoremA14: ∀ {n e q : ℕ} {K : Type} [inst : Field K]
+  [inst_1 : Algebra (PlanarHom.DensePolynomial.RationalFunction n) K]
+  (basis : Module.Basis (Fin e) (PlanarHom.DensePolynomial.RationalFunction n) K) (φ : K →+* ℝ)
+  (M : Matrix (Fin q) (Fin q) K) (hs : ∀ (i j : Fin q), M i j = M j i) (w : Fin q → K),
+  (∀ (i : Fin q), 0 < φ (w i)) →
+    Nonempty
+        (PlanarHom.RepresentedBit.Reduction
+          (PlanarHom.FixedRealMixedInterpolation.problem basis
+            (fun x i j => PlanarHom.FixedRealSignedTransforms.support (M i j)) (fun l => l.elim0) w)
+          (PlanarHom.FixedRealMixedInterpolation.problem basis
+            (fun x i j => PlanarHom.FixedRealSignedTransforms.magnitude φ (M i j)) (fun l => l.elim0) w)) ∧
+      Nonempty
+          (PlanarHom.RepresentedBit.Reduction
+            (PlanarHom.FixedRealMixedInterpolation.problem basis
+              (fun x i j => PlanarHom.FixedRealSignedTransforms.magnitude φ (M i j)) (fun l => l.elim0) w)
+            (PlanarHom.FixedRealMixedInterpolation.problem basis (fun x => M) (fun l => l.elim0) w)) ∧
+        ((∃ c, ¬PlanarHom.ZeroOneBasicStructure.BasicZeroOneComponent fun i j => if φ (M ↑i ↑j) = 0 then 0 else 1) →
+            PlanarHom.RepresentedBit.SharpPHard
+              (PlanarHom.FixedRealMixedInterpolation.problem basis (fun x => M) (fun l => l.elim0) w)) ∧
+          ((∀ (i : Fin q), w i = 1) →
+              (¬PlanarHom.Structures.NonnegativeClass fun i j => |φ (M i j)|) →
+                PlanarHom.RepresentedBit.SharpPHard
+                  (PlanarHom.FixedRealMixedInterpolation.problem basis (fun x => M) (fun l => l.elim0) w)) ∧
+            ((∀ (i j : Fin q), M i j = 0 ∨ M i j = 1) →
+              (PlanarHom.FixedRealSupportHardness.BasicSupport φ M hs →
+                  (PlanarHom.FixedRealMixedInterpolation.problem basis (fun x => M) (fun l => l.elim0) w).InFP) ∧
+                (¬PlanarHom.FixedRealSupportHardness.BasicSupport φ M hs →
+                  PlanarHom.RepresentedBit.SharpPHard
+                    (PlanarHom.FixedRealMixedInterpolation.problem basis (fun x => M) (fun l => l.elim0) w)))
+PAPER_AXIOMS PlanarHom.FixedRealSignedConsequences.theoremA14: [propext, Quot.sound, Classical.choice]
+PAPER_ITEM_CHECKED A.14
