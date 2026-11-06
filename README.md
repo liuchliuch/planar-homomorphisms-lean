@@ -66,4 +66,5 @@ solution using an extra axiom are rejected. See
 ## Citation and license
 
 Use [CITATION.cff](CITATION.cff) to cite the accompanying paper.
-No software license has been specified for this source release.
+The software source code is licensed under the [Apache License 2.0](LICENSE).
+The accompanying paper in `paper/` is distributed under its own terms.
